@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[next]/internal/font/google/public_sans_a4c4a4be.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Public Sans Fallback';\n    src: local(\"Arial\");\n    ascent-override: 90.59%;\ndescent-override: 21.46%;\nline-gap-override: 0.00%;\nsize-adjust: 104.87%;\n\n}\n.className {\n    font-family: 'Public Sans', 'Public Sans Fallback';\n    font-style: normal;\n\n}\n.variable {\n    --body-color-font: 'Public Sans', 'Public Sans Fallback';\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;AAKA","ignoreList":[0]}}]
+}
