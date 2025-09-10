@@ -1,0 +1,15 @@
+{
+  "app": {
+    "[project]/src/app/(home1)/page": [],
+    "[project]/src/app/(innerpage)/about/page": [],
+    "[project]/src/app/(innerpage)/blog/blog-details/page": [],
+    "[project]/src/app/(innerpage)/blog/page": [],
+    "[project]/src/app/(innerpage)/faq/page": [],
+    "[project]/src/app/(innerpage)/project/page": [],
+    "[project]/src/app/(innerpage)/service/ecommerce/page": [],
+    "[project]/src/app/(innerpage)/service/service-details/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
