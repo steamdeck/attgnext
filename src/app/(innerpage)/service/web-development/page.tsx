@@ -9,7 +9,6 @@ const page = () => {
       <BreadCumb
         bgimg="/assets/img/page_header.jpg"
         Title="Web Development Services"
-        Subtitle="Professional web development that drives business growth"
       />
       <WebDevelopmentContent />
       <Contact2 />
