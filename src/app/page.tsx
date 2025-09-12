@@ -1,4 +1,6 @@
 import React from 'react';
+import Header1 from './Components/Header/Header1';
+import Footer1 from './Components/Footer/Footer1';
 import HeroBanner1 from './Components/HeroBanner/HeroBanner1';
 import About1 from './Components/About/About1';
 import Counter1 from './Components/Counter/Counter1';
@@ -16,7 +18,8 @@ import Blog1 from './Components/Blog/Blog1';
 
 const HomePage = () => {
     return (
-        <div>
+        <div className='main-page-area'>
+            <Header1></Header1>
             <HeroBanner1></HeroBanner1>
             <About1></About1>
             <Counter1></Counter1>
@@ -31,6 +34,7 @@ const HomePage = () => {
             <Team1></Team1>
             <Contact1></Contact1>
             <Blog1></Blog1>
+            <Footer1></Footer1>
         </div>
     );
 };
