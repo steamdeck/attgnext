@@ -9,7 +9,6 @@ const page = () => {
       <BreadCumb
         bgimg="/assets/img/page_header.jpg"
         Title="SEO Services"
-        Subtitle="Professional SEO services that improve rankings and drive organic traffic"
       />
       <SEOContent />
       <Contact2 />

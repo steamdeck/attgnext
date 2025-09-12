@@ -9,7 +9,6 @@ const page = () => {
       <BreadCumb
         bgimg="/assets/img/page_header.jpg"
         Title="Digital Marketing Services"
-        Subtitle="Data-driven marketing strategies that deliver measurable ROI"
       />
       <DigitalMarketingContent />
       <Contact2 />

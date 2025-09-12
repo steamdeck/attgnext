@@ -9,7 +9,6 @@ const page = () => {
       <BreadCumb
         bgimg="/assets/img/page_header.jpg"
         Title="Mobile Application Development"
-        Subtitle="Expert mobile app development for iOS and Android platforms"
       />
       <MobileAppContent />
       <Contact2 />

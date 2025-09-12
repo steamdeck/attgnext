@@ -1,15 +1,12 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
 
-# Handle client-side routing for Next.js static export
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.plugins]
+  package = "@netlify/plugin-nextjs"
 
 [[headers]]
   for = "/*"
