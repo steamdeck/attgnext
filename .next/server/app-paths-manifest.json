@@ -1,11 +1,5 @@
 {
   "/(home1)/page": "app/(home1)/page.js",
-  "/(innerpage)/about/page": "app/(innerpage)/about/page.js",
-  "/(innerpage)/blog/blog-details/page": "app/(innerpage)/blog/blog-details/page.js",
-  "/(innerpage)/blog/page": "app/(innerpage)/blog/page.js",
-  "/(innerpage)/faq/page": "app/(innerpage)/faq/page.js",
-  "/(innerpage)/project/page": "app/(innerpage)/project/page.js",
-  "/(innerpage)/service/ecommerce/page": "app/(innerpage)/service/ecommerce/page.js",
-  "/(innerpage)/service/service-details/page": "app/(innerpage)/service/service-details/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }
