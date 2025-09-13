@@ -9,6 +9,10 @@ import {
   getLastModified 
 } from '../lib/sitemap-utils'
 
+// Required for static export
+export const dynamic = 'force-static'
+export const revalidate = false
+
 // Function to recursively get all page files
 function getAllPages(dir: string, basePath: string = ''): string[] {
   const pages: string[] = []

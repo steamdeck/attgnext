@@ -1,5 +1,9 @@
 import { MetadataRoute } from 'next'
 
+// Required for static export
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export default function robots(): MetadataRoute.Robots {
   // Get the base URL dynamically based on environment
   let baseUrl = process.env.NEXT_PUBLIC_BASE_URL
