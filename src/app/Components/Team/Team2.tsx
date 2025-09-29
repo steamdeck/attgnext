@@ -7,9 +7,9 @@ import Image from 'next/image';
 const Team2 = () => {
 
     const teamContent = [
-        {img:'/assets/img/team_5.jpg', name:'Esther howard', content:'Mid-Level Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_6.jpg', name:'Leslie Alexander', content:'Founder & CEO',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_7.jpg', name:'Theresa Web', content:'Merchandiser',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_5.jpg', name:'Alex Thomax', content:'Founder & Director',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_6.jpg', name:'Hardik Vaish', content:'Senior Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_7.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
       ];
 
           useEffect(() => {

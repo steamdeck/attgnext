@@ -5,9 +5,9 @@ import React from 'react';
 const Team1 = () => {
 
     const teamContent = [
-        {img:'/assets/img/team_1.jpg', name:'Esther howard', content:'Mid-Level Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_2.jpg', name:'Leslie Alexander', content:'Founder & CEO',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_3.jpg', name:'Theresa Web', content:'Merchandiser',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_1.jpg', name:'Alex Thomax', content:'Founder & Director',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_2.jpg', name:'Hardik Vaish', content:'Senior Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_3.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
         {img:'/assets/img/team_4.jpg', name:'Floyd Miles', content:'Senior Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
       ];
 

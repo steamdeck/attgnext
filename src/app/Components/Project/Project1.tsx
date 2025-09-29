@@ -5,12 +5,12 @@ import React from 'react';
 const Project1 = () => {
 
     const chooseContent = [
-        {img:'/assets/img/card_1.jpg'},
-        {img:'/assets/img/card_2.jpg'},
-        {img:'/assets/img/card_3.jpg'},
-        {img:'/assets/img/card_4.jpg'},
-        {img:'/assets/img/card_5.jpg'},
-        {img:'/assets/img/card_6.jpg'},
+        {img:'/assets/img/logo4.jpg'},
+        {img:'/assets/img/logo6.jpg'},
+        {img:'/assets/img/logo5.jpg'},
+        {img:'assets/img/logo2.webp'},
+        {img:'/assets/img/logo1.webp'},
+        {img:'/assets/img/logo3.jpg'},
       ]; 
 
     return (
