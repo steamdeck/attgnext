@@ -53,13 +53,13 @@ const HowWeDo = () => {
           <div className="col-lg-7">
             <div className="cs_working_thumbnail_wrapper cs_center position-relative">
               <div className="cs_working_thumbnail position-relative wow fadeInDown">
-                <Image src="/assets/img/working_img_1.jpg" alt="img" width={275} height={369}   />
+                <Image src="assets/img/ad317c5d-d87b-447f-a4f9-49f150259394.jfif" alt="img" width={275} height={369}   />
                 <span className="cs_comment">
                   <Image src="/assets/img/icons/comment.svg" alt="img" width={46} height={33}   />
                 </span>
               </div>
               <div className="cs_working_thumbnail position-relative wow fadeInUp">
-                <Image src="/assets/img/working_img_2.jpg" alt="img" width={279} height={369}   />
+                <Image src="/assets/img/3812fc57-d7de-49fd-9b9b-57ed9bafff5f.jfif" alt="img" width={279} height={369}   />
                 <span className="cs_like">
                   <Image src="/assets/img/icons/like.svg" alt="img" width={40} height={39}   />
                 </span>

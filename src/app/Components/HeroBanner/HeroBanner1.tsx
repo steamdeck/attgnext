@@ -66,14 +66,14 @@ const HeroBanner1 = () => {
             <div className="cs_top_content">
               <div className="cs_clients_info">
                 <a onClick={handelClick} aria-label="Play video button" className="cs_video cs_style_1 cs_video_open cs_center cs_radius_50 cs_mb_20 wow zoomIn">
-                  <Image src="/assets/img/video_bg_1.jpg" alt="img" className="cs_video_bg" width={120} height={120}   />
+                  <Image src="https://www.freeiconspng.com/uploads/video-player-icon-15.png" alt="img" className="cs_video_bg" width={120} height={120}   />
                   <Image src="/assets/img/icons/player_1.svg" alt="img" className="position-relative z-1" width={34} height={34}   />
                 </a>
                 <div className="cs_clients_heading cs_mb_10">
                   <Image src="/assets/img/icons/user_1.svg" alt="img" width={19} height={19}   />
                   <h3 className="cs_fs_20 mb-0">3k+ <span className="cs_fs_14 cs_medium">Satisfied client</span></h3>
                 </div>
-                <Image src="/assets/img/users-group.png" alt="img" width={176} height={40}   />
+                <Image src="https://www.appsflyer.com/wp-content/uploads/2021/08/Active-users.jpg" alt="img" width={176} height={40}   />
               </div>
             </div>
             <div className="cs_bottom_content wow fadeInUp">

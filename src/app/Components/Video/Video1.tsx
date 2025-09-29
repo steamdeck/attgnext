@@ -25,7 +25,7 @@ const Video1 = () => {
     return (
         <div className="position-relative z-2">
         <div className="container-fluid">
-          <div className="cs_video_block cs_style_1 cs_center cs_bg_filed position-relative wow fadeInDown" data-background="/assets/img/video_bg_2.jpg">
+          <div className="cs_video_block cs_style_1 cs_center cs_bg_filed position-relative wow fadeInDown" data-background="/assets/img/ce235bcb-7122-4be6-ae71-65eeedde9c1d.jfif">
             <a onClick={handelClick} aria-label="Play video button" className="cs_player_btn cs_video_open cs_center cs_radius_50">
             <span className="cs_player_btn_icon cs_center cs_accent_bg cs_white_color"><span></span></span>
             </a>
