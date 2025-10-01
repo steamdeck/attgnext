@@ -87,13 +87,13 @@ const ServiceDetails = () => {
         </div>
         <div className="col-lg-8">
           <div className="cs_service_details">
-            <Image src="/assets/img/service_details.jpg" alt="img" width={754} height={392}   />
+            <Image src="/assets/img/generated-image-1759189285024.jpg" alt="img" width={754} height={392}   />
             <h2>Content Management System</h2>
             <p>A Content Management System (CMS) is a software application that allows users to create, manage, and modify digital content, such as text, images, videos, and documents, on a website without requiring in-depth technical knowledge. CMS platforms streamline the process of website management, enabling users to focus on content creation and organization rather than coding and programming.</p>
             <div className="cs_service_details_features cs_gray_bg_1 cs_radius_20">
               <div className="row cs_row_gap_30 cs_gap_y_30">
                 <div className="col-md-5 wow fadeInLeft">
-                  <Image src="/assets/img/service_details_2.jpg" alt="img" width={263} height={196}   />
+                  <Image src="/assets/img/freepik__a-3d-render-of-a-cms-ecosystem-highlighting-user-r__24024.png" alt="img" width={263} height={196}   />
                 </div>
                 <div className="col-md-7">
                   <div className="cs_feature_info">

@@ -38,6 +38,21 @@ export default function AdminSidebar() {
       icon: '📰'
     },
     {
+      name: 'Image Management',
+      href: '/admin/images',
+      icon: '🖼️'
+    },
+    {
+      name: 'Page Editor',
+      href: '/admin/page-editor',
+      icon: '✏️'
+    },
+    {
+      name: 'Page Editor Demo',
+      href: '/admin/page-editor-demo',
+      icon: '📚'
+    },
+    {
       name: 'Settings',
       href: '/admin/settings',
       icon: '⚙️'
@@ -45,20 +60,18 @@ export default function AdminSidebar() {
   ]
 
   return (
-    <aside className="w-64 bg-white shadow-sm h-screen sticky top-0">
-      <nav className="mt-6">
-        <ul className="space-y-2 px-4">
+    <aside className="bg-white shadow-sm" style={{width: '250px', minHeight: '100vh'}}>
+      <nav className="p-3">
+        <ul className="nav nav-pills flex-column">
           {menuItems.map((item) => (
-            <li key={item.name}>
+            <li key={item.name} className="nav-item mb-1">
               <Link
                 href={item.href}
-                className={`flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                  pathname === item.href
-                    ? 'bg-indigo-100 text-indigo-700'
-                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                className={`nav-link d-flex align-items-center ${
+                  pathname === item.href ? 'active' : ''
                 }`}
               >
-                <span className="mr-3 text-lg">{item.icon}</span>
+                <span className="me-3 fs-5">{item.icon}</span>
                 {item.name}
               </Link>
             </li>

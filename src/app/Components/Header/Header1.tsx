@@ -1,33 +1,45 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
 import Image from 'next/image';
+
 export default function Header1({ variant } : any ) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
   const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
 
+  const handleScroll = useCallback(() => {
+    const currentScrollPos = window.scrollY;
+    if (currentScrollPos > prevScrollPos && currentScrollPos > 100) {
+      setIsSticky('cs-gescout_sticky'); // Scrolling down
+    } else if (currentScrollPos !== 0) {
+      setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
+    } else {
+      setIsSticky('');
+    }
+    setPrevScrollPos(currentScrollPos);
+  }, [prevScrollPos]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setIsSticky('cs-gescout_sticky'); // Scrolling down
-      } else if (currentScrollPos !== 0) {
-        setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
-      } else {
-        setIsSticky('');
+    let ticking = false;
+    
+    const optimizedScrollHandler = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
       }
-      setPrevScrollPos(currentScrollPos); // Update previous scroll position
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', optimizedScrollHandler, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
+      window.removeEventListener('scroll', optimizedScrollHandler);
     };
-  }, [prevScrollPos]);
+  }, [handleScroll]);
 
   return (
     <div>
@@ -43,7 +55,7 @@ export default function Header1({ variant } : any ) {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
-            <Image src="/assets/img/logo-3.png" alt="img" width={160} height={450}   />
+            <Image src="/assets/img/logo-3.png" alt="img" width={110} height={450}   />
               </Link>
               </div>
               <div className="cs_main_header_center">

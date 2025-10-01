@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
               <BreadCumb
-                bgimg="/assets/img/page_header.jpg"
+                bgimg="https://placeholdr.ai/24e9c10c-5670-4d95-acbd-2402052822bd/1024/412"
                 Title="Contact Us"
             ></BreadCumb>       
             <Contact3></Contact3>       
