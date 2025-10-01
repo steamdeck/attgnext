@@ -1,34 +1,18 @@
 'use client'
 
-import { AdminUser } from '../../../lib/auth'
-
-interface AdminHeaderProps {
-  user: AdminUser | null
-  onLogout: () => void
-}
-
-export default function AdminHeader({ user, onLogout }: AdminHeaderProps) {
+export default function AdminHeader() {
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
-      <div className="px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
+    <header className="bg-white shadow-sm border-bottom">
+      <div className="container-fluid px-4 py-3">
+        <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center">
+            <h1 className="h4 mb-0 text-dark">Image Management Dashboard</h1>
           </div>
           
-          <div className="flex items-center space-x-4">
-            <div className="text-sm text-gray-700">
-              Welcome, <span className="font-medium">{user?.email}</span>
-            </div>
-            <div className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
-              {user?.role}
-            </div>
-            <button
-              onClick={onLogout}
-              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
-            >
-              Logout
-            </button>
+          <div className="d-flex align-items-center gap-3">
+            <span className="badge bg-primary">
+              Admin
+            </span>
           </div>
         </div>
       </div>

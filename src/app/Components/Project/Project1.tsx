@@ -8,7 +8,7 @@ const Project1 = () => {
         {img:'/assets/img/logo4.jpg'},
         {img:'/assets/img/logo6.jpg'},
         {img:'/assets/img/logo5.jpg'},
-        {img:'assets/img/logo2.webp'},
+        {img:'/assets/img/logo2.webp'},
         {img:'/assets/img/logo1.webp'},
         {img:'/assets/img/logo3.jpg'},
       ]; 
@@ -31,7 +31,7 @@ const Project1 = () => {
             <div className="cs_project_list">
             {chooseContent.map((item, i) => (
               <Link key={i} href="/project/project-details" aria-label="Case study details page link" className="cs_card cs_style_1 cs_center position-relative">
-              <img src={item.img} alt="Project Imagr" />
+              <Image src={item.img} alt="Project Image" width={300} height={200} priority={i < 3} />
               <span className="cs_card_btn cs_center position-absolute">
                 <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
               </span>
@@ -42,7 +42,7 @@ const Project1 = () => {
             <div className="cs_project_list">
             {chooseContent.map((item, i) => (
               <Link key={i} href="/project/project-details" aria-label="Case study details page link" className="cs_card cs_style_1 cs_center position-relative">
-              <img src={item.img} alt="Project Imagr" />
+              <Image src={item.img} alt="Project Image" width={300} height={200} />
               <span className="cs_card_btn cs_center position-absolute">
               <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
               </span>

@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
              <BreadCumb
-                bgimg="/assets/img/page_header.jpg"
+                bgimg="https://placeholdr.ai/d738dd68-faeb-4882-8897-e919d3353b9c/1024/412"
                 Title="WhatsApp Marketing"
             ></BreadCumb>     
             <ServiceDetails></ServiceDetails>       

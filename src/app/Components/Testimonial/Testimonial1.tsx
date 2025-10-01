@@ -47,11 +47,11 @@ const Testimonial1 = () => {
       }; 
 
     const testimonialContent = [
-        {img:'/assets/img/avatar_4.jpg', subtitle:'Acme Co.', title:'Brooklyn Simmons', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
-        {img:'/assets/img/avatar_2.jpg', subtitle:'Barone LLC.', title:'Cody Fisher', content:'This team exceeded my expectations! They were punctual and ssets/imeticulous. My office has looked better. Will use them again!'},
-        {img:'/assets/img/avatar_3.jpg', subtitle:'Biffco Ltd.', title:'Hardik Vaish', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
-        {img:'/assets/img/avatar_4.jpg', subtitle:'Binford Ltd.', title:'Wade Warren', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
-        {img:'/assets/img/avatar_3.jpg', subtitle:'Acme Co.', title:'Brooklyn Simmons', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},        
+        {img:'/assets/img/avatar_4.jpg', subtitle:'Acme Co.', title:'Rahul Jain', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
+        {img:'/assets/img/avatar_2.jpg', subtitle:'Barone LLC.', title:'Smriti Pokhriyal', content:'This team exceeded my expectations! They were punctual and ssets/imeticulous. My office has looked better. Will use them again!'},
+        {img:'/assets/img/avatar_3.jpg', subtitle:'Biffco Ltd.', title:'Nagesh Sharma', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
+        {img:'/assets/img/avatar_4.jpg', subtitle:'Binford Ltd.', title:'Marry Thoungajam', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},
+        {img:'/assets/img/avatar_3.jpg', subtitle:'Acme Co.', title:'Jake Simmons', content:'This team exceeded my expectations! They were punctual and meticulous. My office has looked better. Will use them again!'},        
       ]; 
 
     return (

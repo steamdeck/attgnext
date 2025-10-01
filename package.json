@@ -11,17 +11,22 @@
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/sqlite3": "^3.1.11",
     "bcryptjs": "^3.0.2",
     "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1",
     "html-react-parser": "^5.2.5",
     "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "sharp": "^0.34.4",
+    "slick-carousel": "^1.8.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

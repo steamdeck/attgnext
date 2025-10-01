@@ -22,6 +22,10 @@ export const metadata = {
     title: 'AT Tech Global - Digital Agency React NextJS Template',
     description: 'AT Tech Global - Digital Agency React NextJS Template',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -30,6 +34,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="author" content="Themeservices" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="preconnect" href="https://www.freeiconspng.com" />
+        <link rel="preconnect" href="https://www.appsflyer.com" />
+        <link rel="dns-prefetch" href="https://www.freeiconspng.com" />
+        <link rel="dns-prefetch" href="https://www.appsflyer.com" />
       </head>
       <body className={`${public_sans.variable}`}>
         {children}

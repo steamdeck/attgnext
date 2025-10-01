@@ -53,7 +53,7 @@ const Testimonial2 = () => {
 
     const testimonialContent = [
         {img:'/assets/img/avatar_5.jpg', subtitle:'Senior Director', title:'Eleanor Pena', subcontent:'I’m a new customer', content:'It’s a pleasure working with Bunker. They understood our new brand positioning guidelines and translated them beautifully and consistently into.'},
-        {img:'/assets/img/avatar_1.jpg', subtitle:'Senior Developer', title:'Brooklyn Simmons', subcontent:'I’m a new customer', content:'It’s a pleasure working with Bunker. They understood our new brand positioning guidelines and translated them beautifully and consistently into.'},
+        {img:'/assets/img/avatar_1.jpg', subtitle:'Senior Developer', title:'Brwwwwooklyn Simmons', subcontent:'I’m a new customer', content:'It’s a pleasure working with Bunker. They understood our new brand positioning guidelines and translated them beautifully and consistently into.'},
       ]; 
 
     return (

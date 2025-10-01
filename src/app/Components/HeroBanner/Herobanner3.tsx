@@ -81,7 +81,7 @@ const Herobanner3 = () => {
               <div className="cs_btn_group">
                 <Link href="/contact" aria-label="Contact button" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>GET IN TOUCH</span></Link>
                 <div className="cs_client_info_wrapper wow fadeInRight">
-                  <Image src="/assets/img/client_group_1.png" alt="img" width={126} height={42}   />
+                  <Image src="/assets/img/depositphotos_659029902-stock-photo-button-empty-button-illustration.jpg" alt="img" width={126} height={42}   />
                   <p className="cs_fs_14 cs_medium cs_white_color mb-0">15k+ Active Customer</p>
                 </div>
               </div>

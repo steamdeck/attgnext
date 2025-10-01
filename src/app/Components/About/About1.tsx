@@ -40,7 +40,7 @@ const About1 = () => {
                   </div>
                   <div className="cs_client_review_content">
                     <div className="cs_client_thumb">
-                      <Image src="/assets/img/client_group_1.png" alt="img" width={126} height={42}   />
+                      <Image src="/assets/img/depositphotos_659029902-stock-photo-button-empty-button-illustration.jpg" alt="img" width={126} height={42}   />
                     </div>
                     <div className="cs_client_rating_info">
                       <div className="cs_rating" data-rating="4">

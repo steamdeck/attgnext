@@ -25,8 +25,8 @@ const Footer1 = () => {
           <div className="cs_footer_content cs_footer_row">
             <div className="cs_footer_widget cs_footer_text">
               <div className="cs_text_widget">
-                <Image src="/assets/img/logo-3.png" className="cs_mb_30 wow zoomIn" alt="img" width={212} height={38}   />
-                <p className="cs_mb_37">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+                <Image src="/assets/img/logo-3.png" className="cs_mb_30 wow zoomIn" alt="img" width={110} height={38}   />
+                <p className="cs_mb_37">AT Tech Global delivers digital solutions in web, app development, and marketing.</p>
               </div>
               <div className="cs_social_btns cs_style_1">
                 <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
