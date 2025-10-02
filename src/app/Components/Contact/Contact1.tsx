@@ -9,7 +9,7 @@ const Contact1 = () => {
         <div className="row cs_gap_y_40">
           <div className="col-lg-6 order-lg-2">
             <div className="cs_contact_thumbnail wow fadeInRight">
-               <Image src="/assets/img/1cb7d3a6-d5b0-423f-99ba-8b1b0d91b012.jfif" alt="img" width={699} height={632}   />
+               <Image src="https://placeholdr.ai/0f66a300-9ac2-4427-9c97-3515da06c1f9/512/512" alt="Contact us illustration" width={699} height={632}   />
               <div className="cs_contact_ellipse_1 position-absolute z-0"></div>
               <div className="cs_contact_ellipse_2 position-absolute z-0"></div>
               <div className="cs_contact_ellipse_3 position-absolute z-0"></div>

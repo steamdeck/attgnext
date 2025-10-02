@@ -441,7 +441,7 @@ const MobileAppContent = () => {
                     Can you integrate third-party services and APIs?
                   </div>
                   <div className="cs_faq_answer">
-                    Absolutely! We integrate various third-party services including payment gateways, social media APIs, analytics tools, and cloud services to enhance your app's functionality.
+                    Absolutely! We integrate various third-party services including payment gateways, social media APIs, analytics tools, and cloud services to enhance your app&apos;s functionality.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -454,7 +454,7 @@ const MobileAppContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's included in your app development packages?
+                    What&apos;s included in your app development packages?
                   </div>
                   <div className="cs_faq_answer">
                     Our packages include UI/UX design, development, testing, app store submission, and ongoing support. Specific features and timeline vary by package level.

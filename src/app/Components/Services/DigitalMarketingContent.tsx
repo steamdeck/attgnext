@@ -228,7 +228,7 @@ const DigitalMarketingContent = () => {
                 </p>
                 <h2 className="cs_fs_48 cs_mb_30">Why Digital Marketing Matters for Your Business</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  Digital marketing is essential for modern businesses. Here's how our services can transform your business:
+                  Digital marketing is essential for modern businesses. Here&apos;s how our services can transform your business:
                 </p>
               </div>
             </div>
@@ -387,7 +387,7 @@ const DigitalMarketingContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's included in your digital marketing services?
+                    What&apos;s included in your digital marketing services?
                   </div>
                   <div className="cs_faq_answer">
                     Our services include SEO, PPC advertising, social media marketing, email marketing, content creation, analytics tracking, and monthly reporting. Specific services vary by package.
@@ -411,7 +411,7 @@ const DigitalMarketingContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's the difference between SEO and PPC?
+                    What&apos;s the difference between SEO and PPC?
                   </div>
                   <div className="cs_faq_answer">
                     SEO focuses on improving organic search rankings over time, while PPC provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.
@@ -454,7 +454,7 @@ const DigitalMarketingContent = () => {
                     How do I get started with your digital marketing services?
                   </div>
                   <div className="cs_faq_answer">
-                    Contact us for a free consultation where we'll analyze your current digital presence, discuss your goals, and recommend the best strategy and package for your business.
+                    Contact us for a free consultation where we&apos;ll analyze your current digital presence, discuss your goals, and recommend the best strategy and package for your business.
                   </div>
                 </div>
               </div>
@@ -533,7 +533,7 @@ const DigitalMarketingContent = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="cs_fs_48 cs_fw_bold cs_mb_20 cs_white_color">Ready to Transform Your Digital Presence?</h2>
               <p className="cs_fs_18 cs_mb_30 cs_white_color">
-                Don't let your competitors get ahead. Our digital marketing experts can help you 
+                Don&apos;t let your competitors get ahead. Our digital marketing experts can help you 
                 dominate your market and drive sustainable business growth.
               </p>
               <div className="cs_btn_group cs_mb_40">

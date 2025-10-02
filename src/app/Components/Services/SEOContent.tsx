@@ -100,7 +100,7 @@ const SEOContent = () => {
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">On-Page SEO</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Optimize your website's content, structure, and technical elements for better search rankings.
+                    Optimize your website&apos;s content, structure, and technical elements for better search rankings.
                   </p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const SEOContent = () => {
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Off-Page SEO</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Build high-quality backlinks and improve your website's authority and credibility.
+                    Build high-quality backlinks and improve your website&apos;s authority and credibility.
                   </p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const SEOContent = () => {
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Technical SEO</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Optimize your website's technical aspects including speed, mobile-friendliness, and crawlability.
+                    Optimize your website&apos;s technical aspects including speed, mobile-friendliness, and crawlability.
                   </p>
                 </div>
               </div>
@@ -246,7 +246,7 @@ const SEOContent = () => {
                 </p>
                 <h2 className="cs_fs_48 cs_mb_30">Why SEO is Essential for Your Business</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  Search Engine Optimization is crucial for modern businesses. Here's how our SEO services 
+                  Search Engine Optimization is crucial for modern businesses. Here&apos;s how our SEO services 
                   can transform your online presence and drive sustainable growth.
                 </p>
               </div>
@@ -321,7 +321,7 @@ const SEOContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's the difference between on-page and off-page SEO?
+                    What&apos;s the difference between on-page and off-page SEO?
                   </div>
                   <div className="cs_faq_answer">
                     On-page SEO involves optimizing elements on your website (content, meta tags, structure), while off-page SEO focuses on external factors like backlinks, social signals, and online reputation.
@@ -332,7 +332,7 @@ const SEOContent = () => {
                     Do you guarantee first page rankings?
                   </div>
                   <div className="cs_faq_answer">
-                    While we can't guarantee specific rankings (Google's algorithm is constantly changing), we guarantee our best efforts using proven white-hat techniques. We focus on improving your overall search visibility and organic traffic.
+                    While we can&apos;t guarantee specific rankings (Google&apos;s algorithm is constantly changing), we guarantee our best efforts using proven white-hat techniques. We focus on improving your overall search visibility and organic traffic.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -345,7 +345,7 @@ const SEOContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's included in your SEO reporting?
+                    What&apos;s included in your SEO reporting?
                   </div>
                   <div className="cs_faq_answer">
                     Our reports include keyword rankings, organic traffic growth, backlink acquisition, technical SEO improvements, and actionable recommendations. Reports are customized based on your package level.
@@ -369,7 +369,7 @@ const SEOContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's the difference between local and national SEO?
+                    What&apos;s the difference between local and national SEO?
                   </div>
                   <div className="cs_faq_answer">
                     Local SEO targets customers in your geographic area using location-based keywords and Google My Business optimization. National SEO targets broader audiences across the country or globally.
@@ -404,7 +404,7 @@ const SEOContent = () => {
                     What happens if I stop SEO services?
                   </div>
                   <div className="cs_faq_answer">
-                    SEO requires ongoing effort to maintain and improve rankings. If you stop SEO services, your rankings may decline over time as competitors continue optimizing and Google's algorithm evolves.
+                    SEO requires ongoing effort to maintain and improve rankings. If you stop SEO services, your rankings may decline over time as competitors continue optimizing and Google&apos;s algorithm evolves.
                   </div>
                 </div>
               </div>
@@ -483,7 +483,7 @@ const SEOContent = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="cs_fs_48 cs_fw_bold cs_mb_20 cs_white_color">Ready to Dominate Search Rankings?</h2>
               <p className="cs_fs_18 cs_mb_30 cs_white_color">
-                Don't let your competitors outrank you. Our SEO experts can help you achieve 
+                Don&apos;t let your competitors outrank you. Our SEO experts can help you achieve 
                 top search rankings and drive sustainable organic traffic to your website.
               </p>
               <div className="cs_btn_group cs_mb_40">

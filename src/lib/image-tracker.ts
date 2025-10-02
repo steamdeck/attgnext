@@ -66,12 +66,11 @@ export function scanPageForImages(pagePath: string, pageTitle: string) {
 
 // React hook for tracking images on a page
 export function useImageTracking(pagePath: string, pageTitle: string) {
-  if (typeof window === 'undefined') return
-
-  // Track images when component mounts
   const { useEffect } = require('react')
   
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
     const timer = setTimeout(() => {
       scanPageForImages(pagePath, pageTitle)
     }, 1000) // Wait 1 second for images to load
