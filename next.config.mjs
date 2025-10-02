@@ -17,7 +17,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    optimizePackageImports: ['bootstrap', 'bootstrap-icons', 'react-slick', 'slick-carousel'],
+    // Remove optimizePackageImports while diagnosing Vercel build issue
     scrollRestoration: true,
   },
   compiler: {
