@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 const mockPages = [
   {
     route: '/',
-    name: 'Home Page 1',
+    name: 'Home Page',
     components: [
       {
         id: 'text-1',
@@ -34,7 +34,7 @@ const mockPages = [
         context: '<p className="cs_hero_text cs_medium wow fadeInRight">'
       }
     ],
-    filePath: 'src/app/(home1)/page.tsx'
+    filePath: 'src/app/page.tsx'
   },
   {
     route: '/about',
