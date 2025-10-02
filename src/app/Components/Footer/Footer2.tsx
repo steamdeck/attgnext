@@ -77,7 +77,6 @@ const Footer2 = () => {
                   <ul className="cs_footer_menu cs_mp_0">
                   <li><Link href="/about" aria-label="Page link">About AT Tech Global</Link></li>
                   <li><Link href="/service" aria-label="Page link">Our Services</Link></li>
-                  <li><Link href="/blog" aria-label="Page link">Our Blogs</Link></li>
                   <li><Link href="/contact" aria-label="Page link">Contact Us</Link></li>
                   <li><Link href="#" aria-label="Page link">Login / Register</Link></li>
                   </ul>

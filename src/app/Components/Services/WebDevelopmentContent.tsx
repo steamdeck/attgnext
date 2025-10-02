@@ -126,7 +126,7 @@ const WebDevelopmentContent = () => {
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Analytics Integration</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Built-in Google Analytics and tracking to monitor your website's performance.
+                    Built-in Google Analytics and tracking to monitor your website&apos;s performance.
                   </p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const WebDevelopmentContent = () => {
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">02</div>
                 <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Design & Wireframing</h3>
-                <p className="cs_process_subtitle">Our designers create wireframes and mockups to visualize your website's structure and user experience.</p>
+                <p className="cs_process_subtitle">Our designers create wireframes and mockups to visualize your website&apos;s structure and user experience.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
@@ -459,7 +459,7 @@ const WebDevelopmentContent = () => {
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What's included in your web development packages?
+                    What&apos;s included in your web development packages?
                   </div>
                   <div className="cs_faq_answer">
                     Our packages include custom design, responsive development, SEO optimization, content management system, testing, launch, and ongoing support. Specific features vary by package level.
@@ -557,7 +557,7 @@ const WebDevelopmentContent = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="cs_fs_48 cs_fw_bold cs_mb_20 cs_white_color">Ready to Transform Your Online Presence?</h2>
               <p className="cs_fs_18 cs_mb_30 cs_white_color">
-                Don't let an outdated website hold your business back. Our expert web development team 
+                Don&apos;t let an outdated website hold your business back. Our expert web development team 
                 can create a custom website that drives results and grows your business.
               </p>
               <div className="cs_btn_group cs_mb_40">
