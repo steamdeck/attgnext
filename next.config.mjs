@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed output: 'export' to support API routes
+  output: 'export', // Enable static export for Netlify
   trailingSlash: true,
   images: {
     unoptimized: false,
