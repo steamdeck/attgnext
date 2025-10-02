@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Removed output: 'export' to support API routes
-  trailingSlash: true,
+  // trailingSlash can cause issues with the App Router on Vercel
+  trailingSlash: false,
   images: {
     unoptimized: false,
     domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai'],
