@@ -11,7 +11,7 @@ const Footer1 = () => {
             <div className="cs_footer_top_content">
               <div className="wow fadeInLeft">Lets talk!</div>
               <Link href="/contact" className="cs_footer_top_img cs_radius_50 wow zoomIn">
-              <Image src="/assets/img/footer_img_icon.png" alt="img" width={128} height={128}   />
+              <Image src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/check.png" alt="img" width={128} height={128}   />
                 <span className="cs_center">
                   <Image src="/assets/img/icons/arrow_right_2.svg" alt="img" width={54} height={56}   />
                 </span>
@@ -25,7 +25,7 @@ const Footer1 = () => {
           <div className="cs_footer_content cs_footer_row">
             <div className="cs_footer_widget cs_footer_text">
               <div className="cs_text_widget">
-                <Image src="/assets/img/logo-3.png" className="cs_mb_30 wow zoomIn" alt="img" width={110} height={38}   />
+                <Image src="/assets/img/Untitled_design-removebg-preview.png" className="cs_mb_30 wow zoomIn" alt="img" width={110} height={38}   />
                 <p className="cs_mb_37">AT Tech Global delivers digital solutions in web, app development, and marketing.</p>
               </div>
               <div className="cs_social_btns cs_style_1">
@@ -60,9 +60,7 @@ const Footer1 = () => {
                   <li>
                     <a href="tel:+919266812465" aria-label="Phone call link">+91 92668 12465</a>
                   </li>
-                  <li>
-                    <a href="tel:+919266812465" aria-label="Phone call link">+91 92668 12465</a>
-                  </li>
+                
                 </ul>
               </div>
               <div className="cs_footer_widget">
