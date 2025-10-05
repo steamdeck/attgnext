@@ -5,7 +5,7 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     unoptimized: false,
-    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai'],
+    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net'],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],

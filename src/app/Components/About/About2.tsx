@@ -10,7 +10,7 @@ const About2 = () => {
           <div className="row cs_gap_y_40">
             <div className="col-lg-5 wow fadeInLeft">
               <div className="cs_about_thumbnail">
-                 <Image src="/assets/img/about_img_3.png" alt="img" width={564} height={524}   />
+                 <Image src="https://placeholdr.ai/1e540d91-6e2d-43b5-a5ab-0c3557da15fc/256/256" alt="img" width={564} height={524}   />
               </div>
             </div>
             <div className="col-lg-7">
