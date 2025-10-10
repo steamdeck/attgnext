@@ -25,7 +25,7 @@ const Footer2 = () => {
                   </span>
                   <div className="cs_iconbox_info">
                     <p className="cs_iconbox_subtitle cs_fs_14 cs_white_color_2 cs_mb_1">Office location</p>
-                    <p className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color mb-0">Palam Vihar, Gurugram, New Delhi, India</p>
+                    <p className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                   </div>
                 </div>
                 <div className="cs_iconbox cs_style_4">

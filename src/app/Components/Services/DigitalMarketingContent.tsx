@@ -477,7 +477,7 @@ const DigitalMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40">
+              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
                 <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
                 <p className="cs_case_challenge cs_mb_20">
                   <strong>Challenge:</strong> An online retailer needed to increase brand awareness and drive more qualified traffic to their website.
@@ -499,7 +499,7 @@ const DigitalMarketingContent = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40">
+              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
                 <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Local Service Business</h3>
                 <p className="cs_case_challenge cs_mb_20">
                   <strong>Challenge:</strong> A local service business wanted to dominate local search results and generate more leads.
@@ -540,8 +540,8 @@ const DigitalMarketingContent = () => {
                 <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase cs_white_bg cs_accent_color">
                   <span>Get Free Marketing Audit</span>
                 </Link>
-                <Link href="tel:+1234567890" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
-                  <span>Call (123) 456-7890</span>
+                <Link href="tel:+919266812465" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
+                  <span>Call +91 92668 12465</span>
                 </Link>
               </div>
               <p className="cs_fs_16 cs_white_color">

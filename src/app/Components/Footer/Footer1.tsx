@@ -11,7 +11,7 @@ const Footer1 = () => {
             <div className="cs_footer_top_content">
               <div className="wow fadeInLeft">Lets talk!</div>
               <Link href="/contact" className="cs_footer_top_img cs_radius_50 wow zoomIn">
-              <Image src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/check.png" alt="img" width={128} height={128}   />
+              <Image src="https://4.imimg.com/data4/VN/FN/MY-3117232/laid-natural-white-paper.jpg" alt="img" width={128} height={128}   />
                 <span className="cs_center">
                   <Image src="/assets/img/icons/arrow_right_2.svg" alt="img" width={54} height={56}   />
                 </span>
@@ -29,17 +29,20 @@ const Footer1 = () => {
                 <p className="cs_mb_37">AT Tech Global delivers digital solutions in web, app development, and marketing.</p>
               </div>
               <div className="cs_social_btns cs_style_1">
-                <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
-                <i className="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/attechglobal" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="cs_center cs_radius_50">
+                  <i className="bi bi-facebook"></i>
                 </a>
-                <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
-                <i className="bi bi-twitter-x"></i>
+                <a href="https://www.linkedin.com/in/attechglobal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="cs_center cs_radius_50">
+                  <i className="bi bi-linkedin"></i>
                 </a>
-                <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
-                <i className="bi bi-linkedin"></i>
+                <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cs_center cs_radius_50">
+                  <i className="bi bi-instagram"></i>
                 </a>
-                <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
-                <i className="bi bi-instagram"></i>
+                <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50">
+                  <i className="bi bi-at"></i>
+                </a>
+                <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
+                  <i className="bi bi-whatsapp"></i>
                 </a>
               </div>
             </div>
@@ -54,7 +57,7 @@ const Footer1 = () => {
               </div>
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_27 position-relative">Contact Us</h2>
-                <p className="cs_mb_24">Palam Vihar, Gurugram, New Delhi, India</p>
+                <p className="cs_mb_24">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                 <h3 className="cs_fs_16 cs_white_color cs_mb_10">Phone Call:</h3>
                 <ul className="cs_footer_contact_list cs_mp_0">
                   <li>

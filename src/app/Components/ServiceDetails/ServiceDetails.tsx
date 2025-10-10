@@ -77,7 +77,7 @@ const ServiceDetails = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_fs_14 cs_semibold mb-0">Office Address</p>
-                      <p className="cs_fs_18 cs_semibold mb-0">Palam Vihar, Gurugram, New Delhi, India</p>
+                      <p className="cs_fs_18 cs_semibold mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                     </div>
                   </div>
                 </li>
