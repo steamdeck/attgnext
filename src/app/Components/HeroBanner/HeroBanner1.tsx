@@ -94,15 +94,15 @@ const HeroBanner1 = () => {
               </div>
             </div>
             <div className="cs_social_links wow fadeInRight">
-              <a href="#" aria-label="Social link">
+              <a href="https://www.facebook.com/attechglobal" target="_blank" rel="noopener noreferrer" aria-label="Facebook link">
               <span className="cs_social_text">Facebook</span>
               <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-facebook"></i></span>
               </a>
-              <a href="#" aria-label="Social link">
+              <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram link">
               <span className="cs_social_text">Instagram</span>
               <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-instagram"></i></span>
               </a>
-              <a href="#" aria-label="Social link">
+              <a href="https://www.linkedin.com/in/attechglobal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn link">
               <span className="cs_social_text">LinkedIn</span>
               <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-linkedin"></i></span>
               </a>

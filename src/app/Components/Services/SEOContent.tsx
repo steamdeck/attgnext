@@ -5,32 +5,6 @@ import Link from 'next/link';
 const SEOContent = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="cs_heading_bg">
-        <div className="cs_height_120 cs_height_lg_80"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto text-center">
-              <h1 className="cs_fs_48 cs_fw_bold cs_mb_20 wow fadeInUp">
-                SEO Services That Dominate Search Rankings
-              </h1>
-              <p className="cs_fs_18 cs_mb_30 wow fadeInUp">
-                Boost your online visibility and drive organic traffic with our comprehensive SEO services. 
-                We help businesses rank higher on Google and attract more qualified customers.
-              </p>
-              <div className="cs_btn_group cs_mb_40 wow fadeInUp">
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase">
-                  <span>Get Free SEO Audit</span>
-                </Link>
-                <Link href="/project" className="cs_btn cs_style_2 cs_fs_14 text-uppercase">
-                  <span>View SEO Results</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
-      </section>
 
       {/* Service Overview */}
       <section className="cs_gray_bg_2">
@@ -427,7 +401,7 @@ const SEOContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40">
+              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
                 <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Local Law Firm SEO</h3>
                 <p className="cs_case_challenge cs_mb_20">
                   <strong>Challenge:</strong> A local law firm was struggling to rank for competitive legal keywords and attract clients online.
@@ -449,7 +423,7 @@ const SEOContent = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40">
+              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
                 <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store SEO</h3>
                 <p className="cs_case_challenge cs_mb_20">
                   <strong>Challenge:</strong> An online retailer needed to improve product visibility and compete with larger e-commerce sites.
@@ -490,8 +464,8 @@ const SEOContent = () => {
                 <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase cs_white_bg cs_accent_color">
                   <span>Get Free SEO Audit</span>
                 </Link>
-                <Link href="tel:+1234567890" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
-                  <span>Call (123) 456-7890</span>
+                <Link href="tel:+919266812465" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
+                  <span>Call +91 92668 12465</span>
                 </Link>
               </div>
               <p className="cs_fs_16 cs_white_color">

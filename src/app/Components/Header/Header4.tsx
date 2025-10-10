@@ -66,7 +66,23 @@ export default function Header4({ variant } : any ) {
                 <Link href="/contact" className='cs_btn cs_style_1 cs_fs_14 text-uppercase'>
                 <span> Lets Talk </span></Link>
                   </div>
-
+                <div className="cs_social_btns cs_style_1" style={{marginLeft: '16px'}}>
+                  <a href="https://www.facebook.com/attechglobal" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="cs_center cs_radius_50">
+                    <i className="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/attechglobal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="cs_center cs_radius_50">
+                    <i className="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cs_center cs_radius_50">
+                    <i className="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50">
+                    <i className="bi bi-at"></i>
+                  </a>
+                  <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
+                    <i className="bi bi-whatsapp"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

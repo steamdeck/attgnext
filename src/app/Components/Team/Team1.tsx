@@ -5,10 +5,10 @@ import React from 'react';
 const Team1 = () => {
 
     const teamContent = [
-        {img:'/assets/img/team_1.jpg', name:'Alex Thomax', content:'Founder & Director',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_2.jpg', name:'Hardik Vaish', content:'Senior Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_3.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
-        {img:'/assets/img/team_4.jpg', name:'Floyd Miles', content:'Senior Developer',instagram:'#',facebook:'#',twitter:'#',linkedin:'#'},
+        {img:'/assets/img/team_1.jpg', name:'Alex Thomax', content:'Founder & Director'},
+        {img:'/assets/img/team_2.jpg', name:'Hardik Vaish', content:'Senior Developer'},
+        {img:'/assets/img/team_3.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head'},
+        {img:'/assets/img/team_4.jpg', name:'Floyd Miles', content:'Senior Developer'},
       ];
 
     return (
@@ -29,16 +29,6 @@ const Team1 = () => {
               <div className="cs_team cs_style_1 position-relative">
                 <div className="cs_team_thumbnail cs_radius_15 position-relative">
                   <Image src={item.img} alt="img" width={264} height={342}   />
-                  <div className="cs_social_links cs_radius_8 position-absolute">
-                    <Link href={item.instagram} aria-label="Social button" className="cs_social_link cs_center cs_radius_4">
-                    <i className="bi bi-instagram"></i></Link>
-                    <Link href={item.facebook} aria-label="Social button" className="cs_social_link cs_center cs_radius_4">
-                    <i className="bi bi-facebook"></i></Link>
-                    <Link href={item.twitter} aria-label="Social button" className="cs_social_link cs_center cs_radius_4">
-                    <i className="bi bi-twitter-x"></i></Link>
-                    <Link href={item.linkedin} aria-label="Social button" className="cs_social_link cs_center cs_radius_4">
-                    <i className="bi bi-linkedin"></i></Link>
-                  </div>
                 </div>
                 <div className="cs_tean_info cs_radius_8 text-center">
                   <h3 className="cs_fs_24 text-capitalize mb-0"><Link href="/team/team-details" aria-label="Team details page link">{item.name}</Link></h3>

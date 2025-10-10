@@ -68,7 +68,12 @@ const Contact2 = () => {
                       <option value="choose-service">Type Of Service</option>
                       <option value="uiux-design">UI/UX Design</option>
                       <option value="graphics-design">Graphics Design</option>
-                      <option value="photography">Photography</option>
+                      <option value="email-marketing">Email Marketing</option>
+                      <option value="whatsapp-marketing">Whatsapp Marketing</option>
+                      <option value="sms-marketing">SMS Marketing</option>
+                      <option value="social-media-management">Social Media Management</option>
+                      <option value="website-promotion">Website Promotion</option>
+                      <option value="seo">SEO</option>
                       <option value="web-dev">Web Development</option>
                       <option value="app-dev">App Development</option>
                     </select>

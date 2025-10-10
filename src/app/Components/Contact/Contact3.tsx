@@ -138,6 +138,23 @@ const Contact3 = () => {
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div className="cs_iconbox cs_style_6">
+                    <span className="cs_iconbox_icon cs_center cs_radius_50 position-relative">
+                      <Image src="/assets/img/icons/share.svg" alt="img" width={26} height={27}   />
+                    </span>
+                    <div className="cs_iconbox_info">
+                      <p className="cs_mb_1">Connect With Us</p>
+                      <div className="cs_social_btns cs_style_1">
+                        <a href="https://www.facebook.com/attechglobal" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="cs_center cs_radius_50"><i className="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/attechglobal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="cs_center cs_radius_50"><i className="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cs_center cs_radius_50"><i className="bi bi-instagram"></i></a>
+                        <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50"><i className="bi bi-at"></i></a>
+                        <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50"><i className="bi bi-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -182,13 +199,23 @@ const Contact3 = () => {
                   />
                 </div>
                 <div className="col-md-6">
-                  <input 
+                  <select 
                     name="Service" 
-                    type="text" 
-                    className="cs_form_field cs_radius_8 cs_gray_bg_1" 
-                    placeholder="Select service*" 
+                    className="cs_form_field cs_radius_8 cs_gray_bg_1 cs_custom_select" 
                     required 
-                  />
+                  >
+                    <option value="">Select service*</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Graphics Design">Graphics Design</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Whatsapp Marketing">Whatsapp Marketing</option>
+                    <option value="SMS Marketing">SMS Marketing</option>
+                    <option value="Social Media Management">Social Media Management</option>
+                    <option value="Website Promotion">Website Promotion</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="App Development">App Development</option>
+                  </select>
                 </div>
                 <div className="col-md-12">
                   <textarea 

@@ -11,7 +11,9 @@ const page = () => {
         Title="SEO Services"
       />
       <SEOContent />
-      <Contact2 />
+      <div style={{ padding: '60px 40px' }}>
+        <Contact2 />
+      </div>
     </div>
   );
 };
