@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const DigitalMarketingContent = () => {
+const EmailMarketingContent = () => {
   return (
     <div>
       {/* Service Overview */}
@@ -13,13 +13,14 @@ const DigitalMarketingContent = () => {
             <div className="col-lg-6">
               <div className="cs_section_heading cs_style_1">
                 <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
-                  <span className="cs_shape_right"></span>Why Choose Our Digital Marketing Services<span className="cs_shape_right"></span>
+                  <span className="cs_shape_right"></span>Why Choose Our Email Marketing Services<span className="cs_shape_right"></span>
                 </p>
-                <h2 className="cs_fs_48 cs_mb_30">Data-Driven Marketing That Delivers Results</h2>
+                <h2 className="cs_fs_48 cs_mb_30">Build Strong Customer Relationships and Drive Sales</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  At Digitom, we combine creativity with data-driven strategies to create digital marketing 
-                  campaigns that deliver measurable ROI. Our team has helped 300+ businesses increase their 
-                  online presence and drive sustainable growth.
+                  Email marketing remains one of the most effective digital marketing channels, delivering exceptional ROI 
+                  and direct customer engagement. We help businesses build meaningful relationships with their audience, 
+                  nurture leads, and drive conversions through strategic email campaigns. Our team has managed 500+ 
+                  email campaigns, generating millions in revenue for our clients.
                 </p>
               </div>
             </div>
@@ -27,24 +28,24 @@ const DigitalMarketingContent = () => {
               <div className="cs_choose_content">
                 <div className="cs_choose_item cs_mb_30">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/analytics.svg" alt="Analytics" width={40} height={40} />
+                    <Image src="/assets/img/icons/roi.svg" alt="ROI" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Data-Driven Approach</h3>
-                  <p className="cs_choose_subtitle">Every campaign is backed by comprehensive analytics and performance tracking</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Exceptional ROI</h3>
+                  <p className="cs_choose_subtitle">Average ROI of $42 for every $1 spent on email marketing campaigns</p>
                 </div>
                 <div className="cs_choose_item cs_mb_30">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/roi.svg" alt="ROI" width={40} height={40} />
+                    <Image src="/assets/img/icons/engagement.svg" alt="Engagement" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Proven ROI</h3>
-                  <p className="cs_choose_subtitle">Average 250% ROI improvement for our clients within 6 months</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">High Engagement</h3>
+                  <p className="cs_choose_subtitle">Average 25% open rate and 4% click-through rate across all campaigns</p>
                 </div>
                 <div className="cs_choose_item">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/strategy.svg" alt="Strategy" width={40} height={40} />
+                    <Image src="/assets/img/icons/automation.svg" alt="Automation" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Comprehensive Strategy</h3>
-                  <p className="cs_choose_subtitle">Multi-channel approach covering all aspects of digital marketing</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Automated Workflows</h3>
+                  <p className="cs_choose_subtitle">Automated email sequences that nurture leads and convert customers 24/7</p>
                 </div>
               </div>
             </div>
@@ -53,29 +54,27 @@ const DigitalMarketingContent = () => {
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
 
-      {/* Marketing Channels */}
+      {/* Email Marketing Types */}
       <section>
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
           <div className="cs_section_heading cs_style_1 text-center">
             <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
-              <span className="cs_shape_right"></span>Our Digital Marketing Channels<span className="cs_shape_right"></span>
+              <span className="cs_shape_right"></span>Our Email Marketing Services<span className="cs_shape_right"></span>
             </p>
-            <h2 className="cs_fs_48 mb-0">Complete Digital Marketing Solutions</h2>
+            <h2 className="cs_fs_48 mb-0">Complete Email Marketing Solutions</h2>
           </div>
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_30">
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/seo.svg" alt="SEO" width={35} height={40} />
+                  <Image src="/assets/img/icons/email.svg" alt="Newsletter" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
-                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">
-                    <Link href="/service/seo">SEO Services</Link>
-                  </h3>
+                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Newsletter Campaigns</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Improve your search rankings and drive organic traffic with our comprehensive SEO strategies.
+                    Regular newsletters that keep your audience engaged and informed about your products and services.
                   </p>
                 </div>
               </div>
@@ -83,14 +82,12 @@ const DigitalMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/ppc.svg" alt="PPC" width={35} height={40} />
+                  <Image src="/assets/img/icons/automation.svg" alt="Automation" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
-                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">
-                    <Link href="/service/ppc">PPC Advertising</Link>
-                  </h3>
+                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Email Automation</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Get immediate results with targeted pay-per-click campaigns on Google and social platforms.
+                    Automated welcome series, abandoned cart emails, and nurture sequences that convert leads into customers.
                   </p>
                 </div>
               </div>
@@ -98,14 +95,12 @@ const DigitalMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/social.svg" alt="Social Media" width={35} height={40} />
+                  <Image src="/assets/img/icons/segmentation.svg" alt="Segmentation" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
-                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">
-                    <Link href="/service/smm">Social Media Marketing</Link>
-                  </h3>
+                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">List Segmentation</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Build your brand and engage with your audience across all major social media platforms.
+                    Targeted campaigns for specific customer segments based on behavior, preferences, and purchase history.
                   </p>
                 </div>
               </div>
@@ -113,14 +108,12 @@ const DigitalMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/email.svg" alt="Email Marketing" width={35} height={40} />
+                  <Image src="/assets/img/icons/template.svg" alt="Templates" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
-                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">
-                    <Link href="/service/email-marketing">Email Marketing</Link>
-                  </h3>
+                  <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Email Design</h3>
                   <p className="cs_card_subtitle cs_mb_22">
-                    Nurture leads and retain customers with personalized email marketing campaigns.
+                    Beautiful, responsive email templates that look great on all devices and drive engagement.
                   </p>
                 </div>
               </div>
@@ -138,50 +131,50 @@ const DigitalMarketingContent = () => {
             <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
               <span className="cs_shape_right"></span>How We Work<span className="cs_shape_right"></span>
             </p>
-            <h2 className="cs_fs_48 mb-0">Our 6-Step Digital Marketing Process</h2>
+            <h2 className="cs_fs_48 mb-0">Our 6-Step Email Marketing Process</h2>
           </div>
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">01</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Audit & Analysis</h3>
-                <p className="cs_process_subtitle">We analyze your current digital presence, competitors, and market opportunities.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Strategy & Planning</h3>
+                <p className="cs_process_subtitle">We analyze your audience, goals, and create a comprehensive email marketing strategy.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">02</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Strategy Development</h3>
-                <p className="cs_process_subtitle">We create a comprehensive digital marketing strategy tailored to your goals.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">List Building</h3>
+                <p className="cs_process_subtitle">We help you grow your email list with opt-in forms, lead magnets, and landing pages.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">03</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Campaign Setup</h3>
-                <p className="cs_process_subtitle">We set up and optimize all marketing channels and campaigns.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Segmentation</h3>
+                <p className="cs_process_subtitle">We segment your email list based on demographics, behavior, and preferences.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">04</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Content Creation</h3>
-                <p className="cs_process_subtitle">We create engaging content that resonates with your target audience.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Email Design</h3>
+                <p className="cs_process_subtitle">We create beautiful, responsive email templates that reflect your brand identity.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">05</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Launch & Monitor</h3>
-                <p className="cs_process_subtitle">We launch campaigns and continuously monitor performance metrics.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Campaign Execution</h3>
+                <p className="cs_process_subtitle">We launch and manage your email campaigns with proper timing and personalization.</p>
               </div>
             </div>
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="cs_process_item text-center">
                 <div className="cs_process_number cs_center cs_radius_50 cs_mb_20">06</div>
-                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Optimize & Scale</h3>
-                <p className="cs_process_subtitle">We optimize campaigns based on data and scale successful strategies.</p>
+                <h3 className="cs_process_title cs_fs_20 cs_semibold cs_mb_10">Analysis & Optimization</h3>
+                <p className="cs_process_subtitle">We analyze performance metrics and continuously optimize campaigns for better results.</p>
               </div>
             </div>
           </div>
@@ -199,9 +192,10 @@ const DigitalMarketingContent = () => {
                 <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
                   <span className="cs_shape_right"></span>Business Benefits<span className="cs_shape_right"></span>
                 </p>
-                <h2 className="cs_fs_48 cs_mb_30">Why Digital Marketing Matters for Your Business</h2>
+                <h2 className="cs_fs_48 cs_mb_30">Why Email Marketing Matters for Your Business</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  Digital marketing is essential for modern businesses. Here&apos;s how our services can transform your business:
+                  Email marketing offers direct communication with your customers and the highest ROI of any digital marketing channel. 
+                  Here&apos;s how our email marketing services can transform your business:
                 </p>
               </div>
             </div>
@@ -209,29 +203,29 @@ const DigitalMarketingContent = () => {
               <div className="cs_benefits_list">
                 <div className="cs_benefit_item cs_mb_25">
                   <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/visibility.svg" alt="Brand Visibility" width={30} height={30} />
+                    <Image src="/assets/img/icons/roi.svg" alt="High ROI" width={30} height={30} />
                   </div>
                   <div className="cs_benefit_content">
-                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Increased Brand Visibility</h4>
-                    <p className="cs_benefit_desc">Reach more potential customers across multiple digital channels</p>
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Highest ROI</h4>
+                    <p className="cs_benefit_desc">Email marketing delivers an average ROI of $42 for every $1 spent</p>
                   </div>
                 </div>
                 <div className="cs_benefit_item cs_mb_25">
                   <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/leads.svg" alt="Lead Generation" width={30} height={30} />
+                    <Image src="/assets/img/icons/engagement.svg" alt="Direct Communication" width={30} height={30} />
                   </div>
                   <div className="cs_benefit_content">
-                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Higher Lead Generation</h4>
-                    <p className="cs_benefit_desc">Generate qualified leads through targeted marketing campaigns</p>
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Direct Customer Communication</h4>
+                    <p className="cs_benefit_desc">Reach your customers directly in their inbox with personalized messages</p>
                   </div>
                 </div>
                 <div className="cs_benefit_item cs_mb_25">
                   <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/cost.svg" alt="Cost Effective" width={30} height={30} />
+                    <Image src="/assets/img/icons/automation.svg" alt="Automation" width={30} height={30} />
                   </div>
                   <div className="cs_benefit_content">
-                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Cost-Effective Marketing</h4>
-                    <p className="cs_benefit_desc">Lower cost per acquisition compared to traditional marketing methods</p>
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">24/7 Automation</h4>
+                    <p className="cs_benefit_desc">Automated email sequences work around the clock to nurture leads and convert customers</p>
                   </div>
                 </div>
                 <div className="cs_benefit_item">
@@ -240,7 +234,7 @@ const DigitalMarketingContent = () => {
                   </div>
                   <div className="cs_benefit_content">
                     <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Measurable Results</h4>
-                    <p className="cs_benefit_desc">Track and measure every aspect of your marketing performance</p>
+                    <p className="cs_benefit_desc">Track opens, clicks, conversions, and revenue with detailed analytics and reporting</p>
                   </div>
                 </div>
               </div>
@@ -251,14 +245,14 @@ const DigitalMarketingContent = () => {
       </section>
 
       {/* FAQ Section */}
-      <section>
+      <section className="cs_gray_bg_2">
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
           <div className="cs_section_heading cs_style_1 text-center">
             <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
               <span className="cs_shape_right"></span>Frequently Asked Questions<span className="cs_shape_right"></span>
             </p>
-            <h2 className="cs_fs_48 mb-0">Digital Marketing FAQ</h2>
+            <h2 className="cs_fs_48 mb-0">Email Marketing FAQ</h2>
           </div>
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
@@ -266,82 +260,102 @@ const DigitalMarketingContent = () => {
               <div className="cs_faq_wrap">
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to see results from digital marketing?
+                    Why is email marketing still relevant in 2024?
                   </div>
                   <div className="cs_faq_answer">
-                    Results vary by channel and strategy. PPC campaigns can show immediate results, while SEO typically takes 3-6 months to show significant improvements. We provide detailed timelines during strategy development.
+                    Email marketing remains one of the most effective digital marketing channels with the highest ROI. 
+                    With over 4 billion email users worldwide, email provides direct access to your customers&apos; inboxes. 
+                    It offers personalization, automation, and measurable results that social media and other channels can&apos;t match.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your digital marketing services?
+                    How do I build an email list?
                   </div>
                   <div className="cs_faq_answer">
-                    Our services include SEO, PPC advertising, social media marketing, email marketing, content creation, analytics tracking, and monthly reporting. Specific services vary by package.
+                    We help you build your email list through multiple strategies including opt-in forms on your website, 
+                    lead magnets (free downloads, guides, discounts), landing pages, social media campaigns, and in-store sign-ups. 
+                    We focus on building a quality list of engaged subscribers who want to hear from you.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure the success of digital marketing campaigns?
+                    What&apos;s a good email open rate?
                   </div>
                   <div className="cs_faq_answer">
-                    We track key metrics including website traffic, lead generation, conversion rates, ROI, and engagement rates. We provide detailed monthly reports with actionable insights.
+                    Industry average open rates vary by industry, but generally range from 15-25%. Our clients typically 
+                    see 20-30% open rates through proper segmentation, personalization, and optimal send times. We continuously 
+                    optimize subject lines and email content to improve open rates.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you work with businesses in all industries?
+                    How often should I send emails to my subscribers?
                   </div>
                   <div className="cs_faq_answer">
-                    Yes, we have experience working with businesses across various industries including healthcare, e-commerce, professional services, technology, and more.
+                    Email frequency depends on your industry, audience, and content type. Generally, we recommend 1-2 emails 
+                    per week for newsletters and promotional emails. For automated sequences, emails are sent based on subscriber 
+                    behavior. We analyze your audience&apos;s engagement patterns to determine the optimal frequency.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between SEO and PPC?
+                    What is email automation and how does it work?
                   </div>
                   <div className="cs_faq_answer">
-                    SEO focuses on improving organic search rankings over time, while PPC provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.
+                    Email automation sends targeted emails based on triggers like subscriber actions, dates, or behaviors. 
+                    Examples include welcome series for new subscribers, abandoned cart emails, birthday emails, and post-purchase 
+                    follow-ups. Automation saves time and ensures timely, relevant communication with your audience.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much should I budget for digital marketing?
+                    How do you ensure emails don&apos;t end up in spam folders?
                   </div>
                   <div className="cs_faq_answer">
-                    Budget depends on your business size, goals, and competition. We recommend allocating 7-10% of your revenue to digital marketing for optimal results.
+                    We maintain high deliverability rates through proper authentication (SPF, DKIM, DMARC), clean email lists, 
+                    avoiding spam trigger words, using reputable email service providers, and following best practices. We also 
+                    monitor sender reputation and engagement rates to ensure your emails reach the inbox.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide social media content creation?
+                    Can you help with email design and templates?
                   </div>
                   <div className="cs_faq_answer">
-                    Yes, we create engaging social media content including posts, graphics, videos, and stories tailored to your brand and audience across all platforms.
+                    Yes! We create beautiful, responsive email templates that look great on all devices. Our designs are 
+                    mobile-friendly, brand-consistent, and optimized for engagement. We also design custom templates for 
+                    specific campaigns, promotions, and automated sequences.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with local SEO for my business?
+                    What email marketing platforms do you work with?
                   </div>
                   <div className="cs_faq_answer">
-                    Absolutely! We specialize in local SEO strategies including Google My Business optimization, local citations, and location-based content to help you rank in local searches.
+                    We work with all major email marketing platforms including Mailchimp, Constant Contact, Sendinblue, 
+                    ConvertKit, Klaviyo, and others. We can help you choose the right platform for your needs or work with 
+                    your existing platform.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What reporting do you provide?
+                    How do you measure email marketing success?
                   </div>
                   <div className="cs_faq_answer">
-                    We provide detailed monthly reports including performance metrics, campaign results, recommendations, and insights. Reports are customized based on your package and goals.
+                    We track key metrics including open rates, click-through rates, conversion rates, unsubscribe rates, 
+                    revenue per email, and overall ROI. We provide detailed monthly reports with actionable insights and 
+                    recommendations for improvement.
                   </div>
                 </div>
                 <div className="cs_faq_item">
                   <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your digital marketing services?
+                    How do I get started with your email marketing services?
                   </div>
                   <div className="cs_faq_answer">
-                    Contact us for a free consultation where we&apos;ll analyze your current digital presence, discuss your goals, and recommend the best strategy and package for your business.
+                    Contact us for a free email marketing consultation. We&apos;ll audit your current email strategy, discuss 
+                    your goals, and recommend the best approach for your business. We can have your first campaign running 
+                    within a week.
                   </div>
                 </div>
               </div>
@@ -352,14 +366,14 @@ const DigitalMarketingContent = () => {
       </section>
 
       {/* Case Studies */}
-      <section className="cs_gray_bg_2">
+      <section>
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
           <div className="cs_section_heading cs_style_1 text-center">
             <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
               <span className="cs_shape_right"></span>Success Stories<span className="cs_shape_right"></span>
             </p>
-            <h2 className="cs_fs_48 mb-0">Digital Marketing Case Studies</h2>
+            <h2 className="cs_fs_48 mb-0">Email Marketing Case Studies</h2>
           </div>
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
@@ -367,17 +381,18 @@ const DigitalMarketingContent = () => {
               <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
                 <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
                 <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An online retailer needed to increase brand awareness and drive more qualified traffic to their website.
+                  <strong>Challenge:</strong> An online retailer needed to increase customer retention and repeat purchases while reducing cart abandonment.
                 </p>
                 <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented a comprehensive digital marketing strategy including SEO, PPC, and social media marketing.
+                  <strong>Solution:</strong> We implemented automated abandoned cart emails, welcome series, and segmented promotional campaigns based on purchase history.
                 </p>
                 <div className="cs_case_results">
                   <strong>Results:</strong>
                   <ul className="cs_mt_10">
-                    <li>400% increase in organic traffic</li>
-                    <li>250% improvement in conversion rate</li>
-                    <li>180% increase in online sales</li>
+                    <li>45% increase in email-generated revenue within 6 months</li>
+                    <li>35% reduction in cart abandonment rate</li>
+                    <li>28% improvement in email open rates</li>
+                    <li>52% increase in repeat customer purchases</li>
                   </ul>
                 </div>
                 <div className="cs_case_timeline cs_mt_20">
@@ -387,19 +402,20 @@ const DigitalMarketingContent = () => {
             </div>
             <div className="col-lg-6">
               <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Local Service Business</h3>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">B2B Service Company</h3>
                 <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A local service business wanted to dominate local search results and generate more leads.
+                  <strong>Challenge:</strong> A B2B service company wanted to nurture leads and convert prospects into customers through email marketing.
                 </p>
                 <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We focused on local SEO, Google My Business optimization, and targeted PPC campaigns.
+                  <strong>Solution:</strong> We created a comprehensive email nurture sequence, educational newsletter series, and targeted lead segmentation campaigns.
                 </p>
                 <div className="cs_case_results">
                   <strong>Results:</strong>
                   <ul className="cs_mt_10">
-                    <li>Top 3 rankings for 15+ local keywords</li>
-                    <li>300% increase in local leads</li>
-                    <li>150% improvement in phone calls</li>
+                    <li>38% increase in lead-to-customer conversion rate</li>
+                    <li>42% improvement in email engagement rates</li>
+                    <li>55% increase in qualified leads generated from email</li>
+                    <li>3x ROI on email marketing investment</li>
                   </ul>
                 </div>
                 <div className="cs_case_timeline cs_mt_20">
@@ -418,21 +434,21 @@ const DigitalMarketingContent = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <h2 className="cs_fs_48 cs_fw_bold cs_mb_20 cs_white_color">Ready to Transform Your Digital Presence?</h2>
+              <h2 className="cs_fs_48 cs_fw_bold cs_mb_20 cs_white_color">Ready to Grow Your Business with Email Marketing?</h2>
               <p className="cs_fs_18 cs_mb_30 cs_white_color">
-                Don&apos;t let your competitors get ahead. Our digital marketing experts can help you 
-                dominate your market and drive sustainable business growth.
+                Start building stronger customer relationships and driving sales through strategic email marketing. 
+                Our email marketing experts can help you create campaigns that engage, convert, and deliver exceptional ROI.
               </p>
               <div className="cs_btn_group cs_mb_40">
                 <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase cs_white_bg cs_accent_color">
-                  <span>Get Free Marketing Audit</span>
+                  <span>Get Free Email Audit</span>
                 </Link>
                 <Link href="tel:+919266812465" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
                   <span>Call +91 92668 12465</span>
                 </Link>
               </div>
               <p className="cs_fs_16 cs_white_color">
-                <strong>Free consultation • Custom strategy • Guaranteed results</strong>
+                <strong>Free consultation • Proven ROI • Automated campaigns</strong>
               </p>
             </div>
           </div>
@@ -443,4 +459,5 @@ const DigitalMarketingContent = () => {
   );
 };
 
-export default DigitalMarketingContent;
+export default EmailMarketingContent;
+

@@ -6,7 +6,10 @@ import Link from "next/link";
 const BreadCumb = ({Title,bgimg}) => {
     
     useEffect(() => {
-        loadBackgroudImages();
+        // Only run on client side after component mounts
+        if (typeof window !== 'undefined') {
+            loadBackgroudImages();
+        }
       }, []);
 
     return (

@@ -7,7 +7,10 @@ import Image from 'next/image';
 const Footer2 = () => {
 
         useEffect(() => {
-            loadBackgroudImages();
+            // Only run on client side after component mounts
+            if (typeof window !== 'undefined') {
+                loadBackgroudImages();
+            }
         }, []);
 
     return (
@@ -34,7 +37,7 @@ const Footer2 = () => {
                   </span>
                   <div className="cs_iconbox_info">
                     <p className="cs_iconbox_subtitle cs_fs_14 cs_white_color_2 cs_mb_1">send email</p>
-                    <a href="mailTo:info@attechglobal.com" aria-label="Send email link" className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color">info@attechglobal.com</a>
+                    <a href="mailto:info@attechglobal.com" aria-label="Send email link" className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color">info@attechglobal.com</a>
                   </div>
                 </div>
                 <div className="cs_iconbox cs_style_4">
@@ -77,6 +80,7 @@ const Footer2 = () => {
                   <ul className="cs_footer_menu cs_mp_0">
                   <li><Link href="/about" aria-label="Page link">About AT Tech Global</Link></li>
                   <li><Link href="/service" aria-label="Page link">Our Services</Link></li>
+                  <li><Link href="/blog" aria-label="Page link">Blog</Link></li>
                   <li><Link href="/contact" aria-label="Page link">Contact Us</Link></li>
                   <li><Link href="#" aria-label="Page link">Login / Register</Link></li>
                   </ul>

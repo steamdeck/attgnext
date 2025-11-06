@@ -1,24 +1,24 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
 import Image from 'next/image';
 export default function Header3({ variant } : any ) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const prevScrollPosRef = useRef<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
+      if (currentScrollPos > prevScrollPosRef.current) {
         setIsSticky('cs-gescout_sticky'); // Scrolling down
       } else if (currentScrollPos !== 0) {
         setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
       } else {
         setIsSticky('');
       }
-      setPrevScrollPos(currentScrollPos); // Update previous scroll position
+      prevScrollPosRef.current = currentScrollPos; // Update previous scroll position
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,7 +26,7 @@ export default function Header3({ variant } : any ) {
     return () => {
       window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
     };
-  }, [prevScrollPos]);
+  }, []); // Empty dependency array - effect only runs once
 
   return (
     <div>

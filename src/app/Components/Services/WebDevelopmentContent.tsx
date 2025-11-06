@@ -5,33 +5,6 @@ import Link from 'next/link';
 const WebDevelopmentContent = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="cs_heading_bg">
-        <div className="cs_height_120 cs_height_lg_80"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto text-center">
-              <h1 className="cs_fs_48 cs_fw_bold cs_mb_20 wow fadeInUp">
-                Professional Web Development Services
-              </h1>
-              <p className="cs_fs_18 cs_mb_30 wow fadeInUp">
-                Transform your business with custom, responsive websites that drive results. 
-                Our expert developers create modern, fast-loading websites that convert visitors into customers.
-              </p>
-              <div className="cs_btn_group cs_mb_40 wow fadeInUp">
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase">
-                  <span>Get Free Consultation</span>
-                </Link>
-                <Link href="/project" className="cs_btn cs_style_2 cs_fs_14 text-uppercase">
-                  <span>View Our Work</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
-      </section>
-
       {/* Service Overview */}
       <section className="cs_gray_bg_2">
         <div className="cs_height_120 cs_height_lg_80"></div>
@@ -294,92 +267,6 @@ const WebDevelopmentContent = () => {
                     <h4 className="cs_tech_name cs_fs_16 cs_semibold">PHP</h4>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
-      </section>
-
-      {/* Pricing Packages */}
-      <section className="cs_gray_bg_2">
-        <div className="cs_height_120 cs_height_lg_80"></div>
-        <div className="container">
-          <div className="cs_section_heading cs_style_1 text-center">
-            <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
-              <span className="cs_shape_right"></span>Pricing & Packages<span className="cs_shape_right"></span>
-            </p>
-            <h2 className="cs_fs_48 mb-0">Choose Your Perfect Web Development Package</h2>
-          </div>
-          <div className="cs_height_60 cs_height_lg_50"></div>
-          <div className="row cs_row_gap_30 cs_gap_y_30">
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center">
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Starter Website</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$2,499</div>
-                  <p className="cs_pricing_subtitle">Perfect for small businesses and startups</p>
-                </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Up to 5 pages</li>
-                    <li>Responsive design</li>
-                    <li>Basic SEO optimization</li>
-                    <li>Contact form</li>
-                    <li>Google Analytics setup</li>
-                    <li>3 months support</li>
-                  </ul>
-                </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center cs_popular">
-                <div className="cs_pricing_badge">Most Popular</div>
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Business Website</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$4,999</div>
-                  <p className="cs_pricing_subtitle">Ideal for growing businesses</p>
-                </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Up to 10 pages</li>
-                    <li>Custom design</li>
-                    <li>Advanced SEO optimization</li>
-                    <li>CMS integration</li>
-                    <li>E-commerce functionality</li>
-                    <li>Social media integration</li>
-                    <li>6 months support</li>
-                  </ul>
-                </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center">
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Enterprise Website</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$9,999</div>
-                  <p className="cs_pricing_subtitle">For large businesses and corporations</p>
-                </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Unlimited pages</li>
-                    <li>Custom functionality</li>
-                    <li>Advanced integrations</li>
-                    <li>Multi-language support</li>
-                    <li>Advanced analytics</li>
-                    <li>Priority support</li>
-                    <li>12 months support</li>
-                  </ul>
-                </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
               </div>
             </div>
           </div>
