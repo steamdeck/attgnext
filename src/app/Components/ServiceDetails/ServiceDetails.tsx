@@ -66,7 +66,7 @@ const ServiceDetails = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_fs_14 cs_semibold mb-0">Mail Us</p>
-                      <a href="mailTo:info@attechglobal.com" aria-label="Send mail link" className="cs_fs_18 cs_semibold">info@attechglobal.com</a>
+                      <a href="mailto:info@attechglobal.com" aria-label="Send mail link" className="cs_fs_18 cs_semibold">info@attechglobal.com</a>
                     </div>
                   </div>
                 </li>

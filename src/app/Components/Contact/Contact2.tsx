@@ -34,7 +34,7 @@ const Contact2 = () => {
                     <i className="bi bi-envelope-fill"></i>
                     </span>
                     <div className="cs_iconbox_info">
-                      <a href="mailTo:info@attechglobal.com" aria-label="Click to send email">info@attechglobal.com</a>
+                      <a href="mailto:info@attechglobal.com" aria-label="Click to send email">info@attechglobal.com</a>
                     </div>
                   </div>
                 </li>
@@ -44,7 +44,7 @@ const Contact2 = () => {
                     <i className="bi bi-geo-alt-fill"></i>
                     </span>
                     <div className="cs_iconbox_info">
-                      <p className="mb-0">9550 Bolsa Ave, Westminster, CA <br/> 92683, United States</p>
+                      <p className="mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                     </div>
                   </div>
                 </li>

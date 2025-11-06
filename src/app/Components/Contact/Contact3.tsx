@@ -123,7 +123,7 @@ const Contact3 = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_mb_1">Email Anytime</p>
-                      <a href="mailTo:info@attechglobal.com" aria-label="Click to send email">info@attechglobal.com</a>
+                      <a href="mailto:info@attechglobal.com" aria-label="Click to send email">info@attechglobal.com</a>
                     </div>
                   </div>
                 </li>

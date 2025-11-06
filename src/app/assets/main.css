@@ -1837,6 +1837,60 @@ label {
           transform: translate(-50%, -50%) scale(1);
 }
 
+.cs_btn.cs_style_2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 2px solid var(--blue-color);
+  line-height: 1em;
+  color: var(--blue-color);
+  border-radius: 8px;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cs_btn.cs_style_2 > * {
+  position: relative;
+  z-index: 1;
+}
+.cs_btn.cs_style_2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: inherit;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.6);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.6);
+}
+.cs_btn.cs_style_2:hover {
+  color: var(--white-color);
+  border-color: var(--blue-color);
+}
+.cs_btn.cs_style_2:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
 .cs_player_btn {
   position: relative;
   width: 80px;
@@ -8602,16 +8656,16 @@ label {
     font-weight: 600;
  }
  .header_style_2_2 .cs_nav .cs_nav_list > li > a {
-  color: #fff;
+  color: #113b64;
  }
  .header_style_2_1 .cs_nav .cs_nav_list > li > a{
-  color: #FFF;
+  color: #113b64;
 }
 .header_style_2_3 .cs_nav .cs_nav_list > li > a{
-  color: #FFF;
+  color: #113b64;
 }
 .header_style_2_3 .cs_nav .cs_nav_list > li > a:hover{
-  color: #FFF;
+  color: #113b64;
 }
  .cs_style_2 .cs_nav .cs_nav_list > li > a {
   color: #000;
@@ -8714,13 +8768,35 @@ label {
   background-color: #fff;
 }
 .header_sticky_style1.cs-gescout_sticky{
-  background-color: #064135;
+  background-color: #fff;
 }
 
 .header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{
-  color: #fff;
+  color: #113b64;
 }
 
+.header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a:hover{
+  color: #0a2a4a;
+}
+
+/* Navigation bar background and text colors */
+.header_sticky_style1 .cs_main_header,
+.header_sticky_style1.cs-gescout_sticky .cs_main_header {
+  background-color: #fff;
+}
+
+.header_sticky_style1 .cs_nav .cs_nav_list > li > a,
+.header_style_2_1 .cs_nav .cs_nav_list > li > a,
+.header_style_2_2 .cs_nav .cs_nav_list > li > a,
+.header_style_2_3 .cs_nav .cs_nav_list > li > a {
+  color: #113b64;
+}
+
+.header_sticky_style1 .cs_nav .cs_nav_list > li > a:hover,
+.header_style_2_1 .cs_nav .cs_nav_list > li > a:hover,
+.header_style_2_2 .cs_nav .cs_nav_list > li > a:hover {
+  color: #0a2a4a;
+}
 
 }
 @media screen and (max-width: 1550px) {
@@ -9232,7 +9308,7 @@ label {
   gap: 20px;
 }
 .header_style_2_2{
-  background-color: var(--green-dark);
+  background-color: #fff;
 }
 .header_style_2_0.cs-gescout_show .cs_site_branding img{
   filter: brightness(0) invert(1);

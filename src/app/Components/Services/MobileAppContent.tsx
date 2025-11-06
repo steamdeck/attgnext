@@ -5,33 +5,6 @@ import Link from 'next/link';
 const MobileAppContent = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="cs_heading_bg">
-        <div className="cs_height_120 cs_height_lg_80"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto text-center">
-              <h1 className="cs_fs_48 cs_fw_bold cs_mb_20 wow fadeInUp">
-                Mobile App Development That Drives Success
-              </h1>
-              <p className="cs_fs_18 cs_mb_30 wow fadeInUp">
-                Transform your business with custom mobile applications that engage users and drive growth. 
-                Our expert developers create iOS and Android apps that deliver exceptional user experiences.
-              </p>
-              <div className="cs_btn_group cs_mb_40 wow fadeInUp">
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase">
-                  <span>Get Free App Consultation</span>
-                </Link>
-                <Link href="/project" className="cs_btn cs_style_2 cs_fs_14 text-uppercase">
-                  <span>View App Portfolio</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
-      </section>
-
       {/* Service Overview */}
       <section className="cs_gray_bg_2">
         <div className="cs_height_120 cs_height_lg_80"></div>
@@ -42,11 +15,13 @@ const MobileAppContent = () => {
                 <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
                   <span className="cs_shape_right"></span>Why Choose Our Mobile App Development<span className="cs_shape_right"></span>
                 </p>
-                <h2 className="cs_fs_48 cs_mb_30">Expert Mobile App Development for All Platforms</h2>
+                <h2 className="cs_fs_48 cs_mb_30">Build Powerful Mobile Apps That Drive Business Growth</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  At Digitom, we specialize in creating innovative mobile applications that help businesses 
-                  reach their customers wherever they are. Our team has developed 150+ successful apps 
-                  across various industries.
+                  Mobile apps have become essential for businesses to engage customers, increase sales, and 
+                  improve customer satisfaction. We develop custom mobile applications for iOS and Android 
+                  that deliver exceptional user experiences and drive business results. Our team has developed 
+                  200+ successful mobile apps across various industries, helping businesses increase revenue 
+                  by an average of 120% and improve customer engagement by 85%.
                 </p>
               </div>
             </div>
@@ -56,22 +31,22 @@ const MobileAppContent = () => {
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
                     <Image src="/assets/img/icons/ios.svg" alt="iOS Development" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">iOS & Android Expertise</h3>
-                  <p className="cs_choose_subtitle">Native and cross-platform development for both iOS and Android platforms</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">120% Revenue Increase</h3>
+                  <p className="cs_choose_subtitle">Average 120% increase in revenue within 6 months of app launch</p>
                 </div>
                 <div className="cs_choose_item cs_mb_30">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
                     <Image src="/assets/img/icons/ux.svg" alt="UX Design" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">User Experience Focus</h3>
-                  <p className="cs_choose_subtitle">Intuitive designs that provide exceptional user experiences and drive engagement</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">85% Engagement Increase</h3>
+                  <p className="cs_choose_subtitle">Average 85% improvement in customer engagement with mobile apps</p>
                 </div>
                 <div className="cs_choose_item">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/performance.svg" alt="Performance" width={40} height={40} />
+                    <Image src="/assets/img/icons/mobile.svg" alt="Platforms" width={40} height={40} />
                   </div>
-                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">High Performance</h3>
-                  <p className="cs_choose_subtitle">Optimized apps that load fast and perform smoothly across all devices</p>
+                  <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">All Platforms</h3>
+                  <p className="cs_choose_subtitle">Native iOS, Android, and cross-platform development with React Native and Flutter</p>
                 </div>
               </div>
             </div>
@@ -296,85 +271,61 @@ const MobileAppContent = () => {
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
 
-      {/* Pricing Packages */}
+      {/* Benefits Section */}
       <section className="cs_gray_bg_2">
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
-          <div className="cs_section_heading cs_style_1 text-center">
-            <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
-              <span className="cs_shape_right"></span>Pricing & Packages<span className="cs_shape_right"></span>
-            </p>
-            <h2 className="cs_fs_48 mb-0">Choose Your Mobile App Development Package</h2>
-          </div>
-          <div className="cs_height_60 cs_height_lg_50"></div>
-          <div className="row cs_row_gap_30 cs_gap_y_30">
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center">
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Basic App</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$8,999</div>
-                  <p className="cs_pricing_subtitle">Perfect for simple apps with basic functionality</p>
-                </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Single platform (iOS or Android)</li>
-                    <li>Basic UI/UX design</li>
-                    <li>Up to 10 screens</li>
-                    <li>Basic features</li>
-                    <li>App store submission</li>
-                    <li>3 months support</li>
-                  </ul>
-                </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
+          <div className="row cs_row_gap_30 cs_gap_y_40">
+            <div className="col-lg-6">
+              <div className="cs_section_heading cs_style_1">
+                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
+                  <span className="cs_shape_right"></span>Business Benefits<span className="cs_shape_right"></span>
+                </p>
+                <h2 className="cs_fs_48 cs_mb_30">Why Mobile Apps Matter for Your Business</h2>
+                <p className="cs_fs_18 cs_mb_30">
+                  Mobile apps have transformed how businesses connect with customers and drive growth. 
+                  Here&apos;s how our mobile app development services can transform your business:
+                </p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center cs_popular">
-                <div className="cs_pricing_badge">Most Popular</div>
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Professional App</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$15,999</div>
-                  <p className="cs_pricing_subtitle">Ideal for business apps with advanced features</p>
+            <div className="col-lg-6">
+              <div className="cs_benefits_list">
+                <div className="cs_benefit_item cs_mb_25">
+                  <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
+                    <Image src="/assets/img/icons/roi.svg" alt="Increased Revenue" width={30} height={30} />
+                  </div>
+                  <div className="cs_benefit_content">
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Increased Revenue</h4>
+                    <p className="cs_benefit_desc">Reach customers on their mobile devices and increase sales through convenient mobile commerce</p>
+                  </div>
                 </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Cross-platform development</li>
-                    <li>Custom UI/UX design</li>
-                    <li>Up to 25 screens</li>
-                    <li>Advanced features</li>
-                    <li>Backend integration</li>
-                    <li>Analytics integration</li>
-                    <li>6 months support</li>
-                  </ul>
+                <div className="cs_benefit_item cs_mb_25">
+                  <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
+                    <Image src="/assets/img/icons/engagement.svg" alt="Customer Engagement" width={30} height={30} />
+                  </div>
+                  <div className="cs_benefit_content">
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Enhanced Customer Engagement</h4>
+                    <p className="cs_benefit_desc">Build stronger relationships with customers through push notifications and personalized experiences</p>
+                  </div>
                 </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="cs_pricing_card cs_style_1 cs_radius_20 text-center">
-                <div className="cs_pricing_header cs_mb_30">
-                  <h3 className="cs_pricing_title cs_fs_24 cs_semibold cs_mb_10">Enterprise App</h3>
-                  <div className="cs_pricing_price cs_fs_48 cs_fw_bold cs_accent_color">$29,999</div>
-                  <p className="cs_pricing_subtitle">For complex apps with enterprise-level features</p>
+                <div className="cs_benefit_item cs_mb_25">
+                  <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
+                    <Image src="/assets/img/icons/analytics.svg" alt="Data Insights" width={30} height={30} />
+                  </div>
+                  <div className="cs_benefit_content">
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Customer Insights</h4>
+                    <p className="cs_benefit_desc">Track user behavior, preferences, and app usage with comprehensive analytics</p>
+                  </div>
                 </div>
-                <div className="cs_pricing_features cs_mb_30">
-                  <ul className="cs_pricing_list">
-                    <li>Multi-platform development</li>
-                    <li>Premium UI/UX design</li>
-                    <li>Unlimited screens</li>
-                    <li>Complex integrations</li>
-                    <li>Custom backend</li>
-                    <li>Advanced security</li>
-                    <li>12 months support</li>
-                  </ul>
+                <div className="cs_benefit_item">
+                  <div className="cs_benefit_icon cs_center cs_radius_50 cs_mb_15">
+                    <Image src="/assets/img/icons/brand.svg" alt="Brand Visibility" width={30} height={30} />
+                  </div>
+                  <div className="cs_benefit_content">
+                    <h4 className="cs_benefit_title cs_fs_18 cs_semibold cs_mb_5">Brand Visibility</h4>
+                    <p className="cs_benefit_desc">Increase brand awareness and stay top-of-mind with customers through mobile presence</p>
+                  </div>
                 </div>
-                <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase w-100">
-                  <span>Get Started</span>
-                </Link>
               </div>
             </div>
           </div>
