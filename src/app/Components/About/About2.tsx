@@ -10,7 +10,13 @@ const About2 = () => {
           <div className="row cs_gap_y_40">
             <div className="col-lg-5 wow fadeInLeft">
               <div className="cs_about_thumbnail">
-                 <Image src="/assets/img/2df76b45-51df-45d7-8d38-184608205bd8.jpg" alt="img" width={564} height={524}   />
+                 <Image 
+                   src="https://uplynksolutions.com/wp-content/uploads/2023/05/It-soln2.jpeg" 
+                   alt="img" 
+                   width={564} 
+                   height={524}
+                   unoptimized={true}
+                 />
               </div>
             </div>
             <div className="col-lg-7">

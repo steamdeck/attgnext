@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 // Admin credentials (in production, store these in environment variables)
 const ADMIN_CREDENTIALS = {
-  email: 'admin@digitom.com',
+  email: 'admin@attechglobal.com',
   password: 'admin123', // In production, use a strong password
   role: 'super_admin'
 }

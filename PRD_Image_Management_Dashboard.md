@@ -1,5 +1,5 @@
 # Product Requirements Document (PRD)
-## Image Management Dashboard for Digitom NextJS
+## Image Management Dashboard for AT Tech Global NextJS
 
 ### 1. Executive Summary
 
@@ -10,7 +10,7 @@
 
 ### 2. Product Overview
 
-The Image Management Dashboard is a comprehensive admin tool designed to manage all images across the Digitom NextJS website. It provides centralized control over image metadata, SEO optimization, and content management with an intuitive interface for administrators.
+The Image Management Dashboard is a comprehensive admin tool designed to manage all images across the AT Tech Global NextJS website. It provides centralized control over image metadata, SEO optimization, and content management with an intuitive interface for administrators.
 
 ### 3. Business Objectives
 
@@ -322,7 +322,7 @@ CREATE TABLE image_usage (
 
 ### 15. Conclusion
 
-The Image Management Dashboard will significantly improve the efficiency of image management across the Digitom website while providing powerful SEO optimization tools. The phased implementation approach ensures timely delivery while maintaining quality and security standards.
+The Image Management Dashboard will significantly improve the efficiency of image management across the AT Tech Global website while providing powerful SEO optimization tools. The phased implementation approach ensures timely delivery while maintaining quality and security standards.
 
 ---
 

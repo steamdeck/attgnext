@@ -14,8 +14,8 @@ const About1 = () => {
                 <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
                   About Us<span className="cs_shape_right"></span>
                 </p>
-                <h2 className="cs_fs_48 cs_mb_21 wow fadeInDown">we’re strategic digital marketing agency</h2>
-                <p className="cs_section_heading_text mb-0">In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. </p>
+                <h2 className="cs_fs_48 cs_mb_21 wow fadeInDown">we're strategic digital marketing agency</h2>
+                <p className="cs_section_heading_text mb-0">In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Explore our <Link href="/service" className="cs_accent_color" style={{textDecoration: 'underline'}}>comprehensive services</Link> or view our <Link href="/project" className="cs_accent_color" style={{textDecoration: 'underline'}}>successful projects</Link>.</p>
               </div>
               <ul className="cs_list cs_style_1 cs_medium cs_heading_color cs_mp_0">
                 <li>
@@ -33,6 +33,8 @@ const About1 = () => {
               </ul>
               <div className="cs_about_btn_group">
                 <Link href="/about" aria-label="Click to visit about us page" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>About Us</span></Link>
+                <Link href="/service" aria-label="Click to view services" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Our Services</span></Link>
+                <Link href="/contact" aria-label="Click to contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Contact Us</span></Link>
                 <div className="cs_client_info_wrapper wow fadeInRight">
                   <div className="cs_client_info_header cs_mb_15">
                     <Image src="/assets/img/icons/star.svg" alt="img" width={18} height={18}   />

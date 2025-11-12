@@ -1,4 +1,4 @@
-# Content Brief Template for Digitom Services
+# Content Brief Template for AT Tech Global Services
 
 ## Service: [SERVICE NAME]
 
@@ -35,7 +35,7 @@
 2. **Service Overview**
    - What the service includes
    - Who it's for
-   - Why choose Digitom
+   - Why choose AT Tech Global
 
 3. **Features & Benefits**
    - Detailed feature list

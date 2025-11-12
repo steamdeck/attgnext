@@ -1,13 +1,13 @@
 # Product Requirements Document (PRD)
-## Services Content Strategy for Digitom Next.js Website
+## Services Content Strategy for AT Tech Global Next.js Website
 
 ### 1. Executive Summary
 
-This PRD outlines the comprehensive content strategy for all services and sub-services offered by Digitom, a digital marketing and technology solutions company. The goal is to create compelling, SEO-optimized, and conversion-focused content for each service page to improve user engagement, search rankings, and lead generation.
+This PRD outlines the comprehensive content strategy for all services and sub-services offered by AT Tech Global, a digital marketing and technology solutions company. The goal is to create compelling, SEO-optimized, and conversion-focused content for each service page to improve user engagement, search rankings, and lead generation.
 
 ### 2. Project Overview
 
-**Project Name:** Digitom Services Content Development  
+**Project Name:** AT Tech Global Services Content Development  
 **Project Duration:** 4-6 weeks  
 **Target Audience:** Small to medium businesses seeking digital solutions  
 **Primary Goals:**
@@ -19,7 +19,7 @@ This PRD outlines the comprehensive content strategy for all services and sub-se
 
 ### 3. Current Service Structure
 
-Based on the codebase analysis, Digitom offers the following services:
+Based on the codebase analysis, AT Tech Global offers the following services:
 
 #### 3.1 Main Service Categories
 1. **Web Development**
@@ -56,7 +56,7 @@ Each service page should include:
    - What the service is
    - Who it's for
    - Key benefits
-   - Why choose Digitom
+   - Why choose AT Tech Global
 
 3. **Service Features/Benefits**
    - Detailed feature list

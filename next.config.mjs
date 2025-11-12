@@ -5,7 +5,7 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     unoptimized: false,
-    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net', 'thispersonnotexist.org', '4.imimg.com'],
+    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net', 'thispersonnotexist.org', '4.imimg.com', 'sociology.plus', 'uplynksolutions.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -40,6 +40,18 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: '4.imimg.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sociology.plus',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'uplynksolutions.com',
         port: '',
         pathname: '/**',
       },

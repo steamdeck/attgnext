@@ -17,7 +17,7 @@ const DigitalMarketingContent = () => {
                 </p>
                 <h2 className="cs_fs_48 cs_mb_30">Data-Driven Marketing That Delivers Results</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  At Digitom, we combine creativity with data-driven strategies to create digital marketing 
+                  At AT Tech Global, we combine creativity with data-driven strategies to create digital marketing 
                   campaigns that deliver measurable ROI. Our team has helped 300+ businesses increase their 
                   online presence and drive sustainable growth.
                 </p>
@@ -301,7 +301,7 @@ const DigitalMarketingContent = () => {
                     What&apos;s the difference between SEO and PPC?
                   </div>
                   <div className="cs_faq_answer">
-                    SEO focuses on improving organic search rankings over time, while PPC provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.
+                    <Link href="/service/seo">SEO</Link> focuses on improving organic search rankings over time, while <Link href="/service/ppc">PPC</Link> provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -309,7 +309,7 @@ const DigitalMarketingContent = () => {
                     How much should I budget for digital marketing?
                   </div>
                   <div className="cs_faq_answer">
-                    Budget depends on your business size, goals, and competition. We recommend allocating 7-10% of your revenue to digital marketing for optimal results.
+                    Budget depends on your business size, goals, and competition. We recommend allocating 7-10% of your revenue to digital marketing for optimal results. Check our <Link href="/pricing">pricing page</Link> for package details.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -317,7 +317,7 @@ const DigitalMarketingContent = () => {
                     Do you provide social media content creation?
                   </div>
                   <div className="cs_faq_answer">
-                    Yes, we create engaging social media content including posts, graphics, videos, and stories tailored to your brand and audience across all platforms.
+                    Yes, we create engaging social media content including posts, graphics, videos, and stories tailored to your brand and audience across all platforms. Learn more about our <Link href="/service/smm">social media marketing services</Link>.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -325,7 +325,7 @@ const DigitalMarketingContent = () => {
                     Can you help with local SEO for my business?
                   </div>
                   <div className="cs_faq_answer">
-                    Absolutely! We specialize in local SEO strategies including Google My Business optimization, local citations, and location-based content to help you rank in local searches.
+                    Absolutely! We specialize in local SEO strategies including Google My Business optimization, local citations, and location-based content to help you rank in local searches. Our <Link href="/service/seo">SEO services</Link> include comprehensive local SEO strategies.
                   </div>
                 </div>
                 <div className="cs_faq_item cs_mb_20">
@@ -370,7 +370,7 @@ const DigitalMarketingContent = () => {
                   <strong>Challenge:</strong> An online retailer needed to increase brand awareness and drive more qualified traffic to their website.
                 </p>
                 <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented a comprehensive digital marketing strategy including SEO, PPC, and social media marketing.
+                  <strong>Solution:</strong> We implemented a comprehensive digital marketing strategy including <Link href="/service/seo">SEO</Link>, <Link href="/service/ppc">PPC</Link>, and <Link href="/service/smm">social media marketing</Link>.
                 </p>
                 <div className="cs_case_results">
                   <strong>Results:</strong>
@@ -392,7 +392,7 @@ const DigitalMarketingContent = () => {
                   <strong>Challenge:</strong> A local service business wanted to dominate local search results and generate more leads.
                 </p>
                 <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We focused on local SEO, Google My Business optimization, and targeted PPC campaigns.
+                  <strong>Solution:</strong> We focused on <Link href="/service/seo">local SEO</Link>, Google My Business optimization, and targeted <Link href="/service/ppc">PPC campaigns</Link>.
                 </p>
                 <div className="cs_case_results">
                   <strong>Results:</strong>
@@ -427,12 +427,18 @@ const DigitalMarketingContent = () => {
                 <Link href="/contact" className="cs_btn cs_style_1 cs_fs_14 text-uppercase cs_white_bg cs_accent_color">
                   <span>Get Free Marketing Audit</span>
                 </Link>
+                <Link href="/pricing" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
+                  <span>View Pricing</span>
+                </Link>
                 <Link href="tel:+919266812465" className="cs_btn cs_style_2 cs_fs_14 text-uppercase cs_white_color">
                   <span>Call +91 92668 12465</span>
                 </Link>
               </div>
-              <p className="cs_fs_16 cs_white_color">
+              <p className="cs_fs_16 cs_white_color cs_mb_20">
                 <strong>Free consultation • Custom strategy • Guaranteed results</strong>
+              </p>
+              <p className="cs_fs_14 cs_white_color">
+                Explore our <Link href="/service" className="cs_white_color" style={{textDecoration: 'underline'}}>complete service portfolio</Link> or visit our <Link href="/faq" className="cs_white_color" style={{textDecoration: 'underline'}}>FAQ page</Link> for more information.
               </p>
             </div>
           </div>

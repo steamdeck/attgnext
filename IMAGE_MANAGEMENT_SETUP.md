@@ -1,6 +1,6 @@
 # Image Management Dashboard Setup
 
-This document provides instructions for setting up and using the Image Management Dashboard for the Digitom NextJS project.
+This document provides instructions for setting up and using the Image Management Dashboard for the AT Tech Global NextJS project.
 
 ## Features
 
