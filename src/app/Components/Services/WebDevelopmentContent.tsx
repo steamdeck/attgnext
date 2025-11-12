@@ -17,7 +17,7 @@ const WebDevelopmentContent = () => {
                 </p>
                 <h2 className="cs_fs_48 cs_mb_30">Custom Websites That Drive Business Growth</h2>
                 <p className="cs_fs_18 cs_mb_30">
-                  At Digitom, we specialize in creating custom, responsive websites that help businesses 
+                  At AT Tech Global, we specialize in creating custom, responsive websites that help businesses 
                   establish a strong online presence and drive measurable results. Our team of experienced 
                   developers has helped over 200+ businesses achieve their digital goals.
                 </p>

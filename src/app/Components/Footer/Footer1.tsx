@@ -52,8 +52,23 @@ const Footer1 = () => {
                 <ul className="cs_footer_menu cs_mp_0">
                   <li><Link href="/about" aria-label="Page link">About AT Tech Global</Link></li>
                   <li><Link href="/service" aria-label="Page link">Our Services</Link></li>
+                  <li><Link href="/project" aria-label="Page link">Projects</Link></li>
                   <li><Link href="/blog" aria-label="Page link">Blog</Link></li>
+                  <li><Link href="/pricing" aria-label="Page link">Pricing</Link></li>
+                  <li><Link href="/faq" aria-label="Page link">FAQ</Link></li>
                   <li><Link href="/contact" aria-label="Page link">Contact Us</Link></li>
+                </ul>
+              </div>
+              <div className="cs_footer_widget">
+                <h2 className="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_27 position-relative">Our Services</h2>
+                <ul className="cs_footer_menu cs_mp_0">
+                  <li><Link href="/service/digital-marketing" aria-label="Page link">Digital Marketing</Link></li>
+                  <li><Link href="/service/seo" aria-label="Page link">SEO Services</Link></li>
+                  <li><Link href="/service/web-development" aria-label="Page link">Web Development</Link></li>
+                  <li><Link href="/service/mobile-application" aria-label="Page link">Mobile Application</Link></li>
+                  <li><Link href="/service/ppc" aria-label="Page link">PPC Advertising</Link></li>
+                  <li><Link href="/service/smm" aria-label="Page link">Social Media Marketing</Link></li>
+                  <li><Link href="/service/email-marketing" aria-label="Page link">Email Marketing</Link></li>
                 </ul>
               </div>
               <div className="cs_footer_widget">

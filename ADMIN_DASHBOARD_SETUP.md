@@ -19,7 +19,7 @@ Your Next.js application now includes a complete admin dashboard with authentica
 ## 🔐 **Default Admin Credentials**
 
 ```
-Email: admin@digitom.com
+Email: admin@attechglobal.com
 Password: admin123
 ```
 
@@ -64,7 +64,7 @@ src/
    ```
 
 3. **Login with default credentials**:
-   - Email: `admin@digitom.com`
+   - Email: `admin@attechglobal.com`
    - Password: `admin123`
 
 4. **Access the dashboard**:

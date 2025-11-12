@@ -6,14 +6,14 @@ import React from 'react';
 const Services4 = () => {
 
     const chooseContent = [
-        {img:'/assets/img/icons/bulb.svg', title:'Branding design', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/email.svg', title:'Email Marketing', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/seo.svg', title:'SEO & Analytics', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/watch.svg', title:'Content Marketing', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/ux-ui.svg', title:'UI/UX Design', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/app.svg', title:'App development', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/business.svg', title:'Business Analysis', content:'Personalized service plans tailored to your po specific needs and your.'},
-        {img:'/assets/img/icons/digital.svg', title:'Digital Strategy', content:'Personalized service plans tailored to your po specific needs and your.'},
+        {img:'/assets/img/icons/bulb.svg', title:'Branding design', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/digital-marketing'},
+        {img:'/assets/img/icons/email.svg', title:'Email Marketing', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/email-marketing'},
+        {img:'/assets/img/icons/seo.svg', title:'SEO & Analytics', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/seo'},
+        {img:'/assets/img/icons/watch.svg', title:'Content Marketing', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/digital-marketing'},
+        {img:'/assets/img/icons/ux-ui.svg', title:'UI/UX Design', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/web-development'},
+        {img:'/assets/img/icons/app.svg', title:'App development', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/mobile-application'},
+        {img:'/assets/img/icons/business.svg', title:'Business Analysis', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/erp'},
+        {img:'/assets/img/icons/digital.svg', title:'Digital Strategy', content:'Personalized service plans tailored to your po specific needs and your.', link:'/service/digital-marketing'},
       ]; 
 
     return (
@@ -28,9 +28,9 @@ const Services4 = () => {
               <Image src={item.img} alt="img" width={35} height={40}   />
               </span>
               <div className="cs_card_content">
-                <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10"><Link href="/service/service-details" aria-label="Click to view service">{item.title}</Link></h3>
+                <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10"><Link href={item.link || "/service"} aria-label="Click to view service">{item.title}</Link></h3>
                 <p className="cs_card_subtitle cs_mb_22">{item.content}</p>
-                <Link href="/service/service-details" aria-label="Click to view service" className="cs_card_btn cs_center cs_radius_50">
+                <Link href={item.link || "/service"} aria-label="Click to view service" className="cs_card_btn cs_center cs_radius_50">
                 <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
                 </Link>
               </div>

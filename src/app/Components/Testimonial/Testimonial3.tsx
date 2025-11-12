@@ -63,7 +63,13 @@ const Testimonial3 = () => {
           <div className="row cs_gap_y_40 align-items-end">
             <div className="col-lg-4 order-lg-2 wow fadeInDown">
               <div className="cs_testimonial_thumbnail position-relative">
-                <Image src="/assets/img/testimonial_img_2.jpg" alt="img" width={326} height={444}   />
+                <Image 
+                  src="https://sociology.plus/wp-content/uploads/2022/10/Achievement-Principle-Sociology-Definition.jpg" 
+                  alt="img" 
+                  width={326} 
+                  height={444}
+                  unoptimized={true}
+                />
               </div>
             </div>
             <div className="col-lg-8 order-lg-1">

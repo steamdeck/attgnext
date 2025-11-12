@@ -1,7 +1,7 @@
-# Detailed Task Breakdown: Digitom Services Content Development
+# Detailed Task Breakdown: AT Tech Global Services Content Development
 
 ## Overview
-This document provides a comprehensive breakdown of all tasks required to create content for every service and sub-service offered by Digitom. Each task includes specific deliverables, requirements, and success criteria.
+This document provides a comprehensive breakdown of all tasks required to create content for every service and sub-service offered by AT Tech Global. Each task includes specific deliverables, requirements, and success criteria.
 
 ## Service Categories & Tasks
 
@@ -21,7 +21,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: web development services, custom web development, web development company
-  - Meta title: "Web Development Services | Custom Websites | Digitom"
+  - Meta title: "Web Development Services | Custom Websites | AT Tech Global"
   - Meta description: "Professional web development services. Custom, responsive websites that drive results. Expert developers, modern technology, guaranteed satisfaction."
   - Schema markup for service
   - Internal linking to related services
@@ -54,7 +54,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: digital marketing services, digital marketing agency, online marketing
-  - Meta title: "Digital Marketing Services | Online Marketing Agency | Digitom"
+  - Meta title: "Digital Marketing Services | Online Marketing Agency | AT Tech Global"
   - Meta description: "Comprehensive digital marketing services. SEO, PPC, social media, email marketing. Data-driven strategies that deliver results."
   - Schema markup for service
   - Internal linking to sub-services
@@ -86,7 +86,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: mobile app development, iOS app development, Android app development
-  - Meta title: "Mobile App Development | iOS & Android Apps | Digitom"
+  - Meta title: "Mobile App Development | iOS & Android Apps | AT Tech Global"
   - Meta description: "Expert mobile app development for iOS and Android. Custom apps that engage users and drive business growth."
   - Schema markup for service
   - Internal linking to related services
@@ -119,7 +119,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: SEO services, search engine optimization, SEO company
-  - Meta title: "SEO Services | Search Engine Optimization | Digitom"
+  - Meta title: "SEO Services | Search Engine Optimization | AT Tech Global"
   - Meta description: "Professional SEO services that improve rankings and drive organic traffic. On-page, off-page, and technical SEO expertise."
   - Schema markup for service
   - Internal linking to related services
@@ -152,7 +152,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: PPC services, pay per click advertising, Google Ads management
-  - Meta title: "PPC Services | Pay Per Click Advertising | Digitom"
+  - Meta title: "PPC Services | Pay Per Click Advertising | AT Tech Global"
   - Meta description: "Expert PPC services for Google Ads and Facebook Ads. Maximize ROI with data-driven campaigns and optimization."
   - Schema markup for service
   - Internal linking to related services
@@ -185,7 +185,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: social media marketing, SMM services, social media management
-  - Meta title: "Social Media Marketing | SMM Services | Digitom"
+  - Meta title: "Social Media Marketing | SMM Services | AT Tech Global"
   - Meta description: "Professional social media marketing services. Build engagement, grow followers, and drive conversions across all platforms."
   - Schema markup for service
   - Internal linking to related services
@@ -218,7 +218,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: email marketing services, email marketing campaigns, email automation
-  - Meta title: "Email Marketing Services | Email Campaigns | Digitom"
+  - Meta title: "Email Marketing Services | Email Campaigns | AT Tech Global"
   - Meta description: "Professional email marketing services. Automated campaigns, personalization, and high ROI email strategies."
   - Schema markup for service
   - Internal linking to related services
@@ -251,7 +251,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: WhatsApp marketing, WhatsApp business, WhatsApp marketing services
-  - Meta title: "WhatsApp Marketing | WhatsApp Business | Digitom"
+  - Meta title: "WhatsApp Marketing | WhatsApp Business | AT Tech Global"
   - Meta description: "Professional WhatsApp marketing services. Direct messaging, automation, and customer engagement for local businesses."
   - Schema markup for service
   - Internal linking to related services
@@ -283,7 +283,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: CRM software, customer relationship management, CRM implementation
-  - Meta title: "CRM Solutions | Customer Relationship Management | Digitom"
+  - Meta title: "CRM Solutions | Customer Relationship Management | AT Tech Global"
   - Meta description: "Custom CRM solutions for better customer management. Implementation, customization, and training included."
   - Schema markup for service
   - Internal linking to related services
@@ -315,7 +315,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: ERP software, enterprise resource planning, ERP implementation
-  - Meta title: "ERP Solutions | Enterprise Resource Planning | Digitom"
+  - Meta title: "ERP Solutions | Enterprise Resource Planning | AT Tech Global"
   - Meta description: "Comprehensive ERP solutions for business efficiency. Implementation, integration, and ongoing support included."
   - Schema markup for service
   - Internal linking to related services
@@ -348,7 +348,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: learning management system, LMS development, e-learning platform
-  - Meta title: "LMS Solutions | Learning Management System | Digitom"
+  - Meta title: "LMS Solutions | Learning Management System | AT Tech Global"
   - Meta description: "Custom LMS solutions for online learning. Course management, student tracking, and analytics included."
   - Schema markup for service
   - Internal linking to related services
@@ -382,7 +382,7 @@ This document provides a comprehensive breakdown of all tasks required to create
 
 - [ ] **SEO Optimization**
   - Primary keywords: e-commerce development, online store development, e-commerce platform
-  - Meta title: "E-commerce Solutions | Online Store Development | Digitom"
+  - Meta title: "E-commerce Solutions | Online Store Development | AT Tech Global"
   - Meta description: "Professional e-commerce development. Custom online stores with payment integration, mobile optimization, and SEO."
   - Schema markup for service
   - Internal linking to related services

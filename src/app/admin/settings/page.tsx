@@ -4,18 +4,18 @@ import { useState } from 'react'
 
 export default function SettingsPage() {
   const [settings, setSettings] = useState({
-    siteName: 'Digitom',
+    siteName: 'AT Tech Global',
     siteDescription: 'Digital Marketing Agency',
-    contactEmail: 'contact@digitom.com',
+    contactEmail: 'contact@attechglobal.com',
     contactPhone: '+1 (555) 123-4567',
     socialMedia: {
-      facebook: 'https://facebook.com/digitom',
-      twitter: 'https://twitter.com/digitom',
-      linkedin: 'https://linkedin.com/company/digitom',
-      instagram: 'https://instagram.com/digitom'
+      facebook: 'https://facebook.com/attechglobal',
+      twitter: 'https://twitter.com/attechglobal',
+      linkedin: 'https://linkedin.com/company/attechglobal',
+      instagram: 'https://instagram.com/attechglobal'
     },
     seo: {
-      metaTitle: 'Digitom - Digital Marketing Agency',
+      metaTitle: 'AT Tech Global - Digital Marketing Agency',
       metaDescription: 'Professional digital marketing services for your business growth',
       keywords: 'digital marketing, seo, web development, social media'
     }
