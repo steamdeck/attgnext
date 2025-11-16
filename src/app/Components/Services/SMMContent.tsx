@@ -35,7 +35,7 @@ const SMMContent = () => {
                 </div>
                 <div className="cs_choose_item cs_mb_30">
                   <div className="cs_choose_icon cs_center cs_radius_50 cs_mb_15">
-                    <Image src="/assets/img/icons/followers.svg" alt="Followers" width={40} height={40} />
+                    <Image src="/assets/img/icons/user_1.svg" alt="Followers" width={40} height={40} />
                   </div>
                   <h3 className="cs_choose_title cs_fs_22 cs_semibold cs_mb_10">Organic Growth</h3>
                   <p className="cs_choose_subtitle">Average 300% increase in followers and brand awareness</p>

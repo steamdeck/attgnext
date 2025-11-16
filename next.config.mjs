@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
+// Check if building for cPanel static export
+const isCPanelExport = process.env.CPANEL_EXPORT === 'true';
+
 const nextConfig = {
-  // Removed output: 'export' to support API routes
-  // trailingSlash can cause issues with the App Router on Vercel
-  trailingSlash: false,
+  // Static export for cPanel, normal build for API routes
+  ...(isCPanelExport ? { output: 'export' } : {}),
+  // trailingSlash for cPanel, false for Vercel/API routes
+  trailingSlash: isCPanelExport ? true : false,
   images: {
-    unoptimized: false,
+    // Must be unoptimized for static export
+    unoptimized: isCPanelExport ? true : false,
     domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net', 'thispersonnotexist.org', '4.imimg.com', 'sociology.plus', 'uplynksolutions.com'],
     remotePatterns: [
       {
