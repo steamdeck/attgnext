@@ -1,4 +1,6 @@
 // Utility functions for sitemap generation
+import { readdirSync, statSync } from 'fs'
+import { join } from 'path'
 
 export interface SitemapEntry {
   url: string
@@ -7,38 +9,144 @@ export interface SitemapEntry {
   priority: number
 }
 
-// Function to get blog posts (customize this based on your blog structure)
+// Function to get blog posts from file system or API
 export async function getBlogPosts(): Promise<string[]> {
-  // If you have a blog with dynamic posts, implement this function
-  // For example, if you fetch from an API or read from a directory:
-  
-  // Example 1: If you have blog posts in a directory
-  // const blogDir = join(process.cwd(), 'content/blog')
-  // const files = readdirSync(blogDir)
-  // return files.map(file => file.replace('.md', ''))
-  
-  // Example 2: If you fetch from an API
-  // const response = await fetch('https://your-api.com/blog-posts')
-  // const posts = await response.json()
-  // return posts.map(post => post.slug)
-  
-  // For now, return empty array - you can implement this later
-  return []
+  try {
+    // Check if blog directory exists
+    const blogDir = join(process.cwd(), 'src/app/(innerpage)/blog')
+    
+    // Try to read from file system
+    if (typeof window === 'undefined') {
+      try {
+        const items = readdirSync(blogDir)
+        const blogPosts: string[] = []
+        
+        for (const item of items) {
+          const itemPath = join(blogDir, item)
+          const stat = statSync(itemPath)
+          
+          // Only include directories that contain page.tsx (dynamic blog posts)
+          // Exclude the main blog page and blog-details template
+          if (stat.isDirectory() && item !== 'blog-details') {
+            const pagePath = join(itemPath, 'page.tsx')
+            try {
+              const pageStat = statSync(pagePath)
+              if (pageStat.isFile()) {
+                blogPosts.push(item)
+              }
+            } catch {
+              // Page file doesn't exist, skip
+            }
+          }
+        }
+        
+        return blogPosts
+      } catch (error) {
+        // Directory doesn't exist or can't be read, fall through to other methods
+        console.warn('Could not read blog directory from file system:', error)
+      }
+    }
+    
+    // Future: Fetch from API or database
+    // Example: const response = await fetch('https://your-api.com/blog-posts')
+    // const posts = await response.json()
+    // return posts.map(post => post.slug)
+    
+    return []
+  } catch (error) {
+    console.error('Error getting blog posts:', error)
+    return []
+  }
 }
 
 // Function to get dynamic project routes
 export async function getProjectRoutes(): Promise<string[]> {
-  // If you have dynamic project pages, implement this function
-  // Similar to getBlogPosts but for projects
-  
-  return []
+  try {
+    // Check if project directory exists
+    const projectDir = join(process.cwd(), 'src/app/(innerpage)/project')
+    
+    // Try to read from file system
+    if (typeof window === 'undefined') {
+      try {
+        const items = readdirSync(projectDir)
+        const projects: string[] = []
+        
+        for (const item of items) {
+          const itemPath = join(projectDir, item)
+          const stat = statSync(itemPath)
+          
+          // Only include directories that contain page.tsx (dynamic project pages)
+          // Exclude the main project page and project-details template
+          if (stat.isDirectory() && item !== 'project-details') {
+            const pagePath = join(itemPath, 'page.tsx')
+            try {
+              const pageStat = statSync(pagePath)
+              if (pageStat.isFile()) {
+                projects.push(item)
+              }
+            } catch {
+              // Page file doesn't exist, skip
+            }
+          }
+        }
+        
+        return projects
+      } catch (error) {
+        console.warn('Could not read project directory from file system:', error)
+      }
+    }
+    
+    // Future: Fetch from API or database
+    return []
+  } catch (error) {
+    console.error('Error getting project routes:', error)
+    return []
+  }
 }
 
 // Function to get team member routes
 export async function getTeamMemberRoutes(): Promise<string[]> {
-  // If you have dynamic team member pages, implement this function
-  
-  return []
+  try {
+    // Check if team directory exists
+    const teamDir = join(process.cwd(), 'src/app/(innerpage)/team')
+    
+    // Try to read from file system
+    if (typeof window === 'undefined') {
+      try {
+        const items = readdirSync(teamDir)
+        const teamMembers: string[] = []
+        
+        for (const item of items) {
+          const itemPath = join(teamDir, item)
+          const stat = statSync(itemPath)
+          
+          // Only include directories that contain page.tsx (dynamic team member pages)
+          // Exclude the main team page and team-details template
+          if (stat.isDirectory() && item !== 'team-details') {
+            const pagePath = join(itemPath, 'page.tsx')
+            try {
+              const pageStat = statSync(pagePath)
+              if (pageStat.isFile()) {
+                teamMembers.push(item)
+              }
+            } catch {
+              // Page file doesn't exist, skip
+            }
+          }
+        }
+        
+        return teamMembers
+      } catch (error) {
+        console.warn('Could not read team directory from file system:', error)
+      }
+    }
+    
+    // Future: Fetch from API or database
+    return []
+  } catch (error) {
+    console.error('Error getting team member routes:', error)
+    return []
+  }
 }
 
 // Function to determine route priority and change frequency

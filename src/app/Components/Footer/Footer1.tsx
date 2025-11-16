@@ -54,7 +54,6 @@ const Footer1 = () => {
                   <li><Link href="/service" aria-label="Page link">Our Services</Link></li>
                   <li><Link href="/project" aria-label="Page link">Projects</Link></li>
                   <li><Link href="/blog" aria-label="Page link">Blog</Link></li>
-                  <li><Link href="/pricing" aria-label="Page link">Pricing</Link></li>
                   <li><Link href="/faq" aria-label="Page link">FAQ</Link></li>
                   <li><Link href="/contact" aria-label="Page link">Contact Us</Link></li>
                 </ul>

@@ -26,6 +26,11 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: '/assets/img/logo-3.png',
+    shortcut: '/assets/img/logo-3.png',
+    apple: '/assets/img/logo-3.png',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -33,7 +38,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="author" content="Themeservices" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/assets/img/logo-3.png" sizes="any" />
         <link rel="preconnect" href="https://www.freeiconspng.com" />
         <link rel="preconnect" href="https://www.appsflyer.com" />
         <link rel="dns-prefetch" href="https://www.freeiconspng.com" />

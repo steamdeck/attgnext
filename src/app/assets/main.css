@@ -1891,6 +1891,22 @@ label {
           transform: translate(-50%, -50%) scale(1);
 }
 
+/* Ensure outline buttons remain visible across backgrounds even if utility color classes are applied */
+.cs_btn.cs_style_2.cs_white_color,
+.cs_btn.cs_style_2 .cs_white_color {
+  color: var(--blue-color);
+}
+.cs_blue_bg .cs_btn.cs_style_2 {
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+.cs_blue_bg .cs_btn.cs_style_2::before {
+  background-color: var(--white-color);
+}
+.cs_blue_bg .cs_btn.cs_style_2:hover {
+  color: var(--blue-color);
+}
+
 .cs_player_btn {
   position: relative;
   width: 80px;
@@ -9499,4 +9515,15 @@ label {
   .cs_hero.cs_style_1 .cs_hero_thumbnail > img {
       object-fit: cover;
   }
+}
+
+/* Filled variant for large brand slider text */
+.cs_brands_list.cs_type_3.cs_filled {
+  color: var(--heading-color, #17012C);
+  -webkit-text-stroke: 0;
+}
+
+/* Quick color utilities for filled large brand text */
+.cs_brands_list.cs_type_3.cs_filled.cs_primary {
+  color: #2c668e;
 }

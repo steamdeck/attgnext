@@ -9,13 +9,20 @@ import {
   getLastModified 
 } from '../lib/sitemap-utils'
 
-// Required for static export
-export const dynamic = 'force-static'
-export const revalidate = false
+// Enable dynamic sitemap generation with ISR (Incremental Static Regeneration)
+// Revalidate every 24 hours (86400 seconds) or on-demand
+// This allows the sitemap to update automatically without requiring a full rebuild
+export const revalidate = 86400 // 24 hours in seconds
 
-// Function to recursively get all page files
-function getAllPages(dir: string, basePath: string = ''): string[] {
-  const pages: string[] = []
+// Store page paths with their file paths for lastModified lookup
+interface PageInfo {
+  route: string
+  filePath: string
+}
+
+// Function to recursively get all page files with their paths
+function getAllPages(dir: string, basePath: string = '', baseDir: string = dir): PageInfo[] {
+  const pages: PageInfo[] = []
   
   try {
     const items = readdirSync(dir)
@@ -26,27 +33,26 @@ function getAllPages(dir: string, basePath: string = ''): string[] {
       
       if (stat.isDirectory()) {
         // Skip certain directories
-        if (['node_modules', '.next', 'Components', 'assets', 'favicon.ico'].includes(item)) {
+        if (['node_modules', '.next', 'Components', 'assets', 'favicon.ico', 'api', 'admin'].includes(item)) {
           continue
         }
         
         // Handle route groups (directories with parentheses)
         if (item.startsWith('(') && item.endsWith(')')) {
           // For route groups, don't add them to the path
-          pages.push(...getAllPages(fullPath, basePath))
+          pages.push(...getAllPages(fullPath, basePath, baseDir))
         } else {
           // Regular directory
           const newBasePath = basePath ? `${basePath}/${item}` : item
-          pages.push(...getAllPages(fullPath, newBasePath))
+          pages.push(...getAllPages(fullPath, newBasePath, baseDir))
         }
       } else if (item === 'page.tsx' || item === 'page.ts') {
-        // Found a page file
-        if (basePath) {
-          pages.push(`/${basePath}`)
-        } else {
-          // Root page
-          pages.push('/')
-        }
+        // Found a page file - store the route and file path
+        const route = basePath ? `/${basePath}` : '/'
+        pages.push({
+          route,
+          filePath: fullPath
+        })
       }
     }
   } catch (error) {
@@ -94,23 +100,50 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
   
-  // Get all static pages
+  // Get all static pages with their file paths
   const appDir = join(process.cwd(), 'src/app')
   const staticPages = getAllPages(appDir)
   
-  // Get dynamic routes
+  // Create a Set of existing routes to avoid duplicates
+  const existingRoutes = new Set(staticPages.map(page => page.route))
+  
+  // Get dynamic routes (from database/CMS - not file-based)
   const dynamicRoutes = await getDynamicRoutes()
   
-  // Combine all routes
-  const allRoutes = [...staticPages, ...dynamicRoutes]
+  // Convert dynamic routes to PageInfo format (no file path for dynamic routes)
+  // Only include routes that aren't already discovered by getAllPages
+  const dynamicPages: PageInfo[] = dynamicRoutes
+    .filter(route => !existingRoutes.has(route))
+    .map(route => ({
+      route,
+      filePath: '' // Dynamic routes from CMS/database don't have file paths
+    }))
   
-  // Generate sitemap entries
-  const sitemapEntries: MetadataRoute.Sitemap = allRoutes.map((route) => {
-    const { priority, changeFrequency } = getRouteMetadata(route)
+  // Combine all routes (static pages first, then non-duplicate dynamic routes)
+  const allPages = [...staticPages, ...dynamicPages]
+  
+  // Generate sitemap entries with actual file modification dates
+  const sitemapEntries: MetadataRoute.Sitemap = allPages.map((pageInfo) => {
+    const { priority, changeFrequency } = getRouteMetadata(pageInfo.route)
+    
+    // Get last modified date from actual file if available
+    let lastModified: Date
+    if (pageInfo.filePath) {
+      try {
+        const stats = statSync(pageInfo.filePath)
+        lastModified = stats.mtime
+      } catch (error) {
+        // Fallback to utility function if file can't be read
+        lastModified = getLastModified(pageInfo.route)
+      }
+    } else {
+      // For dynamic routes, use utility function
+      lastModified = getLastModified(pageInfo.route)
+    }
     
     return {
-      url: `${baseUrl}${route}`,
-      lastModified: getLastModified(route),
+      url: `${baseUrl}${pageInfo.route}`,
+      lastModified,
       changeFrequency,
       priority,
     }
