@@ -1,8 +1,60 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const SEOContent = () => {
+  const faqItems = [
+    {
+      question: "How long does it take to see SEO results?",
+      answer: "SEO is a long-term strategy. You can expect to see initial improvements in 3-6 months, with significant results typically appearing in 6-12 months. The timeline depends on your current website state and competition level."
+    },
+    {
+      question: "What's the difference between on-page and off-page SEO?",
+      answer: "On-page SEO involves optimizing elements on your website (content, meta tags, structure), while off-page SEO focuses on external factors like backlinks, social signals, and online reputation."
+    },
+    {
+      question: "Do you guarantee first page rankings?",
+      answer: "While we can't guarantee specific rankings (Google's algorithm is constantly changing), we guarantee our best efforts using proven white-hat techniques. We focus on improving your overall search visibility and organic traffic."
+    },
+    {
+      question: "How do you choose keywords to target?",
+      answer: "We conduct comprehensive keyword research considering search volume, competition level, relevance to your business, and commercial intent. We focus on keywords that will drive qualified traffic and conversions."
+    },
+    {
+      question: "What's included in your SEO reporting?",
+      answer: "Our reports include keyword rankings, organic traffic growth, backlink acquisition, technical SEO improvements, and actionable recommendations. Reports are customized based on your package level."
+    },
+    {
+      question: "Do you work with businesses in all industries?",
+      answer: "Yes, we have experience working with businesses across various industries including healthcare, legal, e-commerce, professional services, and more. Each industry requires a tailored SEO approach."
+    },
+    {
+      question: "How much should I budget for SEO services?",
+      answer: "SEO budgets vary based on business size, competition, and goals. We recommend allocating 5-10% of your marketing budget to SEO. Our packages start at $999/month for local businesses."
+    },
+    {
+      question: "What's the difference between local and national SEO?",
+      answer: "Local SEO targets customers in your geographic area using location-based keywords and Google My Business optimization. National SEO targets broader audiences across the country or globally."
+    },
+    {
+      question: "Do you provide content creation services?",
+      answer: "Yes, we offer SEO-optimized content creation as part of our higher-tier packages. This includes blog posts, service pages, and other content designed to rank well and engage your audience."
+    },
+    {
+      question: "How do you measure SEO success?",
+      answer: "We track key metrics including organic traffic growth, keyword rankings, conversion rates, and ROI. Success is measured by improvements in these metrics over time."
+    },
+    {
+      question: "Can you help with technical SEO issues?",
+      answer: "Absolutely! We provide comprehensive technical SEO services including site speed optimization, mobile-friendliness, crawlability improvements, and fixing technical issues that impact rankings."
+    },
+    {
+      question: "What happens if I stop SEO services?",
+      answer: "SEO requires ongoing effort to maintain and improve rankings. If you stop SEO services, your rankings may decline over time as competitors continue optimizing and Google's algorithm evolves."
+    }
+  ];
   return (
     <div>
 
@@ -284,104 +336,7 @@ const SEOContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to see SEO results?
-                  </div>
-                  <div className="cs_faq_answer">
-                    SEO is a long-term strategy. You can expect to see initial improvements in 3-6 months, with significant results typically appearing in 6-12 months. The timeline depends on your current website state and competition level.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between on-page and off-page SEO?
-                  </div>
-                  <div className="cs_faq_answer">
-                    On-page SEO involves optimizing elements on your website (content, meta tags, structure), while off-page SEO focuses on external factors like backlinks, social signals, and online reputation.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you guarantee first page rankings?
-                  </div>
-                  <div className="cs_faq_answer">
-                    While we can&apos;t guarantee specific rankings (Google&apos;s algorithm is constantly changing), we guarantee our best efforts using proven white-hat techniques. We focus on improving your overall search visibility and organic traffic.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you choose keywords to target?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We conduct comprehensive keyword research considering search volume, competition level, relevance to your business, and commercial intent. We focus on keywords that will drive qualified traffic and conversions.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your SEO reporting?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our reports include keyword rankings, organic traffic growth, backlink acquisition, technical SEO improvements, and actionable recommendations. Reports are customized based on your package level.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you work with businesses in all industries?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we have experience working with businesses across various industries including healthcare, legal, e-commerce, professional services, and more. Each industry requires a tailored SEO approach.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much should I budget for SEO services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    SEO budgets vary based on business size, competition, and goals. We recommend allocating 5-10% of your marketing budget to SEO. Our packages start at $999/month for local businesses.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between local and national SEO?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Local SEO targets customers in your geographic area using location-based keywords and Google My Business optimization. National SEO targets broader audiences across the country or globally.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide content creation services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we offer SEO-optimized content creation as part of our higher-tier packages. This includes blog posts, service pages, and other content designed to rank well and engage your audience.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure SEO success?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including organic traffic growth, keyword rankings, conversion rates, and ROI. Success is measured by improvements in these metrics over time.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with technical SEO issues?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Absolutely! We provide comprehensive technical SEO services including site speed optimization, mobile-friendliness, crawlability improvements, and fixing technical issues that impact rankings.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What happens if I stop SEO services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    SEO requires ongoing effort to maintain and improve rankings. If you stop SEO services, your rankings may decline over time as competitors continue optimizing and Google&apos;s algorithm evolves.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>

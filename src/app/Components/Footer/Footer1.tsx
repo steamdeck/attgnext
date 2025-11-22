@@ -103,8 +103,8 @@ const Footer1 = () => {
             <div className="cs_footer_copyright">&copy; All Copyright 2025 by <a href="#" aria-label="Site link">AT Tech Global</a></div>
             <div>
               <ul className="cs_footer_menu cs_mp_0">
-                <li><a href="#" aria-label="Footer link">Terms & Conditions</a></li>
-                <li><a href="#" aria-label="Footer link">Privacy Policy</a></li>
+                <li><Link href="/terms-and-conditions" aria-label="Footer link">Terms & Conditions</Link></li>
+                <li><Link href="/privacy-policy" aria-label="Footer link">Privacy Policy</Link></li>
               </ul>
             </div>
           </div>

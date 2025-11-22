@@ -12,7 +12,7 @@ const About2 = () => {
               <div className="cs_about_thumbnail">
                  <Image 
                    src="https://uplynksolutions.com/wp-content/uploads/2023/05/It-soln2.jpeg" 
-                   alt="img" 
+                   alt="About Us - Digital Marketing Agency" 
                    width={564} 
                    height={524}
                    unoptimized={true}
@@ -22,26 +22,40 @@ const About2 = () => {
             <div className="col-lg-7">
               <div className="cs_about_content">
                 <div className="cs_section_heading cs_style_1 cs_mb_28">
-                  <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20 wow fadeInDown">What We Do<span className="cs_shape_right"></span>
+                  <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20 wow fadeInDown">
+                    About Our Company<span className="cs_shape_right"></span>
                   </p>
-                  <h2 className="cs_fs_48 cs_mb_21 wow fadeInUp">AT Tech Global problems and their best solutions</h2>
-                  <p className="cs_section_heading_text mb-0 wow fadeInUp" data-wow-delay="200ms">In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey.</p>
+                  <h2 className="cs_fs_48 cs_mb_21 wow fadeInUp">We're a Strategic Digital Marketing Agency Transforming Businesses</h2>
+                  <p className="cs_section_heading_text mb-4 wow fadeInUp" data-wow-delay="200ms">
+                    We are a forward-thinking digital marketing agency dedicated to helping businesses thrive in the digital landscape. With years of experience and a passion for innovation, we combine strategic thinking, creative excellence, and data-driven insights to deliver exceptional results for our clients.
+                  </p>
+                  <p className="cs_section_heading_text mb-4 wow fadeInUp" data-wow-delay="300ms">
+                    Our team of experts specializes in creating comprehensive digital marketing strategies that drive growth, increase brand visibility, and maximize return on investment. We work across the entire customer journey, from initial awareness to conversion and retention, ensuring every touchpoint is optimized for success.
+                  </p>
+                  <p className="cs_section_heading_text mb-0 wow fadeInUp" data-wow-delay="400ms">
+                    Whether you're an e-commerce brand looking to scale, a startup seeking market presence, or an established business aiming to expand your digital footprint, we have the expertise and tools to help you achieve your goals. Explore our <Link href="/service" className="cs_accent_color" style={{textDecoration: 'underline'}}>comprehensive services</Link> or view our <Link href="/project" className="cs_accent_color" style={{textDecoration: 'underline'}}>successful projects</Link> to see how we've helped businesses like yours succeed.
+                  </p>
                 </div>
-                <div className="cs_features_wrapper">
+                <div className="cs_features_wrapper cs_mb_30">
                   <div className="cs_feature_item">
                     <h3 className="cs_fs_24 cs_mb_4">Our Mission</h3>
-                    <p className="cs_fs_18 mb-0">Empowering brands through  and strategic vision</p>
+                    <p className="cs_fs_18 mb-0">To empower businesses of all sizes with cutting-edge digital marketing solutions that drive measurable growth, enhance brand visibility, and create lasting customer relationships. We believe in transparency, innovation, and delivering value that exceeds expectations.</p>
                   </div>
                   <div className="cs_feature_item">
                     <h3 className="cs_fs_24 cs_mb_4">Our Vision</h3>
-                    <p className="cs_fs_18 mb-0">Shaping the future of branding with creativity and strategy</p>
+                    <p className="cs_fs_18 mb-0">To be the leading digital marketing agency recognized for transforming businesses through strategic vision, creative excellence, and data-driven results. We envision a future where every business can leverage the power of digital marketing to achieve extraordinary success.</p>
+                  </div>
+                  <div className="cs_feature_item">
+                    <h3 className="cs_fs_24 cs_mb_4">Our Values</h3>
+                    <p className="cs_fs_18 mb-0">Integrity, innovation, and client success are at the core of everything we do. We foster a culture of continuous learning, collaboration, and excellence, ensuring we stay ahead of industry trends and deliver solutions that make a real difference.</p>
                   </div>
                 </div>
                 <div className="cs_about_btn_group">
-                  <Link href="/about" aria-label="About page visit button" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>About More</span></Link>
+                  <Link href="/service" aria-label="View our services" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>Our Services</span></Link>
+                  <Link href="/contact" aria-label="Contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Get In Touch</span></Link>
                   <div className="cs_client_info_wrapper wow fadeInRight">
                     <div className="cs_client_info_header cs_mb_1">
-                      <span className="cs_fs_20 cs_semibold">(6k) Highest rated</span>
+                      <span className="cs_fs_20 cs_semibold">(6k+) Highest rated</span>
                     </div>
                     <div className="cs_client_review_content">
                       <div className="cs_client_thumb">

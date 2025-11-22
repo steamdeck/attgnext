@@ -7,7 +7,7 @@ const Contact2 = () => {
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
           <div className="cs_contact_thumbnail_2 z-0">
-            <Image src="/assets/img/contact_img_2.jpg" alt="img" width={717} height={576}   />
+            <Image src="https://placeholders.io/600/400/contact-form?style=photographic&seed=42" alt="img" width={717} height={576} unoptimized={true} />
           </div>
           <div className="row cs_gap_y_30 position-relative z-1">
             <div className="col-lg-5">

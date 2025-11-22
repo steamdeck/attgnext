@@ -17,10 +17,10 @@ const Cta = () => {
           <div className="cs_project_content position-relative">
             <div className="cs_project_thumbnail_wrapper cs_center">
               <div className="cs_project_thumbnail cs_radius_20">
-                <Image src="/assets/img/project_1.jpg" alt="img" width={242} height={261}   />
+                <Image src="https://placeholders.io/600/400/website?style=photographic&seed=42" alt="img" width={242} height={261} unoptimized={true} />
               </div>
               <div className="cs_project_thumbnail cs_radius_20">
-                <Image src="/assets/img/project_2.jpg" alt="img" width={242} height={261}   />
+                <Image src="https://placeholders.io/600/400/mobile%20app?style=photographic&seed=41" alt="img" width={242} height={261} unoptimized={true} />
               </div>
             </div>
             <div className="cs_project_heading text-center">

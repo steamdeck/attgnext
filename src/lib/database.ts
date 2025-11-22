@@ -44,6 +44,21 @@ export interface ImageUsageRecord {
   created_at: string
 }
 
+export interface BlogRecord {
+  id: number
+  title: string
+  content: string
+  excerpt: string
+  image: string
+  slug: string
+  category: string
+  author: string
+  published_date: string
+  created_at: string
+  updated_at: string
+  status: string
+}
+
 // Initialize database
 export function initDatabase(): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -99,6 +114,24 @@ async function createTables(): Promise<void> {
       usage_context TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (image_id) REFERENCES images(id)
+    )
+  `)
+
+  // Blogs table
+  await run(`
+    CREATE TABLE IF NOT EXISTS blogs (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title VARCHAR(500) NOT NULL,
+      content TEXT,
+      excerpt TEXT,
+      image VARCHAR(500),
+      slug VARCHAR(500) UNIQUE NOT NULL,
+      category VARCHAR(255),
+      author VARCHAR(255) DEFAULT 'Admin',
+      published_date DATETIME,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      status VARCHAR(50) DEFAULT 'published'
     )
   `)
 

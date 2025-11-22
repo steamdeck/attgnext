@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const SMMContent = () => {
+  const faqItems = [
+    {
+      question: "Which social media platforms should my business be on?",
+      answer: "The best platforms depend on your target audience and business type. We help you identify where your customers are most active and create platform-specific strategies. Common choices include Facebook, Instagram, LinkedIn, Twitter/X, and TikTok."
+    },
+    {
+      question: "How often should I post on social media?",
+      answer: "Posting frequency varies by platform. Generally, we recommend 3-5 posts per week for Facebook, daily posts for Instagram, and 1-2 posts per day for Twitter/X. We create a content calendar tailored to your industry and audience."
+    },
+    {
+      question: "What's included in your social media management services?",
+      answer: "Our services include content creation, post scheduling, community management, engagement, social media advertising, analytics reporting, and strategy optimization. Specific services vary by package."
+    },
+    {
+      question: "How do you measure social media success?",
+      answer: "We track key metrics including engagement rate, follower growth, reach, impressions, clicks, conversions, and ROI. We provide monthly reports with detailed analytics and actionable insights."
+    },
+    {
+      question: "Do you create all the content, or do I need to provide it?",
+      answer: "We handle everything! Our team creates all content including copy, graphics, videos, and images. We work with your brand guidelines to ensure all content aligns with your brand voice and style."
+    },
+    {
+      question: "How long does it take to see results from social media marketing?",
+      answer: "While some results like increased engagement can be seen within 2-4 weeks, significant growth typically takes 3-6 months. We focus on building authentic engagement which leads to long-term sustainable growth."
+    },
+    {
+      question: "What's the difference between organic and paid social media?",
+      answer: "Organic social media involves free content and engagement, while paid social media uses advertising budgets to promote content. We recommend a combination of both for maximum reach and results."
+    },
+    {
+      question: "Can you help with social media advertising?",
+      answer: "Yes! We create and manage paid social media campaigns on Facebook, Instagram, LinkedIn, and Twitter/X. We optimize ad spend, target the right audiences, and track conversions to maximize ROI."
+    },
+    {
+      question: "How do you handle negative comments or reviews?",
+      answer: "We have a comprehensive community management strategy that includes monitoring, responding professionally, and addressing concerns promptly. We turn negative situations into opportunities to showcase excellent customer service."
+    },
+    {
+      question: "How do I get started with your social media marketing services?",
+      answer: "Contact us for a free consultation where we'll analyze your current social media presence, discuss your goals, and recommend the best strategy and package for your business."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -250,88 +294,7 @@ const SMMContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Which social media platforms should my business be on?
-                  </div>
-                  <div className="cs_faq_answer">
-                    The best platforms depend on your target audience and business type. We help you identify where your customers are most active and create platform-specific strategies. Common choices include Facebook, Instagram, LinkedIn, Twitter/X, and TikTok.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How often should I post on social media?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Posting frequency varies by platform. Generally, we recommend 3-5 posts per week for Facebook, daily posts for Instagram, and 1-2 posts per day for Twitter/X. We create a content calendar tailored to your industry and audience.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your social media management services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our services include content creation, post scheduling, community management, engagement, social media advertising, analytics reporting, and strategy optimization. Specific services vary by package.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure social media success?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including engagement rate, follower growth, reach, impressions, clicks, conversions, and ROI. We provide monthly reports with detailed analytics and actionable insights.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you create all the content, or do I need to provide it?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We handle everything! Our team creates all content including copy, graphics, videos, and images. We work with your brand guidelines to ensure all content aligns with your brand voice and style.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to see results from social media marketing?
-                  </div>
-                  <div className="cs_faq_answer">
-                    While some results like increased engagement can be seen within 2-4 weeks, significant growth typically takes 3-6 months. We focus on building authentic engagement which leads to long-term sustainable growth.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between organic and paid social media?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Organic social media involves free content and engagement, while paid social media uses advertising budgets to promote content. We recommend a combination of both for maximum reach and results.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with social media advertising?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We create and manage paid social media campaigns on Facebook, Instagram, LinkedIn, and Twitter/X. We optimize ad spend, target the right audiences, and track conversions to maximize ROI.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you handle negative comments or reviews?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We have a comprehensive community management strategy that includes monitoring, responding professionally, and addressing concerns promptly. We turn negative situations into opportunities to showcase excellent customer service.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your social media marketing services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free consultation where we&apos;ll analyze your current social media presence, discuss your goals, and recommend the best strategy and package for your business.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>

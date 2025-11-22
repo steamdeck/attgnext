@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const PPCContent = () => {
+  const faqItems = [
+    {
+      question: "How quickly can I see results from PPC advertising?",
+      answer: "PPC campaigns can start driving traffic and leads within 24-48 hours of launch. Unlike SEO which takes months, PPC delivers immediate visibility and results. You can see clicks and conversions from day one."
+    },
+    {
+      question: "What's the difference between Google Ads and Facebook Ads?",
+      answer: "Google Ads targets people actively searching for your products on Google, while Facebook Ads targets people based on their interests and demographics. Both have their place - Google Ads is great for search intent, while Facebook Ads is excellent for brand awareness and retargeting."
+    },
+    {
+      question: "How much should I budget for PPC advertising?",
+      answer: "Budget depends on your industry, competition, and goals. We recommend starting with a minimum of $500-1000/month for Google Ads to see meaningful results. Most businesses see the best ROI with budgets between $2000-5000/month."
+    },
+    {
+      question: "How do you measure PPC campaign success?",
+      answer: "We track key metrics including click-through rate (CTR), cost per click (CPC), conversion rate, cost per conversion, return on ad spend (ROAS), and overall ROI. We provide detailed monthly reports with actionable insights."
+    },
+    {
+      question: "Can PPC work for local businesses?",
+      answer: "Absolutely! Local PPC is highly effective for businesses targeting customers in specific geographic areas. We use location targeting, local keywords, and Google Local Services Ads to drive foot traffic and local leads."
+    },
+    {
+      question: "What happens if I stop running PPC campaigns?",
+      answer: "When you pause or stop PPC campaigns, your traffic and leads from paid advertising will stop immediately. However, the traffic you've driven may convert later, and you can always restart campaigns when ready."
+    },
+    {
+      question: "Do you manage landing pages for PPC campaigns?",
+      answer: "Yes! We create and optimize landing pages specifically designed for PPC campaigns. A well-designed landing page can significantly improve conversion rates and reduce cost per acquisition."
+    },
+    {
+      question: "How do you optimize PPC campaigns for better results?",
+      answer: "We continuously optimize campaigns by refining keywords, improving ad copy, adjusting bids, testing new ad variations, optimizing landing pages, and refining targeting. We use A/B testing and data analysis to improve performance over time."
+    },
+    {
+      question: "Can you help with remarketing campaigns?",
+      answer: "Yes! Remarketing is one of the most effective PPC strategies. We create remarketing campaigns that target people who have visited your website but didn't convert, helping you bring them back and complete their purchase."
+    },
+    {
+      question: "How do I get started with your PPC services?",
+      answer: "Contact us for a free PPC audit and consultation. We'll analyze your current campaigns, discuss your goals, and recommend the best strategy and budget for your business. We can have your first campaign running within 48 hours."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -256,99 +300,7 @@ const PPCContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How quickly can I see results from PPC advertising?
-                  </div>
-                  <div className="cs_faq_answer">
-                    PPC campaigns can start driving traffic and leads within 24-48 hours of launch. Unlike SEO which takes months, 
-                    PPC delivers immediate visibility and results. You can see clicks and conversions from day one.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between Google Ads and Facebook Ads?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Google Ads targets people actively searching for your products on Google, while Facebook Ads targets people 
-                    based on their interests and demographics. Both have their place - Google Ads is great for search intent, 
-                    while Facebook Ads is excellent for brand awareness and retargeting.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much should I budget for PPC advertising?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Budget depends on your industry, competition, and goals. We recommend starting with a minimum of $500-1000/month 
-                    for Google Ads to see meaningful results. Most businesses see the best ROI with budgets between $2000-5000/month.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure PPC campaign success?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including click-through rate (CTR), cost per click (CPC), conversion rate, cost per conversion, 
-                    return on ad spend (ROAS), and overall ROI. We provide detailed monthly reports with actionable insights.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can PPC work for local businesses?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Absolutely! Local PPC is highly effective for businesses targeting customers in specific geographic areas. 
-                    We use location targeting, local keywords, and Google Local Services Ads to drive foot traffic and local leads.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What happens if I stop running PPC campaigns?
-                  </div>
-                  <div className="cs_faq_answer">
-                    When you pause or stop PPC campaigns, your traffic and leads from paid advertising will stop immediately. 
-                    However, the traffic you&apos;ve driven may convert later, and you can always restart campaigns when ready.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you manage landing pages for PPC campaigns?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We create and optimize landing pages specifically designed for PPC campaigns. A well-designed landing page 
-                    can significantly improve conversion rates and reduce cost per acquisition.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you optimize PPC campaigns for better results?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We continuously optimize campaigns by refining keywords, improving ad copy, adjusting bids, testing new ad variations, 
-                    optimizing landing pages, and refining targeting. We use A/B testing and data analysis to improve performance over time.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with remarketing campaigns?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! Remarketing is one of the most effective PPC strategies. We create remarketing campaigns that target people 
-                    who have visited your website but didn&apos;t convert, helping you bring them back and complete their purchase.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your PPC services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free PPC audit and consultation. We&apos;ll analyze your current campaigns, discuss your goals, 
-                    and recommend the best strategy and budget for your business. We can have your first campaign running within 48 hours.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
