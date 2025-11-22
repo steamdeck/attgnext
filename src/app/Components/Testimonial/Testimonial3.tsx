@@ -52,8 +52,11 @@ const Testimonial3 = () => {
         sliderRef.current.slickPrev();
       };         
         const testimonialContent = [
-            {content:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock and its stubalist charity lorem ipsum !'},
-            {content:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock and its stubalist charity lorem ipsum !'},
+            {content:'Working with this team has been a game-changer for our business. Their strategic approach to digital marketing helped us increase our online sales by 150% in just six months. The team is professional, responsive, and truly understands how to drive results. Highly recommended!'},
+            {content:'Outstanding service from start to finish! They transformed our online presence completely. Our website traffic tripled, and we\'re seeing consistent growth in leads and conversions. The team\'s expertise in SEO and social media marketing is exceptional. We couldn\'t be happier with the results.'},
+            {content:'As a startup, we needed a digital marketing partner who could help us establish a strong online presence quickly. This agency delivered beyond our expectations. Their creative campaigns and data-driven strategies helped us reach our target audience effectively. The ROI has been incredible!'},
+            {content:'Professional, innovative, and results-driven. This team took our e-commerce business to the next level. Their comprehensive approach to digital marketing, from SEO to paid advertising, has significantly increased our brand visibility and revenue. The best investment we\'ve made for our business growth.'},
+            {content:'The level of dedication and expertise this team brings is unmatched. They don\'t just execute campaigns; they truly understand our business goals and create strategies that align perfectly. Our customer engagement has improved dramatically, and we\'ve seen a substantial increase in brand awareness. Exceptional work!'},
           ]; 
 
     return (
@@ -74,8 +77,8 @@ const Testimonial3 = () => {
             </div>
             <div className="col-lg-8 order-lg-1">
               <div className="cs_section_heading cs_style_1">
-                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20 wow fadeInDown">Our Testimonial<span className="cs_shape_right"></span></p>
-                <h2 className="cs_fs_48 cs_white_color cs_mb_46 wow fadeInUp">What They Are Talking <br/> About Transid</h2>
+                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20 wow fadeInDown">Our Testimonials<span className="cs_shape_right"></span></p>
+                <h2 className="cs_fs_48 cs_white_color cs_mb_46 wow fadeInUp">What Our Clients Say <br/> About Us</h2>
                 <hr/>
               </div>
               <div className="testimonial_slider_content cs_slider">

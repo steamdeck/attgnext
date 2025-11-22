@@ -62,7 +62,7 @@ const Faq1 = () => {
                   <h2 className="cs_fs_48 mb-0 wow fadeInUp">Frequently Asked Questions</h2>
                 </div>
                 <div className="cs_height_51 cs_height_lg_50"></div>
-                <div className="cs_video_block cs_style_2 cs_center cs_bg_filed cs_radius_20 position-relative wow fadeInDown" data-background="/assets/img/video_bg_3.jpg">
+                <div className="cs_video_block cs_style_2 cs_center cs_bg_filed cs_radius_20 position-relative wow fadeInDown" data-background="https://placeholders.io/600/400/Frequently%20Asked%20Questions?style=photographic&seed=100">
                   <a onClick={handelClick} aria-label="Play video button" className="cs_player_btn cs_video_open cs_center cs_radius_50">
                   <span className="cs_player_btn_icon cs_center cs_blue_color"><span></span></span>
                   </a>

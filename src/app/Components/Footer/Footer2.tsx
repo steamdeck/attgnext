@@ -137,8 +137,18 @@ const Footer2 = () => {
             </div>
           </div>
           <div className="cs_footer_bottom cs_white_color_2">
-            <div className="cs_footer_copyright cs_center">&copy; All Copyright 2025 by
-              <a href="#" aria-label="Site link"> AT Tech Global</a>
+            <div className="container-fluid">
+              <div className="cs_footer_bottom_in cs_footer_content">
+                <div className="cs_footer_copyright">&copy; All Copyright 2025 by
+                  <a href="#" aria-label="Site link"> AT Tech Global</a>
+                </div>
+                <div>
+                  <ul className="cs_footer_menu cs_mp_0">
+                    <li><Link href="/terms-and-conditions" aria-label="Footer link">Terms & Conditions</Link></li>
+                    <li><Link href="/privacy-policy" aria-label="Footer link">Privacy Policy</Link></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

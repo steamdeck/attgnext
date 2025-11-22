@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const WhatsAppMarketingContent = () => {
+  const faqItems = [
+    {
+      question: "What is WhatsApp Business and how is it different from regular WhatsApp?",
+      answer: "WhatsApp Business is a free app designed specifically for businesses. It includes features like business profile, catalog, quick replies, automated messages, labels, and business statistics. Unlike personal WhatsApp, it allows businesses to showcase products, automate responses, and manage customer communications professionally."
+    },
+    {
+      question: "Can I send marketing messages to customers who haven't contacted me first?",
+      answer: "Yes, but only to customers who have opted in to receive messages from you. WhatsApp has strict policies about unsolicited messages. We help you set up proper opt-in mechanisms and ensure compliance with WhatsApp's terms of service to avoid account restrictions."
+    },
+    {
+      question: "What's the difference between WhatsApp Business API and WhatsApp Business App?",
+      answer: "WhatsApp Business App is free and suitable for small businesses with basic needs. WhatsApp Business API is for larger businesses requiring advanced features like automation, multiple agents, integration with CRM systems, and higher message volumes. We help you choose the right solution based on your needs."
+    },
+    {
+      question: "How can WhatsApp marketing help my local business?",
+      answer: "WhatsApp is perfect for local businesses! You can send location-based offers, share store updates, provide instant customer support, send order confirmations, and build personal relationships with local customers. It's especially effective for restaurants, retail stores, service providers, and e-commerce businesses."
+    },
+    {
+      question: "Can you automate WhatsApp messages?",
+      answer: "Yes! We set up automated welcome messages, order confirmations, shipping updates, abandoned cart reminders, birthday greetings, and FAQ responses. Automation helps you provide instant responses 24/7 and improves customer experience while saving time."
+    },
+    {
+      question: "How do I build a WhatsApp contact list?",
+      answer: "We help you build your contact list through website opt-in forms, QR codes, social media campaigns, in-store sign-ups, and by collecting numbers during purchases. We ensure all contacts have opted in to comply with WhatsApp policies and regulations."
+    },
+    {
+      question: "Can I integrate WhatsApp with my existing CRM or e-commerce platform?",
+      answer: "Yes! We can integrate WhatsApp Business API with popular platforms like Shopify, WooCommerce, Magento, Salesforce, HubSpot, and custom CRM systems. This allows automatic order updates, customer data sync, and streamlined customer communication."
+    },
+    {
+      question: "How do you measure WhatsApp marketing success?",
+      answer: "We track key metrics including message delivery rate, read receipts, response time, click-through rates, conversion rates, customer satisfaction, and revenue generated from WhatsApp campaigns. We provide detailed monthly reports with insights and recommendations."
+    },
+    {
+      question: "What happens if I send too many messages?",
+      answer: "WhatsApp monitors message quality and spam reports. Sending too many unsolicited messages or having high spam rates can result in account restrictions or bans. We help you maintain healthy messaging practices, proper opt-ins, and quality content to avoid issues."
+    },
+    {
+      question: "How do I get started with your WhatsApp marketing services?",
+      answer: "Contact us for a free WhatsApp marketing consultation. We'll assess your needs, recommend the right WhatsApp Business solution (App or API), and help you set up your account. We can have your WhatsApp marketing campaign running within a week."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -257,109 +301,7 @@ const WhatsAppMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What is WhatsApp Business and how is it different from regular WhatsApp?
-                  </div>
-                  <div className="cs_faq_answer">
-                    WhatsApp Business is a free app designed specifically for businesses. It includes features like business 
-                    profile, catalog, quick replies, automated messages, labels, and business statistics. Unlike personal 
-                    WhatsApp, it allows businesses to showcase products, automate responses, and manage customer communications professionally.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can I send marketing messages to customers who haven&apos;t contacted me first?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, but only to customers who have opted in to receive messages from you. WhatsApp has strict policies 
-                    about unsolicited messages. We help you set up proper opt-in mechanisms and ensure compliance with 
-                    WhatsApp&apos;s terms of service to avoid account restrictions.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between WhatsApp Business API and WhatsApp Business App?
-                  </div>
-                  <div className="cs_faq_answer">
-                    WhatsApp Business App is free and suitable for small businesses with basic needs. WhatsApp Business API 
-                    is for larger businesses requiring advanced features like automation, multiple agents, integration with CRM 
-                    systems, and higher message volumes. We help you choose the right solution based on your needs.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How can WhatsApp marketing help my local business?
-                  </div>
-                  <div className="cs_faq_answer">
-                    WhatsApp is perfect for local businesses! You can send location-based offers, share store updates, 
-                    provide instant customer support, send order confirmations, and build personal relationships with 
-                    local customers. It&apos;s especially effective for restaurants, retail stores, service providers, 
-                    and e-commerce businesses.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you automate WhatsApp messages?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We set up automated welcome messages, order confirmations, shipping updates, abandoned cart reminders, 
-                    birthday greetings, and FAQ responses. Automation helps you provide instant responses 24/7 and improves 
-                    customer experience while saving time.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I build a WhatsApp contact list?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We help you build your contact list through website opt-in forms, QR codes, social media campaigns, 
-                    in-store sign-ups, and by collecting numbers during purchases. We ensure all contacts have opted in 
-                    to comply with WhatsApp policies and regulations.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can I integrate WhatsApp with my existing CRM or e-commerce platform?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can integrate WhatsApp Business API with popular platforms like Shopify, WooCommerce, Magento, 
-                    Salesforce, HubSpot, and custom CRM systems. This allows automatic order updates, customer data sync, 
-                    and streamlined customer communication.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure WhatsApp marketing success?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including message delivery rate, read receipts, response time, click-through rates, 
-                    conversion rates, customer satisfaction, and revenue generated from WhatsApp campaigns. We provide 
-                    detailed monthly reports with insights and recommendations.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What happens if I send too many messages?
-                  </div>
-                  <div className="cs_faq_answer">
-                    WhatsApp monitors message quality and spam reports. Sending too many unsolicited messages or having 
-                    high spam rates can result in account restrictions or bans. We help you maintain healthy messaging 
-                    practices, proper opt-ins, and quality content to avoid issues.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your WhatsApp marketing services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free WhatsApp marketing consultation. We&apos;ll assess your needs, recommend the right 
-                    WhatsApp Business solution (App or API), and help you set up your account. We can have your WhatsApp 
-                    marketing campaign running within a week.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -379,48 +321,60 @@ const WhatsAppMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An online fashion retailer needed to reduce cart abandonment and improve customer engagement through direct communication.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(102, 126, 234, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>E-commerce Store Growth</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> An online fashion retailer needed to reduce cart abandonment and improve customer engagement through direct communication.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented WhatsApp Business API with automated order confirmations, shipping updates, abandoned cart reminders, and customer support chatbot.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We implemented WhatsApp Business API with automated order confirmations, shipping updates, abandoned cart reminders, and customer support chatbot.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>40% reduction in cart abandonment rate</li>
                     <li>65% increase in repeat customer purchases</li>
                     <li>98% message open rate</li>
                     <li>50% improvement in customer satisfaction scores</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 3 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 3 months
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Local Restaurant Chain</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A restaurant chain wanted to improve order management, provide instant customer support, and send promotional offers to local customers.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(245, 87, 108, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Local Restaurant Chain</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A restaurant chain wanted to improve order management, provide instant customer support, and send promotional offers to local customers.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We set up WhatsApp Business with automated order confirmations, menu sharing, table booking system, and promotional broadcast campaigns.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We set up WhatsApp Business with automated order confirmations, menu sharing, table booking system, and promotional broadcast campaigns.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>35% increase in online orders through WhatsApp</li>
                     <li>60% reduction in customer support response time</li>
                     <li>45% increase in repeat customers</li>
                     <li>80% customer satisfaction with WhatsApp ordering</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 2 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 2 months
                 </div>
               </div>
             </div>

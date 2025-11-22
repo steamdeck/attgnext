@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const DigitalMarketingContent = () => {
+  const faqItems = [
+    {
+      question: "How long does it take to see results from digital marketing?",
+      answer: "Results vary by channel and strategy. PPC campaigns can show immediate results, while SEO typically takes 3-6 months to show significant improvements. We provide detailed timelines during strategy development."
+    },
+    {
+      question: "What's included in your digital marketing services?",
+      answer: "Our services include SEO, PPC advertising, social media marketing, email marketing, content creation, analytics tracking, and monthly reporting. Specific services vary by package."
+    },
+    {
+      question: "How do you measure the success of digital marketing campaigns?",
+      answer: "We track key metrics including website traffic, lead generation, conversion rates, ROI, and engagement rates. We provide detailed monthly reports with actionable insights."
+    },
+    {
+      question: "Do you work with businesses in all industries?",
+      answer: "Yes, we have experience working with businesses across various industries including healthcare, e-commerce, professional services, technology, and more."
+    },
+    {
+      question: "What's the difference between SEO and PPC?",
+      answer: <><Link href="/service/seo">SEO</Link> focuses on improving organic search rankings over time, while <Link href="/service/ppc">PPC</Link> provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.</>
+    },
+    {
+      question: "How much should I budget for digital marketing?",
+      answer: <>{`Budget depends on your business size, goals, and competition. We recommend allocating 7-10% of your revenue to digital marketing for optimal results. Check our `}<Link href="/pricing">pricing page</Link>{` for package details.`}</>
+    },
+    {
+      question: "Do you provide social media content creation?",
+      answer: <>{`Yes, we create engaging social media content including posts, graphics, videos, and stories tailored to your brand and audience across all platforms. Learn more about our `}<Link href="/service/smm">social media marketing services</Link>.</>
+    },
+    {
+      question: "Can you help with local SEO for my business?",
+      answer: <>{`Absolutely! We specialize in local SEO strategies including Google My Business optimization, local citations, and location-based content to help you rank in local searches. Our `}<Link href="/service/seo">SEO services</Link>{` include comprehensive local SEO strategies.`}</>
+    },
+    {
+      question: "What reporting do you provide?",
+      answer: "We provide detailed monthly reports including performance metrics, campaign results, recommendations, and insights. Reports are customized based on your package and goals."
+    },
+    {
+      question: "How do I get started with your digital marketing services?",
+      answer: "Contact us for a free consultation where we'll analyze your current digital presence, discuss your goals, and recommend the best strategy and package for your business."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -263,88 +307,7 @@ const DigitalMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to see results from digital marketing?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Results vary by channel and strategy. PPC campaigns can show immediate results, while SEO typically takes 3-6 months to show significant improvements. We provide detailed timelines during strategy development.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your digital marketing services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our services include SEO, PPC advertising, social media marketing, email marketing, content creation, analytics tracking, and monthly reporting. Specific services vary by package.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure the success of digital marketing campaigns?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including website traffic, lead generation, conversion rates, ROI, and engagement rates. We provide detailed monthly reports with actionable insights.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you work with businesses in all industries?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we have experience working with businesses across various industries including healthcare, e-commerce, professional services, technology, and more.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between SEO and PPC?
-                  </div>
-                  <div className="cs_faq_answer">
-                    <Link href="/service/seo">SEO</Link> focuses on improving organic search rankings over time, while <Link href="/service/ppc">PPC</Link> provides immediate visibility through paid advertisements. Both strategies work together for comprehensive digital marketing.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much should I budget for digital marketing?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Budget depends on your business size, goals, and competition. We recommend allocating 7-10% of your revenue to digital marketing for optimal results. Check our <Link href="/pricing">pricing page</Link> for package details.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide social media content creation?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we create engaging social media content including posts, graphics, videos, and stories tailored to your brand and audience across all platforms. Learn more about our <Link href="/service/smm">social media marketing services</Link>.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with local SEO for my business?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Absolutely! We specialize in local SEO strategies including Google My Business optimization, local citations, and location-based content to help you rank in local searches. Our <Link href="/service/seo">SEO services</Link> include comprehensive local SEO strategies.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What reporting do you provide?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We provide detailed monthly reports including performance metrics, campaign results, recommendations, and insights. Reports are customized based on your package and goals.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your digital marketing services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free consultation where we&apos;ll analyze your current digital presence, discuss your goals, and recommend the best strategy and package for your business.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
