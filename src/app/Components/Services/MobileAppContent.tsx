@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const MobileAppContent = () => {
+  const faqItems = [
+    {
+      question: "How long does it take to develop a mobile app?",
+      answer: "App development timeline depends on complexity and features. Simple apps take 2-3 months, while complex apps can take 6-12 months. We provide detailed timelines during the planning phase."
+    },
+    {
+      question: "Should I choose native or cross-platform development?",
+      answer: "Native apps offer better performance and platform-specific features, while cross-platform apps are cost-effective and faster to develop. We recommend the best approach based on your requirements."
+    },
+    {
+      question: "Do you provide app store submission services?",
+      answer: "Yes, we handle the complete app store submission process including app store optimization, metadata creation, and compliance with store guidelines for both iOS and Android."
+    },
+    {
+      question: "What technologies do you use for mobile app development?",
+      answer: "We use native technologies (Swift, Kotlin) for iOS and Android, and cross-platform frameworks like React Native and Flutter. The choice depends on your specific requirements and budget."
+    },
+    {
+      question: "Do you provide app maintenance and updates?",
+      answer: "Yes, we offer comprehensive maintenance packages including bug fixes, feature updates, security patches, and performance optimizations to keep your app running smoothly."
+    },
+    {
+      question: "Can you integrate third-party services and APIs?",
+      answer: "Absolutely! We integrate various third-party services including payment gateways, social media APIs, analytics tools, and cloud services to enhance your app's functionality."
+    },
+    {
+      question: "How do you ensure app security?",
+      answer: "We implement multiple security measures including data encryption, secure authentication, API security, and regular security audits to protect your app and user data."
+    },
+    {
+      question: "What's included in your app development packages?",
+      answer: "Our packages include UI/UX design, development, testing, app store submission, and ongoing support. Specific features and timeline vary by package level."
+    },
+    {
+      question: "Do you provide app analytics and user tracking?",
+      answer: "Yes, we integrate comprehensive analytics solutions to track user behavior, app performance, and key metrics to help you make data-driven decisions."
+    },
+    {
+      question: "Can you help with app marketing and user acquisition?",
+      answer: "We provide app store optimization (ASO) services and can recommend marketing strategies. For comprehensive marketing, we work with our digital marketing team."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -346,88 +390,7 @@ const MobileAppContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to develop a mobile app?
-                  </div>
-                  <div className="cs_faq_answer">
-                    App development timeline depends on complexity and features. Simple apps take 2-3 months, while complex apps can take 6-12 months. We provide detailed timelines during the planning phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Should I choose native or cross-platform development?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Native apps offer better performance and platform-specific features, while cross-platform apps are cost-effective and faster to develop. We recommend the best approach based on your requirements.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide app store submission services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we handle the complete app store submission process including app store optimization, metadata creation, and compliance with store guidelines for both iOS and Android.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What technologies do you use for mobile app development?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We use native technologies (Swift, Kotlin) for iOS and Android, and cross-platform frameworks like React Native and Flutter. The choice depends on your specific requirements and budget.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide app maintenance and updates?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we offer comprehensive maintenance packages including bug fixes, feature updates, security patches, and performance optimizations to keep your app running smoothly.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you integrate third-party services and APIs?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Absolutely! We integrate various third-party services including payment gateways, social media APIs, analytics tools, and cloud services to enhance your app&apos;s functionality.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you ensure app security?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We implement multiple security measures including data encryption, secure authentication, API security, and regular security audits to protect your app and user data.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your app development packages?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our packages include UI/UX design, development, testing, app store submission, and ongoing support. Specific features and timeline vary by package level.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide app analytics and user tracking?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we integrate comprehensive analytics solutions to track user behavior, app performance, and key metrics to help you make data-driven decisions.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with app marketing and user acquisition?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We provide app store optimization (ASO) services and can recommend marketing strategies. For comprehensive marketing, we work with our digital marketing team.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -447,46 +410,58 @@ const MobileAppContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Mobile App</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A retail business needed a mobile app to compete with online giants and increase customer engagement.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(255, 107, 107, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>E-commerce Mobile App</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A retail business needed a mobile app to compete with online giants and increase customer engagement.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a cross-platform e-commerce app with advanced features including AR try-on, push notifications, and seamless checkout.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We developed a cross-platform e-commerce app with advanced features including AR try-on, push notifications, and seamless checkout.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>500% increase in mobile sales</li>
                     <li>4.8-star app store rating</li>
                     <li>200% improvement in user engagement</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 4 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 4 months
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Healthcare Management App</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A healthcare provider needed a patient management app to streamline appointments and improve patient experience.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(78, 205, 196, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Healthcare Management App</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A healthcare provider needed a patient management app to streamline appointments and improve patient experience.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We created a HIPAA-compliant app with appointment booking, telemedicine features, and secure patient data management.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We created a HIPAA-compliant app with appointment booking, telemedicine features, and secure patient data management.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>60% reduction in no-show appointments</li>
                     <li>300% increase in patient satisfaction</li>
                     <li>40% improvement in operational efficiency</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 6 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 6 months
                 </div>
               </div>
             </div>

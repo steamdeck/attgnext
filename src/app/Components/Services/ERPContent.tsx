@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const ERPContent = () => {
+  const faqItems = [
+    {
+      question: "What is ERP and why does my business need it?",
+      answer: "ERP (Enterprise Resource Planning) is software that integrates all your business processes including finance, inventory, HR, manufacturing, and sales into a single system. If you're using multiple disconnected systems, struggling with data accuracy, or spending too much time on manual processes, an ERP system can help you streamline operations, reduce costs, and improve efficiency."
+    },
+    {
+      question: "What's the difference between custom ERP and off-the-shelf ERP software?",
+      answer: "Off-the-shelf ERP software offers standard modules but may not fit your specific business processes. Custom ERP is built specifically for your business, tailored to your workflows, and can be integrated with your existing systems. Custom ERP offers more flexibility, better fit, and can be more cost-effective for businesses with unique requirements."
+    },
+    {
+      question: "How long does it take to implement an ERP system?",
+      answer: "Implementation time depends on the complexity of your business and number of modules required. A basic ERP with 3-4 modules can be implemented in 8-12 weeks, while a more complex system with multiple modules and integrations may take 16-24 weeks. We provide a detailed timeline during the business analysis phase."
+    },
+    {
+      question: "Can you integrate ERP with our existing business systems?",
+      answer: "Yes! We can integrate your ERP with accounting software, e-commerce platforms, CRM systems, payment gateways, shipping systems, and other business applications. Integration ensures seamless data flow and eliminates duplicate data entry across systems."
+    },
+    {
+      question: "What ERP modules do you typically include?",
+      answer: "Common modules include Financial Management, Inventory Management, Human Resources, Manufacturing, Sales & Distribution, Purchase Management, and Reporting & Analytics. We customize modules based on your business needs and can add industry-specific modules as required."
+    },
+    {
+      question: "What data security measures do you implement?",
+      answer: "We implement industry-standard security measures including data encryption, secure authentication, role-based access control, regular backups, and compliance with data protection regulations. Your business data is protected with the highest security standards and regular security audits."
+    },
+    {
+      question: "Will you train our employees on how to use the ERP?",
+      answer: "Yes! We provide comprehensive training for your employees including user manuals, video tutorials, and hands-on training sessions for each module. We also provide ongoing support to help your team get the most out of your ERP system."
+    },
+    {
+      question: "Can the ERP be accessed on mobile devices?",
+      answer: "Yes! Our ERP solutions are responsive and work on all devices including smartphones and tablets. Your team can access business data, approve workflows, and manage operations from anywhere, anytime, with mobile-optimized interfaces."
+    },
+    {
+      question: "How much does a custom ERP system cost?",
+      answer: "ERP costs vary based on modules, complexity, integrations, and number of users. We provide detailed quotes after understanding your requirements. Custom ERP can be more cost-effective than paying monthly fees for off-the-shelf software, especially for larger businesses with specific needs."
+    },
+    {
+      question: "How do I get started with your ERP development services?",
+      answer: "Contact us for a free ERP consultation. We'll analyze your business processes, discuss your requirements, and recommend the best ERP solution for your business. We can start development within 2-3 weeks of project approval."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -258,111 +302,7 @@ const ERPContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What is ERP and why does my business need it?
-                  </div>
-                  <div className="cs_faq_answer">
-                    ERP (Enterprise Resource Planning) is software that integrates all your business processes including 
-                    finance, inventory, HR, manufacturing, and sales into a single system. If you&apos;re using multiple 
-                    disconnected systems, struggling with data accuracy, or spending too much time on manual processes, 
-                    an ERP system can help you streamline operations, reduce costs, and improve efficiency.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between custom ERP and off-the-shelf ERP software?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Off-the-shelf ERP software offers standard modules but may not fit your specific business processes. 
-                    Custom ERP is built specifically for your business, tailored to your workflows, and can be integrated 
-                    with your existing systems. Custom ERP offers more flexibility, better fit, and can be more cost-effective 
-                    for businesses with unique requirements.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to implement an ERP system?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Implementation time depends on the complexity of your business and number of modules required. 
-                    A basic ERP with 3-4 modules can be implemented in 8-12 weeks, while a more complex system with 
-                    multiple modules and integrations may take 16-24 weeks. We provide a detailed timeline during 
-                    the business analysis phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you integrate ERP with our existing business systems?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can integrate your ERP with accounting software, e-commerce platforms, CRM systems, 
-                    payment gateways, shipping systems, and other business applications. Integration ensures 
-                    seamless data flow and eliminates duplicate data entry across systems.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What ERP modules do you typically include?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Common modules include Financial Management, Inventory Management, Human Resources, Manufacturing, 
-                    Sales & Distribution, Purchase Management, and Reporting & Analytics. We customize modules based 
-                    on your business needs and can add industry-specific modules as required.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What data security measures do you implement?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We implement industry-standard security measures including data encryption, secure authentication, 
-                    role-based access control, regular backups, and compliance with data protection regulations. Your 
-                    business data is protected with the highest security standards and regular security audits.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Will you train our employees on how to use the ERP?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We provide comprehensive training for your employees including user manuals, video tutorials, 
-                    and hands-on training sessions for each module. We also provide ongoing support to help your team 
-                    get the most out of your ERP system.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can the ERP be accessed on mobile devices?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! Our ERP solutions are responsive and work on all devices including smartphones and tablets. 
-                    Your team can access business data, approve workflows, and manage operations from anywhere, anytime, 
-                    with mobile-optimized interfaces.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much does a custom ERP system cost?
-                  </div>
-                  <div className="cs_faq_answer">
-                    ERP costs vary based on modules, complexity, integrations, and number of users. We provide detailed 
-                    quotes after understanding your requirements. Custom ERP can be more cost-effective than paying 
-                    monthly fees for off-the-shelf software, especially for larger businesses with specific needs.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your ERP development services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free ERP consultation. We&apos;ll analyze your business processes, discuss your 
-                    requirements, and recommend the best ERP solution for your business. We can start development 
-                    within 2-3 weeks of project approval.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -382,48 +322,60 @@ const ERPContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Manufacturing Company</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A manufacturing company was using multiple disconnected systems for inventory, production, and finance, leading to data inconsistencies and operational inefficiencies.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(102, 126, 234, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Manufacturing Company</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A manufacturing company was using multiple disconnected systems for inventory, production, and finance, leading to data inconsistencies and operational inefficiencies.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a custom ERP with integrated modules for inventory management, production planning, quality control, financial management, and reporting.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We developed a custom ERP with integrated modules for inventory management, production planning, quality control, financial management, and reporting.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>30% reduction in operational costs within 12 months</li>
                     <li>45% improvement in inventory accuracy</li>
                     <li>35% reduction in production lead time</li>
                     <li>50% reduction in manual data entry time</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 16 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 16 weeks
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Distribution Business</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A distribution business needed to manage inventory across multiple warehouses, streamline order processing, and improve financial reporting.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(245, 87, 108, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Distribution Business</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A distribution business needed to manage inventory across multiple warehouses, streamline order processing, and improve financial reporting.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We built an ERP system with multi-warehouse inventory management, sales order processing, purchase management, financial accounting, and integrated reporting.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We built an ERP system with multi-warehouse inventory management, sales order processing, purchase management, financial accounting, and integrated reporting.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>40% improvement in order processing efficiency</li>
                     <li>25% reduction in inventory carrying costs</li>
                     <li>60% reduction in financial reporting time</li>
                     <li>35% improvement in customer satisfaction</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 12 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 12 weeks
                 </div>
               </div>
             </div>

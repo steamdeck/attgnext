@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const LMSContent = () => {
+  const faqItems = [
+    {
+      question: "What is LMS and why does my organization need it?",
+      answer: "LMS (Learning Management System) is software that helps organizations deliver, track, and manage online learning and training programs. If you're delivering training in person, managing courses manually, or struggling to track student progress, an LMS can help you automate course delivery, improve learning outcomes, and reduce training costs."
+    },
+    {
+      question: "What's the difference between custom LMS and off-the-shelf LMS software?",
+      answer: "Off-the-shelf LMS software offers standard features but may not fit your specific learning needs or workflows. Custom LMS is built specifically for your organization, tailored to your course structure, branding, and requirements. Custom LMS offers more flexibility, better fit, and can integrate with your existing systems."
+    },
+    {
+      question: "How long does it take to implement an LMS system?",
+      answer: "Implementation time depends on the complexity of your requirements. A basic LMS with core features can be implemented in 8-12 weeks, while a more complex system with advanced features and integrations may take 16-20 weeks. We provide a detailed timeline during the requirements analysis phase."
+    },
+    {
+      question: "Can you integrate LMS with our existing systems?",
+      answer: "Yes! We can integrate your LMS with student information systems, HR systems, payment gateways, video conferencing tools, and other business applications. Integration ensures seamless data flow and eliminates duplicate data entry."
+    },
+    {
+      question: "What features do you typically include in an LMS?",
+      answer: "Common features include course management, student enrollment, progress tracking, assessments and quizzes, certificates, video streaming, discussion forums, gradebooks, reporting, and mobile access. We customize features based on your needs and can add industry-specific features as required."
+    },
+    {
+      question: "Can students access courses on mobile devices?",
+      answer: "Yes! Our LMS solutions are fully responsive and mobile-friendly. Students can access courses, take quizzes, view progress, and interact with content on smartphones and tablets. We also offer native mobile apps for iOS and Android if required."
+    },
+    {
+      question: "How do you handle video content and live classes?",
+      answer: "We integrate video streaming capabilities including video uploads, video hosting, live streaming for webinars, and integration with video conferencing tools like Zoom and Google Meet. Video content is optimized for different devices and network conditions."
+    },
+    {
+      question: "Can you migrate existing course content to the new LMS?",
+      answer: "Yes! We can migrate your existing course content including videos, documents, quizzes, assignments, and student data to the new LMS. We ensure data integrity and maintain course structure during migration."
+    },
+    {
+      question: "How much does a custom LMS system cost?",
+      answer: "LMS costs vary based on features, complexity, integrations, and number of users. We provide detailed quotes after understanding your requirements. Custom LMS can be more cost-effective than paying monthly fees for off-the-shelf software, especially for larger organizations."
+    },
+    {
+      question: "How do I get started with your LMS development services?",
+      answer: "Contact us for a free LMS consultation. We'll analyze your learning requirements, discuss your objectives, and recommend the best LMS solution for your organization. We can start development within 2-3 weeks of project approval."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -258,109 +302,7 @@ const LMSContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What is LMS and why does my organization need it?
-                  </div>
-                  <div className="cs_faq_answer">
-                    LMS (Learning Management System) is software that helps organizations deliver, track, and manage 
-                    online learning and training programs. If you&apos;re delivering training in person, managing courses 
-                    manually, or struggling to track student progress, an LMS can help you automate course delivery, 
-                    improve learning outcomes, and reduce training costs.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between custom LMS and off-the-shelf LMS software?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Off-the-shelf LMS software offers standard features but may not fit your specific learning needs 
-                    or workflows. Custom LMS is built specifically for your organization, tailored to your course 
-                    structure, branding, and requirements. Custom LMS offers more flexibility, better fit, and can 
-                    integrate with your existing systems.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to implement an LMS system?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Implementation time depends on the complexity of your requirements. A basic LMS with core features 
-                    can be implemented in 8-12 weeks, while a more complex system with advanced features and integrations 
-                    may take 16-20 weeks. We provide a detailed timeline during the requirements analysis phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you integrate LMS with our existing systems?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can integrate your LMS with student information systems, HR systems, payment gateways, 
-                    video conferencing tools, and other business applications. Integration ensures seamless data flow 
-                    and eliminates duplicate data entry.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What features do you typically include in an LMS?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Common features include course management, student enrollment, progress tracking, assessments and 
-                    quizzes, certificates, video streaming, discussion forums, gradebooks, reporting, and mobile access. 
-                    We customize features based on your needs and can add industry-specific features as required.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can students access courses on mobile devices?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! Our LMS solutions are fully responsive and mobile-friendly. Students can access courses, 
-                    take quizzes, view progress, and interact with content on smartphones and tablets. We also offer 
-                    native mobile apps for iOS and Android if required.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you handle video content and live classes?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We integrate video streaming capabilities including video uploads, video hosting, live streaming 
-                    for webinars, and integration with video conferencing tools like Zoom and Google Meet. Video content 
-                    is optimized for different devices and network conditions.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you migrate existing course content to the new LMS?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can migrate your existing course content including videos, documents, quizzes, assignments, 
-                    and student data to the new LMS. We ensure data integrity and maintain course structure during migration.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much does a custom LMS system cost?
-                  </div>
-                  <div className="cs_faq_answer">
-                    LMS costs vary based on features, complexity, integrations, and number of users. We provide detailed 
-                    quotes after understanding your requirements. Custom LMS can be more cost-effective than paying monthly 
-                    fees for off-the-shelf software, especially for larger organizations.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your LMS development services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free LMS consultation. We&apos;ll analyze your learning requirements, discuss your 
-                    objectives, and recommend the best LMS solution for your organization. We can start development 
-                    within 2-3 weeks of project approval.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -380,48 +322,60 @@ const LMSContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Educational Institution</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A university needed to deliver online courses, manage student enrollment, and track academic progress for remote learning.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(79, 172, 254, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Educational Institution</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A university needed to deliver online courses, manage student enrollment, and track academic progress for remote learning.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a custom LMS with course management, student enrollment, gradebook, assessments, video streaming, and academic reporting.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We developed a custom LMS with course management, student enrollment, gradebook, assessments, video streaming, and academic reporting.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>80% increase in online course enrollment</li>
                     <li>65% reduction in administrative workload</li>
                     <li>70% improvement in student engagement</li>
                     <li>50% reduction in training delivery costs</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 16 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 16 weeks
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Corporate Training</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A large corporation needed to train employees across multiple locations, track compliance training, and manage certifications.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(250, 112, 154, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Corporate Training</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A large corporation needed to train employees across multiple locations, track compliance training, and manage certifications.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We built an LMS with employee training modules, compliance tracking, certification management, reporting, and mobile access.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We built an LMS with employee training modules, compliance tracking, certification management, reporting, and mobile access.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>60% reduction in training costs</li>
                     <li>85% improvement in training completion rates</li>
                     <li>90% reduction in training delivery time</li>
                     <li>75% increase in employee satisfaction with training</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 14 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 14 weeks
                 </div>
               </div>
             </div>

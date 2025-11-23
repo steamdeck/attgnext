@@ -320,48 +320,60 @@ const PPCContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An online retailer needed to increase sales and compete with larger competitors in a competitive market.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(255, 107, 107, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>E-commerce Store Growth</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> An online retailer needed to increase sales and compete with larger competitors in a competitive market.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We created comprehensive Google Ads campaigns with shopping ads, search ads, and display remarketing campaigns.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We created comprehensive Google Ads campaigns with shopping ads, search ads, and display remarketing campaigns.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>400% increase in online sales within 3 months</li>
                     <li>250% improvement in ROI</li>
                     <li>60% reduction in cost per acquisition</li>
                     <li>180% increase in qualified website traffic</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 3 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 3 months
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">B2B Service Company</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A B2B service company wanted to generate more qualified leads and reduce their cost per lead.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(78, 205, 196, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>B2B Service Company</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A B2B service company wanted to generate more qualified leads and reduce their cost per lead.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented LinkedIn Ads and Google Ads campaigns targeting decision-makers with highly targeted messaging.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We implemented LinkedIn Ads and Google Ads campaigns targeting decision-makers with highly targeted messaging.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>300% increase in qualified leads</li>
                     <li>50% reduction in cost per lead</li>
                     <li>200% improvement in conversion rate</li>
                     <li>350% increase in ROI</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 4 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 4 months
                 </div>
               </div>
             </div>

@@ -67,7 +67,7 @@ const About4 = () => {
                         <div className="cs_about_thumbnail_wrapper wow fadeInUp">
                             <div className="cs_about_thumbnail position-relative">
                                 <Image 
-                                    src="https://uplynksolutions.com/wp-content/uploads/2023/05/It-soln2.jpeg" 
+                                    src="https://www.cardinaldigitalmarketing.com/wp-content/uploads/2020/10/iStock-1206796363-scaled-1-2256x1200.jpg" 
                                     alt="Our Team at Work" 
                                     width={260} 
                                     height={353}
@@ -82,7 +82,7 @@ const About4 = () => {
                             </div>
                             <div className="cs_about_thumbnail position-relative">
                                 <Image 
-                                    src="https://uplynksolutions.com/wp-content/uploads/2023/05/It-soln2.jpeg" 
+                                    src="https://vanguard-x.com/wp-content/uploads/2023/06/Mask-group-2.png" 
                                     alt="Digital Marketing Excellence" 
                                     width={269} 
                                     height={453}

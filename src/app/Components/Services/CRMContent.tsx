@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const CRMContent = () => {
+  const faqItems = [
+    {
+      question: "What is CRM and why does my business need it?",
+      answer: "CRM (Customer Relationship Management) is software that helps businesses manage customer interactions, track sales opportunities, and improve customer relationships. If you're managing customer data in spreadsheets, losing track of leads, or struggling with follow-ups, a CRM system can help you organize customer data, automate tasks, and increase sales."
+    },
+    {
+      question: "What's the difference between custom CRM and off-the-shelf CRM software?",
+      answer: "Off-the-shelf CRM software offers standard features but may not fit your specific business processes. Custom CRM is built specifically for your business, tailored to your workflows, and can be integrated with your existing systems. Custom CRM offers more flexibility, better fit, and can be more cost-effective in the long run."
+    },
+    {
+      question: "How long does it take to implement a CRM system?",
+      answer: "Implementation time depends on the complexity of your requirements. A basic CRM can be implemented in 4-6 weeks, while a more complex system with multiple integrations may take 8-12 weeks. We provide a detailed timeline during the requirements analysis phase."
+    },
+    {
+      question: "Can you integrate CRM with our existing systems?",
+      answer: "Yes! We can integrate your CRM with email systems, accounting software, e-commerce platforms, marketing automation tools, and other business systems. Integration ensures seamless data flow and eliminates duplicate data entry."
+    },
+    {
+      question: "What data security measures do you implement?",
+      answer: "We implement industry-standard security measures including data encryption, secure authentication, regular backups, role-based access control, and compliance with data protection regulations. Your customer data is protected with the highest security standards."
+    },
+    {
+      question: "Will you train our team on how to use the CRM?",
+      answer: "Yes! We provide comprehensive training for your team including user manuals, video tutorials, and hands-on training sessions. We also provide ongoing support to help your team get the most out of your CRM system."
+    },
+    {
+      question: "Can the CRM be accessed on mobile devices?",
+      answer: "Yes! Our CRM solutions are responsive and work on all devices including smartphones and tablets. Your sales team can access customer data, update deals, and manage tasks from anywhere, anytime."
+    },
+    {
+      question: "What kind of reporting and analytics does the CRM provide?",
+      answer: "Our CRM provides comprehensive reporting including sales pipeline reports, revenue forecasts, lead conversion reports, customer activity reports, and custom reports based on your needs. All reports include real-time data and visual dashboards."
+    },
+    {
+      question: "How much does a custom CRM system cost?",
+      answer: "CRM costs vary based on features, complexity, and integrations required. We provide detailed quotes after understanding your requirements. Custom CRM can be more cost-effective than paying monthly fees for off-the-shelf software, especially for larger teams."
+    },
+    {
+      question: "How do I get started with your CRM development services?",
+      answer: "Contact us for a free CRM consultation. We'll analyze your business processes, discuss your requirements, and recommend the best CRM solution for your business. We can start development within 1-2 weeks of project approval."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -258,109 +302,7 @@ const CRMContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What is CRM and why does my business need it?
-                  </div>
-                  <div className="cs_faq_answer">
-                    CRM (Customer Relationship Management) is software that helps businesses manage customer interactions, 
-                    track sales opportunities, and improve customer relationships. If you&apos;re managing customer data in 
-                    spreadsheets, losing track of leads, or struggling with follow-ups, a CRM system can help you organize 
-                    customer data, automate tasks, and increase sales.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s the difference between custom CRM and off-the-shelf CRM software?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Off-the-shelf CRM software offers standard features but may not fit your specific business processes. 
-                    Custom CRM is built specifically for your business, tailored to your workflows, and can be integrated 
-                    with your existing systems. Custom CRM offers more flexibility, better fit, and can be more cost-effective 
-                    in the long run.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to implement a CRM system?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Implementation time depends on the complexity of your requirements. A basic CRM can be implemented in 
-                    4-6 weeks, while a more complex system with multiple integrations may take 8-12 weeks. We provide a 
-                    detailed timeline during the requirements analysis phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you integrate CRM with our existing systems?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can integrate your CRM with email systems, accounting software, e-commerce platforms, marketing 
-                    automation tools, and other business systems. Integration ensures seamless data flow and eliminates 
-                    duplicate data entry.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What data security measures do you implement?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We implement industry-standard security measures including data encryption, secure authentication, 
-                    regular backups, role-based access control, and compliance with data protection regulations. Your 
-                    customer data is protected with the highest security standards.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Will you train our team on how to use the CRM?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We provide comprehensive training for your team including user manuals, video tutorials, and 
-                    hands-on training sessions. We also provide ongoing support to help your team get the most out of 
-                    your CRM system.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can the CRM be accessed on mobile devices?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! Our CRM solutions are responsive and work on all devices including smartphones and tablets. 
-                    Your sales team can access customer data, update deals, and manage tasks from anywhere, anytime.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What kind of reporting and analytics does the CRM provide?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our CRM provides comprehensive reporting including sales pipeline reports, revenue forecasts, 
-                    lead conversion reports, customer activity reports, and custom reports based on your needs. 
-                    All reports include real-time data and visual dashboards.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much does a custom CRM system cost?
-                  </div>
-                  <div className="cs_faq_answer">
-                    CRM costs vary based on features, complexity, and integrations required. We provide detailed 
-                    quotes after understanding your requirements. Custom CRM can be more cost-effective than paying 
-                    monthly fees for off-the-shelf software, especially for larger teams.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your CRM development services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free CRM consultation. We&apos;ll analyze your business processes, discuss your 
-                    requirements, and recommend the best CRM solution for your business. We can start development 
-                    within 1-2 weeks of project approval.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -380,48 +322,60 @@ const CRMContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">B2B Sales Company</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A B2B sales company was managing leads in spreadsheets, losing track of follow-ups, and struggling with sales forecasting.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(102, 126, 234, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>B2B Sales Company</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A B2B sales company was managing leads in spreadsheets, losing track of follow-ups, and struggling with sales forecasting.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a custom CRM with lead management, sales pipeline tracking, automated follow-up reminders, and sales forecasting tools.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We developed a custom CRM with lead management, sales pipeline tracking, automated follow-up reminders, and sales forecasting tools.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>35% increase in sales revenue within 6 months</li>
                     <li>50% reduction in lost leads</li>
                     <li>40% improvement in sales team productivity</li>
                     <li>60% reduction in time spent on administrative tasks</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 8 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 8 weeks
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Business</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An e-commerce business needed to manage customer support tickets, track customer interactions, and improve customer retention.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(245, 87, 108, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>E-commerce Business</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> An e-commerce business needed to manage customer support tickets, track customer interactions, and improve customer retention.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We built a CRM integrated with their e-commerce platform, including customer support ticketing, interaction history, and automated customer communication.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We built a CRM integrated with their e-commerce platform, including customer support ticketing, interaction history, and automated customer communication.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>45% improvement in customer satisfaction scores</li>
                     <li>30% reduction in customer support response time</li>
                     <li>25% increase in customer retention rate</li>
                     <li>50% improvement in customer support efficiency</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 10 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 10 weeks
                 </div>
               </div>
             </div>
