@@ -10,7 +10,7 @@ const nextConfig = {
   images: {
     // Must be unoptimized for static export
     unoptimized: isCPanelExport ? true : false,
-    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net', 'thispersonnotexist.org', '4.imimg.com', 'sociology.plus', 'uplynksolutions.com'],
+    domains: ['www.freeiconspng.com', 'www.appsflyer.com', 'placeholdr.ai', 'd1nhio0ox7pgb.cloudfront.net', 'thispersonnotexist.org', '4.imimg.com', 'sociology.plus', 'uplynksolutions.com', 'tiimg.tistatic.com', 'encrypted-tbn0.gstatic.com', 'images.seeklogo.com', 'cdn.sologo.ai'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -57,6 +57,30 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'uplynksolutions.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tiimg.tistatic.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.seeklogo.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sologo.ai',
         port: '',
         pathname: '/**',
       },
