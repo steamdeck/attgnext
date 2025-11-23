@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const WebDevelopmentContent = () => {
+  const faqItems = [
+    {
+      question: "How long does it take to develop a website?",
+      answer: "The development timeline depends on the complexity of your project. A simple website typically takes 4-6 weeks, while a complex e-commerce site can take 8-12 weeks. We provide detailed timelines during the planning phase."
+    },
+    {
+      question: "Do you provide website maintenance and support?",
+      answer: "Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security monitoring, performance optimization, and technical support to keep your website running smoothly."
+    },
+    {
+      question: "Will my website be mobile-friendly?",
+      answer: "Absolutely! All our websites are built with a mobile-first approach, ensuring they look and function perfectly on all devices, from smartphones to tablets to desktop computers."
+    },
+    {
+      question: "Can I update the content myself?",
+      answer: "Yes, we provide user-friendly content management systems that allow you to easily update text, images, and other content without any technical knowledge. We also provide training on how to use the CMS."
+    },
+    {
+      question: "What technologies do you use for web development?",
+      answer: "We use modern technologies including React.js, Next.js, Node.js, PHP, WordPress, and various databases. The technology stack is chosen based on your specific requirements and project goals."
+    },
+    {
+      question: "Do you offer e-commerce website development?",
+      answer: "Yes, we specialize in e-commerce development and can create online stores with payment processing, inventory management, order tracking, and all the features you need to sell products online."
+    },
+    {
+      question: "How do you ensure website security?",
+      answer: "We implement multiple security measures including SSL certificates, secure coding practices, regular security updates, and monitoring. We also provide security audits and recommendations."
+    },
+    {
+      question: "What's included in your web development packages?",
+      answer: "Our packages include custom design, responsive development, SEO optimization, content management system, testing, launch, and ongoing support. Specific features vary by package level."
+    },
+    {
+      question: "Do you provide hosting and domain services?",
+      answer: "We can help you set up hosting and domain registration, or work with your existing hosting provider. We recommend reliable hosting solutions that ensure optimal performance and security."
+    },
+    {
+      question: "Can you help with website redesign and updates?",
+      answer: "Yes, we offer website redesign services to modernize existing websites, improve user experience, and enhance functionality. We can also provide ongoing updates and improvements to your current site."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -287,88 +331,7 @@ const WebDevelopmentContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to develop a website?
-                  </div>
-                  <div className="cs_faq_answer">
-                    The development timeline depends on the complexity of your project. A simple website typically takes 4-6 weeks, while a complex e-commerce site can take 8-12 weeks. We provide detailed timelines during the planning phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide website maintenance and support?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security monitoring, performance optimization, and technical support to keep your website running smoothly.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Will my website be mobile-friendly?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Absolutely! All our websites are built with a mobile-first approach, ensuring they look and function perfectly on all devices, from smartphones to tablets to desktop computers.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can I update the content myself?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we provide user-friendly content management systems that allow you to easily update text, images, and other content without any technical knowledge. We also provide training on how to use the CMS.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What technologies do you use for web development?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We use modern technologies including React.js, Next.js, Node.js, PHP, WordPress, and various databases. The technology stack is chosen based on your specific requirements and project goals.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you offer e-commerce website development?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we specialize in e-commerce development and can create online stores with payment processing, inventory management, order tracking, and all the features you need to sell products online.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you ensure website security?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We implement multiple security measures including SSL certificates, secure coding practices, regular security updates, and monitoring. We also provide security audits and recommendations.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s included in your web development packages?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Our packages include custom design, responsive development, SEO optimization, content management system, testing, launch, and ongoing support. Specific features vary by package level.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide hosting and domain services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We can help you set up hosting and domain registration, or work with your existing hosting provider. We recommend reliable hosting solutions that ensure optimal performance and security.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with website redesign and updates?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes, we offer website redesign services to modernize existing websites, improve user experience, and enhance functionality. We can also provide ongoing updates and improvements to your current site.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -388,46 +351,58 @@ const WebDevelopmentContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Platform for Fashion Retailer</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A fashion retailer needed a modern e-commerce platform to compete with online giants and increase online sales.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(79, 172, 254, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>E-commerce Platform for Fashion Retailer</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A fashion retailer needed a modern e-commerce platform to compete with online giants and increase online sales.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a custom e-commerce website with advanced filtering, mobile optimization, and integrated payment processing.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We developed a custom e-commerce website with advanced filtering, mobile optimization, and integrated payment processing.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>300% increase in online sales</li>
                     <li>45% improvement in page loading speed</li>
                     <li>60% increase in mobile conversions</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 8 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 8 weeks
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Corporate Website for Tech Startup</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A tech startup needed a professional website to establish credibility and attract investors and clients.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(250, 112, 154, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Corporate Website for Tech Startup</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A tech startup needed a professional website to establish credibility and attract investors and clients.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We created a modern, responsive website with interactive features, case studies, and investor-focused content.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We created a modern, responsive website with interactive features, case studies, and investor-focused content.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>250% increase in lead generation</li>
                     <li>40% improvement in user engagement</li>
                     <li>Successfully secured Series A funding</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 6 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 6 weeks
                 </div>
               </div>
             </div>

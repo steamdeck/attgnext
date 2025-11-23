@@ -327,46 +327,58 @@ const DigitalMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An online retailer needed to increase brand awareness and drive more qualified traffic to their website.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+                color: '#333333',
+                boxShadow: '0 10px 30px rgba(168, 237, 234, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#1a1a1a' }}>E-commerce Store Growth</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Challenge:</strong> An online retailer needed to increase brand awareness and drive more qualified traffic to their website.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented a comprehensive digital marketing strategy including <Link href="/service/seo">SEO</Link>, <Link href="/service/ppc">PPC</Link>, and <Link href="/service/smm">social media marketing</Link>.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Solution:</strong> We implemented a comprehensive digital marketing strategy including <Link href="/service/seo" style={{ color: '#0066cc' }}>SEO</Link>, <Link href="/service/ppc" style={{ color: '#0066cc' }}>PPC</Link>, and <Link href="/service/smm" style={{ color: '#0066cc' }}>social media marketing</Link>.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#444444' }}>
                     <li>400% increase in organic traffic</li>
                     <li>250% improvement in conversion rate</li>
                     <li>180% increase in online sales</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 6 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Timeline:</strong> 6 months
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Local Service Business</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A local service business wanted to dominate local search results and generate more leads.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
+                color: '#333333',
+                boxShadow: '0 10px 30px rgba(255, 154, 158, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#1a1a1a' }}>Local Service Business</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Challenge:</strong> A local service business wanted to dominate local search results and generate more leads.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We focused on <Link href="/service/seo">local SEO</Link>, Google My Business optimization, and targeted <Link href="/service/ppc">PPC campaigns</Link>.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Solution:</strong> We focused on <Link href="/service/seo" style={{ color: '#0066cc' }}>local SEO</Link>, Google My Business optimization, and targeted <Link href="/service/ppc" style={{ color: '#0066cc' }}>PPC campaigns</Link>.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#444444' }}>
                     <li>Top 3 rankings for 15+ local keywords</li>
                     <li>300% increase in local leads</li>
                     <li>150% improvement in phone calls</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 4 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Timeline:</strong> 4 months
                 </div>
               </div>
             </div>

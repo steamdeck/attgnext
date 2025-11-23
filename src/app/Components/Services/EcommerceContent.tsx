@@ -1,8 +1,60 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const EcommerceContent = () => {
+  const faqItems = [
+    {
+      question: "What platforms do you use for e-commerce development?",
+      answer: "We work with popular e-commerce platforms including WooCommerce, Shopify, Magento, BigCommerce, and custom solutions built with React, Next.js, and Node.js. We recommend the best platform based on your business needs, budget, and scalability requirements."
+    },
+    {
+      question: "How long does it take to build an e-commerce website?",
+      answer: "Development time depends on the complexity of your requirements. A basic e-commerce website with 50-100 products can be built in 6-8 weeks, while a more complex store with custom features and integrations may take 12-16 weeks. We provide a detailed timeline during the planning phase."
+    },
+    {
+      question: "What payment gateways do you integrate?",
+      answer: "We integrate all major payment gateways including Razorpay, Stripe, PayPal, Square, PayU, CCAvenue, and others. We can also integrate multiple payment options including credit cards, debit cards, UPI, digital wallets, and cash on delivery based on your requirements."
+    },
+    {
+      question: "Is the e-commerce website mobile-friendly?",
+      answer: "Yes! All our e-commerce websites are fully responsive and mobile-optimized. With over 60% of online shopping happening on mobile devices, we ensure your store provides an excellent mobile shopping experience with fast loading times and easy navigation."
+    },
+    {
+      question: "Do you provide SEO optimization for e-commerce websites?",
+      answer: "Yes! We implement SEO best practices including product page optimization, meta tags, structured data, sitemaps, fast loading times, and mobile optimization. We also help with product SEO, category optimization, and content marketing to improve your search rankings."
+    },
+    {
+      question: "Can you integrate inventory management systems?",
+      answer: "Yes! We can integrate your e-commerce website with existing inventory management systems, ERP software, accounting software, and other business tools. Integration ensures seamless data flow and eliminates duplicate data entry."
+    },
+    {
+      question: "What security measures do you implement?",
+      answer: "We implement industry-standard security measures including SSL encryption, secure payment processing, PCI DSS compliance, regular security updates, data backups, and protection against common vulnerabilities. Your customer data and transactions are protected with the highest security standards."
+    },
+    {
+      question: "Do you provide ongoing support and maintenance?",
+      answer: "Yes! We provide ongoing support including bug fixes, security updates, feature additions, performance optimization, and technical support. We offer monthly maintenance plans to keep your e-commerce website running smoothly and securely."
+    },
+    {
+      question: "Can you add custom features to the e-commerce website?",
+      answer: "Yes! We can add custom features including product customization tools, subscription services, multi-vendor marketplace, loyalty programs, advanced filtering, product recommendations, and any other features specific to your business needs."
+    },
+    {
+      question: "How much does an e-commerce website cost?",
+      answer: "E-commerce website costs vary based on features, complexity, integrations, and platform. Basic e-commerce websites start from $2,000, while custom solutions with advanced features may cost $10,000 or more. We provide detailed quotes after understanding your requirements."
+    },
+    {
+      question: "Can you migrate my existing e-commerce store to a new platform?",
+      answer: "Yes! We can migrate your existing e-commerce store including products, customers, orders, and data to a new platform. We ensure data integrity, minimize downtime, and maintain SEO rankings during migration."
+    },
+    {
+      question: "How do I get started with your e-commerce development services?",
+      answer: "Contact us for a free e-commerce consultation. We'll analyze your business requirements, discuss your goals, and recommend the best e-commerce solution for your business. We can start development within 1-2 weeks of project approval."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -257,129 +309,7 @@ const EcommerceContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What platforms do you use for e-commerce development?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We work with popular e-commerce platforms including WooCommerce, Shopify, Magento, BigCommerce, 
-                    and custom solutions built with React, Next.js, and Node.js. We recommend the best platform 
-                    based on your business needs, budget, and scalability requirements.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How long does it take to build an e-commerce website?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Development time depends on the complexity of your requirements. A basic e-commerce website 
-                    with 50-100 products can be built in 6-8 weeks, while a more complex store with custom features 
-                    and integrations may take 12-16 weeks. We provide a detailed timeline during the planning phase.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What payment gateways do you integrate?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We integrate all major payment gateways including Razorpay, Stripe, PayPal, Square, PayU, 
-                    CCAvenue, and others. We can also integrate multiple payment options including credit cards, 
-                    debit cards, UPI, digital wallets, and cash on delivery based on your requirements.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Is the e-commerce website mobile-friendly?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! All our e-commerce websites are fully responsive and mobile-optimized. With over 60% 
-                    of online shopping happening on mobile devices, we ensure your store provides an excellent 
-                    mobile shopping experience with fast loading times and easy navigation.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide SEO optimization for e-commerce websites?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We implement SEO best practices including product page optimization, meta tags, structured 
-                    data, sitemaps, fast loading times, and mobile optimization. We also help with product SEO, 
-                    category optimization, and content marketing to improve your search rankings.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you integrate inventory management systems?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can integrate your e-commerce website with existing inventory management systems, 
-                    ERP software, accounting software, and other business tools. Integration ensures seamless 
-                    data flow and eliminates duplicate data entry.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What security measures do you implement?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We implement industry-standard security measures including SSL encryption, secure payment 
-                    processing, PCI DSS compliance, regular security updates, data backups, and protection 
-                    against common vulnerabilities. Your customer data and transactions are protected with 
-                    the highest security standards.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Do you provide ongoing support and maintenance?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We provide ongoing support including bug fixes, security updates, feature additions, 
-                    performance optimization, and technical support. We offer monthly maintenance plans to 
-                    keep your e-commerce website running smoothly and securely.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you add custom features to the e-commerce website?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can add custom features including product customization tools, subscription services, 
-                    multi-vendor marketplace, loyalty programs, advanced filtering, product recommendations, 
-                    and any other features specific to your business needs.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How much does an e-commerce website cost?
-                  </div>
-                  <div className="cs_faq_answer">
-                    E-commerce website costs vary based on features, complexity, integrations, and platform. 
-                    Basic e-commerce websites start from $2,000, while custom solutions with advanced features 
-                    may cost $10,000 or more. We provide detailed quotes after understanding your requirements.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you migrate my existing e-commerce store to a new platform?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We can migrate your existing e-commerce store including products, customers, orders, 
-                    and data to a new platform. We ensure data integrity, minimize downtime, and maintain 
-                    SEO rankings during migration.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your e-commerce development services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free e-commerce consultation. We&apos;ll analyze your business requirements, 
-                    discuss your goals, and recommend the best e-commerce solution for your business. We can 
-                    start development within 1-2 weeks of project approval.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -399,48 +329,60 @@ const EcommerceContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Fashion Retail Store</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A fashion retailer needed to move online and compete with established e-commerce brands while maintaining brand identity.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+                color: '#333333',
+                boxShadow: '0 10px 30px rgba(252, 182, 159, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#1a1a1a' }}>Fashion Retail Store</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Challenge:</strong> A fashion retailer needed to move online and compete with established e-commerce brands while maintaining brand identity.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We developed a custom e-commerce website with product catalog, multiple payment options, shipping integration, and mobile optimization.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Solution:</strong> We developed a custom e-commerce website with product catalog, multiple payment options, shipping integration, and mobile optimization.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#444444' }}>
                     <li>200% increase in online sales within 6 months</li>
                     <li>65% of sales from mobile devices</li>
                     <li>45% improvement in conversion rate</li>
                     <li>80% customer satisfaction score</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 10 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Timeline:</strong> 10 weeks
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">Electronics Store</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An electronics retailer wanted to expand online sales and manage inventory across multiple warehouses.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #a8caba 0%, #5d4e75 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(93, 78, 117, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>Electronics Store</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> An electronics retailer wanted to expand online sales and manage inventory across multiple warehouses.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We built an e-commerce platform with multi-warehouse inventory management, advanced product filtering, payment integration, and order tracking.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We built an e-commerce platform with multi-warehouse inventory management, advanced product filtering, payment integration, and order tracking.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>180% increase in online revenue within 8 months</li>
                     <li>50% reduction in order processing time</li>
                     <li>35% improvement in inventory accuracy</li>
                     <li>60% reduction in customer support tickets</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 12 weeks
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 12 weeks
                 </div>
               </div>
             </div>

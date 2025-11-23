@@ -1,8 +1,52 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import FaqAccordion from '../Faq/FaqAccordion';
 
 const EmailMarketingContent = () => {
+  const faqItems = [
+    {
+      question: "Why is email marketing still relevant in 2024?",
+      answer: "Email marketing remains one of the most effective digital marketing channels with the highest ROI. With over 4 billion email users worldwide, email provides direct access to your customers' inboxes. It offers personalization, automation, and measurable results that social media and other channels can't match."
+    },
+    {
+      question: "How do I build an email list?",
+      answer: "We help you build your email list through multiple strategies including opt-in forms on your website, lead magnets (free downloads, guides, discounts), landing pages, social media campaigns, and in-store sign-ups. We focus on building a quality list of engaged subscribers who want to hear from you."
+    },
+    {
+      question: "What's a good email open rate?",
+      answer: "Industry average open rates vary by industry, but generally range from 15-25%. Our clients typically see 20-30% open rates through proper segmentation, personalization, and optimal send times. We continuously optimize subject lines and email content to improve open rates."
+    },
+    {
+      question: "How often should I send emails to my subscribers?",
+      answer: "Email frequency depends on your industry, audience, and content type. Generally, we recommend 1-2 emails per week for newsletters and promotional emails. For automated sequences, emails are sent based on subscriber behavior. We analyze your audience's engagement patterns to determine the optimal frequency."
+    },
+    {
+      question: "What is email automation and how does it work?",
+      answer: "Email automation sends targeted emails based on triggers like subscriber actions, dates, or behaviors. Examples include welcome series for new subscribers, abandoned cart emails, birthday emails, and post-purchase follow-ups. Automation saves time and ensures timely, relevant communication with your audience."
+    },
+    {
+      question: "How do you ensure emails don't end up in spam folders?",
+      answer: "We maintain high deliverability rates through proper authentication (SPF, DKIM, DMARC), clean email lists, avoiding spam trigger words, using reputable email service providers, and following best practices. We also monitor sender reputation and engagement rates to ensure your emails reach the inbox."
+    },
+    {
+      question: "Can you help with email design and templates?",
+      answer: "Yes! We create beautiful, responsive email templates that look great on all devices. Our designs are mobile-friendly, brand-consistent, and optimized for engagement. We also design custom templates for specific campaigns, promotions, and automated sequences."
+    },
+    {
+      question: "What email marketing platforms do you work with?",
+      answer: "We work with all major email marketing platforms including Mailchimp, Constant Contact, Sendinblue, ConvertKit, Klaviyo, and others. We can help you choose the right platform for your needs or work with your existing platform."
+    },
+    {
+      question: "How do you measure email marketing success?",
+      answer: "We track key metrics including open rates, click-through rates, conversion rates, unsubscribe rates, revenue per email, and overall ROI. We provide detailed monthly reports with actionable insights and recommendations for improvement."
+    },
+    {
+      question: "How do I get started with your email marketing services?",
+      answer: "Contact us for a free email marketing consultation. We'll audit your current email strategy, discuss your goals, and recommend the best approach for your business. We can have your first campaign running within a week."
+    }
+  ];
   return (
     <div>
       {/* Service Overview */}
@@ -257,108 +301,7 @@ const EmailMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="cs_faq_wrap">
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Why is email marketing still relevant in 2024?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Email marketing remains one of the most effective digital marketing channels with the highest ROI. 
-                    With over 4 billion email users worldwide, email provides direct access to your customers&apos; inboxes. 
-                    It offers personalization, automation, and measurable results that social media and other channels can&apos;t match.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I build an email list?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We help you build your email list through multiple strategies including opt-in forms on your website, 
-                    lead magnets (free downloads, guides, discounts), landing pages, social media campaigns, and in-store sign-ups. 
-                    We focus on building a quality list of engaged subscribers who want to hear from you.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What&apos;s a good email open rate?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Industry average open rates vary by industry, but generally range from 15-25%. Our clients typically 
-                    see 20-30% open rates through proper segmentation, personalization, and optimal send times. We continuously 
-                    optimize subject lines and email content to improve open rates.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How often should I send emails to my subscribers?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Email frequency depends on your industry, audience, and content type. Generally, we recommend 1-2 emails 
-                    per week for newsletters and promotional emails. For automated sequences, emails are sent based on subscriber 
-                    behavior. We analyze your audience&apos;s engagement patterns to determine the optimal frequency.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What is email automation and how does it work?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Email automation sends targeted emails based on triggers like subscriber actions, dates, or behaviors. 
-                    Examples include welcome series for new subscribers, abandoned cart emails, birthday emails, and post-purchase 
-                    follow-ups. Automation saves time and ensures timely, relevant communication with your audience.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you ensure emails don&apos;t end up in spam folders?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We maintain high deliverability rates through proper authentication (SPF, DKIM, DMARC), clean email lists, 
-                    avoiding spam trigger words, using reputable email service providers, and following best practices. We also 
-                    monitor sender reputation and engagement rates to ensure your emails reach the inbox.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    Can you help with email design and templates?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Yes! We create beautiful, responsive email templates that look great on all devices. Our designs are 
-                    mobile-friendly, brand-consistent, and optimized for engagement. We also design custom templates for 
-                    specific campaigns, promotions, and automated sequences.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    What email marketing platforms do you work with?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We work with all major email marketing platforms including Mailchimp, Constant Contact, Sendinblue, 
-                    ConvertKit, Klaviyo, and others. We can help you choose the right platform for your needs or work with 
-                    your existing platform.
-                  </div>
-                </div>
-                <div className="cs_faq_item cs_mb_20">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do you measure email marketing success?
-                  </div>
-                  <div className="cs_faq_answer">
-                    We track key metrics including open rates, click-through rates, conversion rates, unsubscribe rates, 
-                    revenue per email, and overall ROI. We provide detailed monthly reports with actionable insights and 
-                    recommendations for improvement.
-                  </div>
-                </div>
-                <div className="cs_faq_item">
-                  <div className="cs_faq_question cs_fs_18 cs_semibold cs_mb_10">
-                    How do I get started with your email marketing services?
-                  </div>
-                  <div className="cs_faq_answer">
-                    Contact us for a free email marketing consultation. We&apos;ll audit your current email strategy, discuss 
-                    your goals, and recommend the best approach for your business. We can have your first campaign running 
-                    within a week.
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion items={faqItems} />
             </div>
           </div>
         </div>
@@ -378,48 +321,60 @@ const EmailMarketingContent = () => {
           <div className="cs_height_60 cs_height_lg_50"></div>
           <div className="row cs_row_gap_30 cs_gap_y_40">
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">E-commerce Store Growth</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> An online retailer needed to increase customer retention and repeat purchases while reducing cart abandonment.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+                color: '#333333',
+                boxShadow: '0 10px 30px rgba(252, 182, 159, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#1a1a1a' }}>E-commerce Store Growth</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Challenge:</strong> An online retailer needed to increase customer retention and repeat purchases while reducing cart abandonment.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We implemented automated abandoned cart emails, welcome series, and segmented promotional campaigns based on purchase history.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Solution:</strong> We implemented automated abandoned cart emails, welcome series, and segmented promotional campaigns based on purchase history.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#444444' }}>
                     <li>45% increase in email-generated revenue within 6 months</li>
                     <li>35% reduction in cart abandonment rate</li>
                     <li>28% improvement in email open rates</li>
                     <li>52% increase in repeat customer purchases</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 6 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#444444' }}>
+                  <strong style={{ color: '#1a1a1a' }}>Timeline:</strong> 6 months
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cs_case_study cs_radius_20 cs_white_bg cs_p_40" style={{ marginBottom: '30px', padding: '40px 30px' }}>
-                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15">B2B Service Company</h3>
-                <p className="cs_case_challenge cs_mb_20">
-                  <strong>Challenge:</strong> A B2B service company wanted to nurture leads and convert prospects into customers through email marketing.
+              <div className="cs_case_study cs_radius_20 cs_p_40" style={{ 
+                marginBottom: '30px', 
+                padding: '40px 30px',
+                background: 'linear-gradient(135deg, #a8caba 0%, #5d4e75 100%)',
+                color: '#ffffff',
+                boxShadow: '0 10px 30px rgba(93, 78, 117, 0.3)'
+              }}>
+                <h3 className="cs_case_title cs_fs_24 cs_semibold cs_mb_15" style={{ color: '#ffffff' }}>B2B Service Company</h3>
+                <p className="cs_case_challenge cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Challenge:</strong> A B2B service company wanted to nurture leads and convert prospects into customers through email marketing.
                 </p>
-                <p className="cs_case_solution cs_mb_20">
-                  <strong>Solution:</strong> We created a comprehensive email nurture sequence, educational newsletter series, and targeted lead segmentation campaigns.
+                <p className="cs_case_solution cs_mb_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Solution:</strong> We created a comprehensive email nurture sequence, educational newsletter series, and targeted lead segmentation campaigns.
                 </p>
-                <div className="cs_case_results">
-                  <strong>Results:</strong>
-                  <ul className="cs_mt_10">
+                <div className="cs_case_results" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Results:</strong>
+                  <ul className="cs_mt_10" style={{ color: '#f0f0f0' }}>
                     <li>38% increase in lead-to-customer conversion rate</li>
                     <li>42% improvement in email engagement rates</li>
                     <li>55% increase in qualified leads generated from email</li>
                     <li>3x ROI on email marketing investment</li>
                   </ul>
                 </div>
-                <div className="cs_case_timeline cs_mt_20">
-                  <strong>Timeline:</strong> 4 months
+                <div className="cs_case_timeline cs_mt_20" style={{ color: '#f0f0f0' }}>
+                  <strong style={{ color: '#ffffff' }}>Timeline:</strong> 4 months
                 </div>
               </div>
             </div>
