@@ -14,27 +14,27 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/multer": "^2.0.0",
     "@types/sqlite3": "^3.1.11",
-    "bcryptjs": "^3.0.2",
-    "bootstrap": "^5.3.7",
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
-    "html-react-parser": "^5.2.5",
+    "html-react-parser": "^5.2.10",
     "jsonwebtoken": "^9.0.2",
     "multer": "^2.0.2",
     "next": "15.3.4",
-    "react": "^19.0.0",
+    "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.0",
     "react-slick": "^0.30.3",
-    "sharp": "^0.34.4",
+    "sharp": "^0.34.5",
     "slick-carousel": "^1.8.1",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^24.0.8",
-    "@types/react": "^19.1.8",
-    "eslint": "^9",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.6",
+    "eslint": "^9.39.1",
     "eslint-config-next": "15.3.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   }
 }
