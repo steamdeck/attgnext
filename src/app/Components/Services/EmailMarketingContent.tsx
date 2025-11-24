@@ -126,7 +126,7 @@ const EmailMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/automation.svg" alt="Automation" width={35} height={40} />
+                  <Image src="/assets/img/icons/email-automation.svg" alt="Automation" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Email Automation</h3>
@@ -139,7 +139,7 @@ const EmailMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/segmentation.svg" alt="Segmentation" width={35} height={40} />
+                  <Image src="/assets/img/icons/email-segmentation.svg" alt="Segmentation" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">List Segmentation</h3>
@@ -152,7 +152,7 @@ const EmailMarketingContent = () => {
             <div className="col-lg-3 col-md-6">
               <div className="cs_card cs_style_2 cs_radius_10 position-relative overflow-hidden">
                 <span className="cs_card_icon cs_white_bg cs_center cs_radius_50 cs_mb_25">
-                  <Image src="/assets/img/icons/template.svg" alt="Templates" width={35} height={40} />
+                  <Image src="/assets/img/icons/email-design.svg" alt="Templates" width={35} height={40} />
                 </span>
                 <div className="cs_card_content">
                   <h3 className="cs_card_title cs_fs_22 cs_semibold cs_mb_10">Email Design</h3>

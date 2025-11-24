@@ -141,7 +141,7 @@ const Contact3 = () => {
                 <li>
                   <div className="cs_iconbox cs_style_6">
                     <span className="cs_iconbox_icon cs_center cs_radius_50 position-relative">
-                      <Image src="/assets/img/icons/share.svg" alt="img" width={26} height={27}   />
+                      <Image src="/assets/img/icons/social.svg" alt="img" width={26} height={27}   />
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_mb_1">Connect With Us</p>

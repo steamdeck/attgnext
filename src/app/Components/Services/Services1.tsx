@@ -33,10 +33,10 @@ const Services1 = () => {
             <div key={i} className="cs_service_item cs_style_1 position-relative wow fadeInDown">
               <div className="cs_service_content">
                 <h3 className="cs_service_title cs_fs_24 cs_white_color mb-0">
-                  <Link href="/service/service-details" aria-label="Click to view service details">{item.title}</Link>
+                  {item.title}
                 </h3>
                 <p className="cs_service_subtitle cs_medium cs_white_color_2 mb-0">{item.content}</p>
-                <Link href="/service/service-details" aria-label="Click to view service details" className="cs_service_btn cs_center cs_radius_50">
+                <Link href="/service" aria-label="Click to view all services" className="cs_service_btn cs_center cs_radius_50">
                 <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
                 </Link>
               </div>
