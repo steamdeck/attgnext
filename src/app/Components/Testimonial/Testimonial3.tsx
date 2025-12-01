@@ -61,7 +61,7 @@ const Testimonial3 = () => {
 
     return (
         <section className="cs_testimonial cs_style_3 cs_heading_bg cs_bg_filed" data-background="/assets/img/testimonial_bg_2.jpg">
-        <div className="cs_height_120 cs_height_lg_80"></div>
+        <div className="cs_height_40 cs_height_lg_30"></div>
         <div className="container">
           <div className="row cs_gap_y_40 align-items-end">
             <div className="col-lg-4 order-lg-2 wow fadeInDown">
@@ -77,8 +77,8 @@ const Testimonial3 = () => {
             </div>
             <div className="col-lg-8 order-lg-1">
               <div className="cs_section_heading cs_style_1">
-                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20 wow fadeInDown">Our Testimonials<span className="cs_shape_right"></span></p>
-                <h2 className="cs_fs_48 cs_white_color cs_mb_46 wow fadeInUp">What Our Clients Say <br/> About Us</h2>
+                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_12 wow fadeInDown">Our Testimonials<span className="cs_shape_right"></span></p>
+                <h2 className="cs_fs_48 cs_white_color cs_mb_30 wow fadeInUp">What Our Clients Say <br/> About Us</h2>
                 <hr/>
               </div>
               <div className="testimonial_slider_content cs_slider">
@@ -118,7 +118,7 @@ const Testimonial3 = () => {
             </div>
           </div>
         </div>
-        <div className="cs_height_136 cs_height_lg_80"></div>
+        <div className="cs_height_40 cs_height_lg_30"></div>
       </section>
     );
 };

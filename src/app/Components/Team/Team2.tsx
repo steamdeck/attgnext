@@ -18,7 +18,7 @@ const Team2 = () => {
 
     return (
 <section className="cs_bg_filed position-relative" data-background="/assets/img/team_bg.svg">
-      <div className="cs_height_120 cs_height_lg_80"></div>
+      <div className="cs_height_40 cs_height_lg_30"></div>
       <div className="container">
         <div className="cs_section_heading cs_style_1 text-center">
           <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_center cs_mb_20 wow fadeInDown">
@@ -26,7 +26,7 @@ const Team2 = () => {
           </p>
           <h2 className="cs_fs_48 cs_mb_21 wow fadeInUp">Our Professional Experts</h2>
         </div>
-        <div className="cs_height_60 cs_height_lg_50"></div>
+        <div className="cs_height_30 cs_height_lg_20"></div>
         <div className="row cs_row_gap_30 cs_gap_y_30 position-relative z-1">
 
         {teamContent.map((item, i) => (
@@ -64,7 +64,7 @@ const Team2 = () => {
 
         </div>
       </div>
-      <div className="cs_height_120 cs_height_lg_80"></div>
+      <div className="cs_height_40 cs_height_lg_30"></div>
     </section>
     );
 };

@@ -12,23 +12,23 @@ const About4 = () => {
                 }
             `}} />
             <section className="cs_about cs_style_1 position-relative overflow-hidden">
-            <div className="cs_height_120 cs_height_lg_80"></div>
+            <div className="cs_height_40 cs_height_lg_30"></div>
             <div className="container">
                 <div className="row cs_gap_y_40 cs_tab_reverse">
                     <div className="col-lg-6">
                         <div className="cs_about_content">
-                            <div className="cs_section_heading cs_style_1 cs_mb_28">
-                                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
+                            <div className="cs_section_heading cs_style_1 cs_mb_20">
+                                <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_12">
                                     Our Story<span className="cs_shape_right"></span>
                                 </p>
-                                <h2 className="cs_fs_48 cs_mb_21 wow fadeInDown">Building Digital Excellence Since Day One</h2>
-                                <p className="cs_section_heading_text mb-4">
+                                <h2 className="cs_fs_48 cs_mb_15 wow fadeInDown">Building Digital Excellence Since Day One</h2>
+                                <p className="cs_section_heading_text mb-3">
                                     Founded with a vision to transform how businesses connect with their audiences in the digital age, we have grown from a small team of passionate marketers into a full-service digital agency trusted by businesses worldwide.
                                 </p>
-                                <p className="cs_section_heading_text mb-4">
+                                <p className="cs_section_heading_text mb-3">
                                     Our journey began with a simple belief: every business, regardless of size, deserves access to world-class digital marketing solutions. This philosophy has guided us through years of growth, innovation, and countless successful projects.
                                 </p>
-                                <p className="cs_section_heading_text mb-4">
+                                <p className="cs_section_heading_text mb-3">
                                     Today, we're proud to have helped hundreds of businesses achieve their digital goals, from startups making their first mark to established enterprises expanding their online presence. Our commitment to excellence, combined with our deep understanding of digital trends, has made us a preferred partner for businesses seeking sustainable growth.
                                 </p>
                                 <p className="cs_section_heading_text mb-0">
@@ -57,7 +57,7 @@ const About4 = () => {
                                     <span className="cs_list_text">Dedicated support and ongoing optimization</span>
                                 </li>
                             </ul>
-                            <div className="cs_about_btn_group">
+                            <div className="cs_about_btn_group" style={{ marginTop: '20px' }}>
                                 <Link href="/service" aria-label="View our services" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>Explore Services</span></Link>
                                 <Link href="/contact" aria-label="Contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Start Your Journey</span></Link>
                             </div>
@@ -96,7 +96,7 @@ const About4 = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_120 cs_height_lg_80"></div>
+            <div className="cs_height_40 cs_height_lg_30"></div>
         </section>
         </>
     );

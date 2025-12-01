@@ -23,10 +23,10 @@ const Video2 = () => {
 
     return (
         <section>
-        <div className="cs_height_120 cs_height_lg_80"></div>
+        <div className="cs_height_40 cs_height_lg_30"></div>
         <div className="container">
-          <div className="cs_section_heading cs_style_1 cs_mb_47 text-center">
-            <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_center cs_mb_20 wow fadeInDown">
+          <div className="cs_section_heading cs_style_1 cs_mb_30 text-center">
+            <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_center cs_mb_12 wow fadeInDown">
               <span className="cs_shape_left"></span>Watch Video<span className="cs_shape_right"></span>
             </p>
             <h2 className="cs_fs_32 mb-0 wow fadeInUp">We assist our clients in bringing their business concepts to <br/> life and achieving outstanding outcomes.</h2>
@@ -37,7 +37,7 @@ const Video2 = () => {
             </a>
           </div>
         </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
+        <div className="cs_height_40 cs_height_lg_30"></div>
 
         <VideoModal
             isTrue={toggle}

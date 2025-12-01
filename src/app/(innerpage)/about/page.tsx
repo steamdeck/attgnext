@@ -10,15 +10,15 @@ import Team2 from '../../Components/Team/Team2';
 
 const page = () => {
   return (
-    <div>
+    <div style={{ margin: 0, padding: 0 }}>
              <BreadCumb
                 bgimg="https://placeholdr.ai/8f9e3f1a-c3b5-4361-a45f-bdb0661ea3a0/1024/412"
                 Title="About Us"
             ></BreadCumb> 
             <About2></About2>
+            <Counter1></Counter1> 
             <About3></About3>
             <About4></About4>
-            <Counter1></Counter1> 
             <Video2></Video2> 
             <Testimonial3></Testimonial3>
             <Team2></Team2>
