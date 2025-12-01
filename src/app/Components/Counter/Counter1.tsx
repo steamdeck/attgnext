@@ -2,7 +2,7 @@ import React from 'react';
 
 const Counter1 = () => {
     return (
-<div className="cs_counter cs_style_1 cs_gray_bg_1">
+<div className="cs_counter cs_style_1 cs_gray_bg_1" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-sm-6">
