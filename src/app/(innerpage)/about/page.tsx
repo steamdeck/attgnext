@@ -3,6 +3,7 @@ import BreadCumb from '../../Components/Common/BreadCumb';
 import About2 from '../../Components/About/About2';
 import About3 from '../../Components/About/About3';
 import About4 from '../../Components/About/About4';
+import MissionVisionValues from '../../Components/About/MissionVisionValues';
 import Counter1 from '../../Components/Counter/Counter1';
 import Video2 from '../../Components/Video/Video2';
 import Testimonial3 from '../../Components/Testimonial/Testimonial3';
@@ -16,6 +17,7 @@ const page = () => {
                 Title="About Us"
             ></BreadCumb> 
             <About2></About2>
+            <MissionVisionValues></MissionVisionValues>
             <Counter1></Counter1> 
             <About3></About3>
             <About4></About4>
