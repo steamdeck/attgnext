@@ -36,20 +36,6 @@ const About2 = () => {
                     Whether you're an e-commerce brand looking to scale, a startup seeking market presence, or an established business aiming to expand your digital footprint, we have the expertise and tools to help you achieve your goals. Explore our <Link href="/service" className="cs_accent_color" style={{textDecoration: 'underline'}}>comprehensive services</Link> or view our <Link href="/project" className="cs_accent_color" style={{textDecoration: 'underline'}}>successful projects</Link> to see how we've helped businesses like yours succeed.
                   </p>
                 </div>
-                <div className="cs_features_wrapper cs_mb_20">
-                  <div className="cs_feature_item" style={{ marginBottom: '20px' }}>
-                    <h3 className="cs_fs_24 cs_mb_3">Our Mission</h3>
-                    <p className="cs_fs_18 mb-0">To empower businesses of all sizes with cutting-edge digital marketing solutions that drive measurable growth, enhance brand visibility, and create lasting customer relationships. We believe in transparency, innovation, and delivering value that exceeds expectations.</p>
-                  </div>
-                  <div className="cs_feature_item" style={{ marginBottom: '20px' }}>
-                    <h3 className="cs_fs_24 cs_mb_3">Our Vision</h3>
-                    <p className="cs_fs_18 mb-0">To be the leading digital marketing agency recognized for transforming businesses through strategic vision, creative excellence, and data-driven results. We envision a future where every business can leverage the power of digital marketing to achieve extraordinary success.</p>
-                  </div>
-                  <div className="cs_feature_item" style={{ marginBottom: '0' }}>
-                    <h3 className="cs_fs_24 cs_mb_3">Our Values</h3>
-                    <p className="cs_fs_18 mb-0">Integrity, innovation, and client success are at the core of everything we do. We foster a culture of continuous learning, collaboration, and excellence, ensuring we stay ahead of industry trends and deliver solutions that make a real difference.</p>
-                  </div>
-                </div>
                 <div className="cs_about_btn_group">
                   <Link href="/service" aria-label="View our services" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>Our Services</span></Link>
                   <Link href="/contact" aria-label="Contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Get In Touch</span></Link>
