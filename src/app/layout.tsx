@@ -63,6 +63,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${public_sans.variable}`}>
         {children}
+        <a href="tel:+919266812465" style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
+          <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp" style={{ width: '50px', height: '50px' }} />
+        </a>
       </body>
     </html>
   );
