@@ -8,6 +8,7 @@ import Counter1 from '../../Components/Counter/Counter1';
 import Video2 from '../../Components/Video/Video2';
 import Testimonial3 from '../../Components/Testimonial/Testimonial3';
 import Team2 from '../../Components/Team/Team2';
+import AboutSection5050 from '../../Components/About/AboutSection5050';
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
                 Title="About Us"
             ></BreadCumb> 
             <About2></About2>
+            <AboutSection5050 />
             <MissionVisionValues></MissionVisionValues>
             <Counter1></Counter1> 
             <About3></About3>
