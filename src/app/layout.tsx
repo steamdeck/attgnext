@@ -17,10 +17,10 @@ export const metadata = {
     default: 'AT Tech Global - Digital Agency',
     template: '%s | AT Tech Global - Digital Agency',
   },
-  description: 'AT Tech Global - Digital Agency React NextJS Template',
+  description: 'AT Tech Global - Digital Agency in Gurugram',
   openGraph: {
     title: 'AT Tech Global - Digital Agency',
-    description: 'AT Tech Global - Digital Agency React NextJS Template',
+    description: 'AT Tech Global - Digital Agency in Gurugram',
   },
   robots: {
     index: true,
@@ -47,6 +47,19 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.appsflyer.com" />
         <link rel="dns-prefetch" href="https://www.freeiconspng.com" />
         <link rel="dns-prefetch" href="https://www.appsflyer.com" />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNT3Y26E7Q"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-TNT3Y26E7Q');
+            `,
+          }}
+        />
       </head>
       <body className={`${public_sans.variable}`}>
         {children}
