@@ -55,7 +55,7 @@ const ServiceDetails = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_fs_14 cs_semibold mb-0">Call Us</p>
-                      <a href="tel:+919266812465" aria-label="Click to make a call" className="cs_fs_18 cs_semibold">+91 92668 12465</a>
+                      <a href="tel:+447469369962" aria-label="Click to make a call" className="cs_fs_18 cs_semibold">+44 7469 369962</a>
                     </div>
                   </div>
                 </li>

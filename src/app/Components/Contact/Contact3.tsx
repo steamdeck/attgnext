@@ -111,7 +111,18 @@ const Contact3 = () => {
                       <Image src="/assets/img/icons/head_phone.svg" alt="img" width={26} height={27}   />
                     </span>
                     <div className="cs_iconbox_info">
-                      <p className="cs_mb_1">Call Us For Query</p>
+                      <p className="cs_mb_1">Call Us For Query (UK)</p>
+                      <a href="tel:+447469369962" aria-label="Phone call button">+44 7469 369962</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="cs_iconbox cs_style_6">
+                    <span className="cs_iconbox_icon cs_center cs_radius_50 position-relative">
+                      <Image src="/assets/img/icons/head_phone.svg" alt="img" width={26} height={27}   />
+                    </span>
+                    <div className="cs_iconbox_info">
+                      <p className="cs_mb_1">Call Us For Query (India)</p>
                       <a href="tel:+919266812465" aria-label="Phone call button">+91 92668 12465</a>
                     </div>
                   </div>
@@ -133,8 +144,19 @@ const Contact3 = () => {
                       <Image src="/assets/img/icons/location.svg" alt="img" width={26} height={27}   />
                     </span>
                     <div className="cs_iconbox_info">
-                      <p className="cs_mb_1">Visit Our Office</p>
-                      <p className="cs_fs_18 cs_semibold cs_heading_color mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                      <p className="cs_mb_1">Visit Our Office (UK)</p>
+                      <p className="cs_fs_18 cs_semibold cs_heading_color mb-0">6 Armadale Drive Leicester, Le5 1he ,United Kingdom</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="cs_iconbox cs_style_6">
+                    <span className="cs_iconbox_icon cs_center cs_radius_50 position-relative">
+                      <Image src="/assets/img/icons/location.svg" alt="img" width={26} height={27}   />
+                    </span>
+                    <div className="cs_iconbox_info">
+                      <p className="cs_mb_1">Visit Our Office (India)</p>
+                      <p className="cs_fs_18 cs_semibold cs_heading_color mb-0">IIIrd Floor, Block B, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                     </div>
                   </div>
                 </li>
@@ -150,7 +172,7 @@ const Contact3 = () => {
                         <a href="https://www.linkedin.com/in/attechglobal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="cs_center cs_radius_50"><i className="bi bi-linkedin"></i></a>
                         <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cs_center cs_radius_50"><i className="bi bi-instagram"></i></a>
                         <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50"><i className="bi bi-at"></i></a>
-                        <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50"><i className="bi bi-whatsapp"></i></a>
+                        <a href="https://wa.me/447469369962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50"><i className="bi bi-whatsapp"></i></a>
                       </div>
                     </div>
                   </div>
@@ -187,15 +209,15 @@ const Contact3 = () => {
                   />
                 </div>
                 <div className="col-md-6">
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="Phone" 
-                    className="cs_form_field cs_radius_8 cs_gray_bg_1" 
-                    placeholder="Phone number*" 
-                    required 
-                    pattern="[0-9]{10}" 
-                    title="Enter 10-digit phone number" 
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                    className="cs_form_field cs_radius_8 cs_gray_bg_1"
+                    placeholder="Phone number*"
+                    required
+                    pattern="[0-9]{10,15}"
+                    title="Enter valid phone number"
                   />
                 </div>
                 <div className="col-md-6">

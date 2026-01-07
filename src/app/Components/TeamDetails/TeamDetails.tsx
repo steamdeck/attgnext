@@ -93,7 +93,7 @@ const TeamDetails = () => {
             <div className="cs_call_btn wow fadeInLeft">
               <span className="cs_call_btn_icon cs_center cs_radius_50"><i className="bi bi-telephone-fill"></i></span>
               <div className="cs_call_btn_text">
-                <h3 className="cs_fs_18 mb-0">Call Us: <a href="tel:+919266812465">+91 92668 12465</a></h3>
+                <h3 className="cs_fs_18 mb-0">Call Us: <a href="tel:+447469369962">+44 7469 369962</a></h3>
                 <p className="cs_medium mb-0">For any question</p>
               </div>
             </div>

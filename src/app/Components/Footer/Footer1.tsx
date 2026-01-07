@@ -41,7 +41,7 @@ const Footer1 = () => {
                 <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50">
                   <i className="bi bi-at"></i>
                 </a>
-                <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
+                <a href="https://wa.me/447469369962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
                   <i className="bi bi-whatsapp"></i>
                 </a>
               </div>
@@ -76,7 +76,7 @@ const Footer1 = () => {
                 <h3 className="cs_fs_16 cs_white_color cs_mb_10">Phone Call:</h3>
                 <ul className="cs_footer_contact_list cs_mp_0">
                   <li>
-                    <a href="tel:+919266812465" aria-label="Phone call link">+91 92668 12465</a>
+                    <a href="tel:+447469369962" aria-label="Phone call link">+44 7469 369962</a>
                   </li>
                 
                 </ul>
