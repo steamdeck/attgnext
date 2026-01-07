@@ -12,7 +12,7 @@ const About4 = () => {
                 }
             `}} />
             <section className="cs_about cs_style_1 position-relative overflow-hidden">
-            <div className="cs_height_40 cs_height_lg_30"></div>
+            <div className="cs_height_80 cs_height_lg_60"></div>
             <div className="container">
                 <div className="row cs_gap_y_40 cs_tab_reverse">
                     <div className="col-lg-6">
@@ -21,45 +21,45 @@ const About4 = () => {
                                 <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_mb_12">
                                     Our Story<span className="cs_shape_right"></span>
                                 </p>
-                                <h2 className="cs_fs_48 cs_mb_15 wow fadeInDown">Building Digital Excellence Since Day One</h2>
+                                <h2 className="cs_fs_48 cs_mb_15 wow fadeInDown">From Vision to Reality: The Journey That Shaped Us</h2>
                                 <p className="cs_section_heading_text mb-3">
-                                    Founded with a vision to transform how businesses connect with their audiences in the digital age, we have grown from a small team of passionate marketers into a full-service digital agency trusted by businesses worldwide.
+                                    Every great story has a beginning, and ours started with a simple yet powerful realization: businesses everywhere were struggling to navigate the complex, ever-changing world of digital marketing. Traditional agencies offered cookie-cutter solutions, while genuine expertise remained out of reach for most. We knew there had to be a better way.
                                 </p>
                                 <p className="cs_section_heading_text mb-3">
-                                    Our journey began with a simple belief: every business, regardless of size, deserves access to world-class digital marketing solutions. This philosophy has guided us through years of growth, innovation, and countless successful projects.
+                                    Founded in 2020 by a team of digital enthusiasts and business strategists, AT Tech Global emerged not just as another agency, but as a movement to democratize digital excellence. Our founders brought together decades of combined experience from Fortune 500 companies, innovative startups, and everything in between. But more than credentials, they brought a shared passion: making transformative digital marketing accessible to every business with a dream.
                                 </p>
                                 <p className="cs_section_heading_text mb-3">
-                                    Today, we're proud to have helped hundreds of businesses achieve their digital goals, from startups making their first mark to established enterprises expanding their online presence. Our commitment to excellence, combined with our deep understanding of digital trends, has made us a preferred partner for businesses seeking sustainable growth.
+                                    The early days were humbling. We didn't just want clients—we wanted partners who believed in our vision. We invested countless hours understanding different industries, experimenting with emerging technologies, and perfecting our craft. Each success taught us something new; every challenge made us stronger. Today, we stand proud as a trusted partner to over 500 businesses worldwide, but we haven't forgotten our roots.
                                 </p>
                                 <p className="cs_section_heading_text mb-0">
-                                    As we look to the future, we remain dedicated to pushing boundaries, exploring new possibilities, and helping our clients stay ahead in an ever-evolving digital landscape. Your success story is our success story, and we're here to make it happen.
+                                    What drives us now is what drove us then: the belief that when businesses succeed online, they create jobs, build communities, and change lives. Your growth fuels our passion. Your challenges inspire our innovation. Your success stories become our legacy. This isn't just business for us—it's our purpose, our commitment, and our promise to you.
                                 </p>
                             </div>
                             <ul className="cs_list cs_style_1 cs_medium cs_heading_color cs_mp_0 cs_mb_30">
                                 <li>
                                     <span className="cs_list_icon cs_center"><i className="bi bi-check-lg"></i></span>
-                                    <span className="cs_list_text">Comprehensive digital marketing solutions tailored to your needs</span>
+                                    <span className="cs_list_text">Full-spectrum digital marketing covering all channels and touchpoints</span>
                                 </li>
                                 <li>
                                     <span className="cs_list_icon cs_center"><i className="bi bi-check-lg"></i></span>
-                                    <span className="cs_list_text">Expert team with proven track record of success</span>
+                                    <span className="cs_list_text">Industry-certified professionals with proven expertise and credentials</span>
                                 </li>
                                 <li>
                                     <span className="cs_list_icon cs_center"><i className="bi bi-check-lg"></i></span>
-                                    <span className="cs_list_text">Cutting-edge tools and technologies for optimal results</span>
+                                    <span className="cs_list_text">Advanced technology stack for analytics, automation, and optimization</span>
                                 </li>
                                 <li>
                                     <span className="cs_list_icon cs_center"><i className="bi bi-check-lg"></i></span>
-                                    <span className="cs_list_text">Transparent reporting and regular performance updates</span>
+                                    <span className="cs_list_text">Transparent metrics and detailed reporting with actionable insights</span>
                                 </li>
                                 <li>
                                     <span className="cs_list_icon cs_center"><i className="bi bi-check-lg"></i></span>
-                                    <span className="cs_list_text">Dedicated support and ongoing optimization</span>
+                                    <span className="cs_list_text">Continuous support, optimization, and strategic consultation</span>
                                 </li>
                             </ul>
                             <div className="cs_about_btn_group" style={{ marginTop: '20px' }}>
-                                <Link href="/service" aria-label="View our services" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>Explore Services</span></Link>
-                                <Link href="/contact" aria-label="Contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Start Your Journey</span></Link>
+                                <Link href="/service" aria-label="View our services" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>Discover Our Services</span></Link>
+                                <Link href="/contact" aria-label="Contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Partner With Us</span></Link>
                             </div>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ const About4 = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_40 cs_height_lg_30"></div>
+            <div className="cs_height_80 cs_height_lg_60"></div>
         </section>
         </>
     );
