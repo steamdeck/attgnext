@@ -24,7 +24,7 @@ const Contact2 = () => {
                     <i className="bi bi-telephone-fill"></i>
                     </span>
                     <div className="cs_iconbox_info">
-                      <a href="tel:+919266812465" aria-label="Phone call button">+91 92668 12465</a>
+                      <a href="tel:+447469369962" aria-label="Phone call button">+44 7469 369962</a>
                     </div>
                   </div>
                 </li>
@@ -44,7 +44,7 @@ const Contact2 = () => {
                     <i className="bi bi-geo-alt-fill"></i>
                     </span>
                     <div className="cs_iconbox_info">
-                      <p className="mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                      <p className="mb-0">6 Armadale Drive Leicester, Le5 1he ,United Kingdom</p>
                     </div>
                   </div>
                 </li>
