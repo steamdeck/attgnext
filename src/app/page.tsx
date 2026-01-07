@@ -11,10 +11,10 @@ import Video1 from './Components/Video/Video1';
 import Brand1 from './Components/Brand/Brand1';
 import Contact1 from './Components/Contact/Contact1';
 import LazyWrapper from './Components/Common/LazyWrapper';
+import Testimonial1 from './Components/Testimonial/Testimonial1';
 import { 
   DynamicProject1, 
   DynamicServices1, 
-  DynamicTestimonial1, 
   DynamicTeam1, 
   DynamicBlog1 
 } from './Components/Common/DynamicWrapper';
@@ -48,7 +48,7 @@ const HomePage = () => {
                 <Brand1 />
             </LazyWrapper>
             <LazyWrapper>
-                <DynamicTestimonial1 />
+                <Testimonial1 />
             </LazyWrapper>
             <LazyWrapper>
                 <DynamicTeam1 />
