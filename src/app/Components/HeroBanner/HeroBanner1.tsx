@@ -38,7 +38,7 @@ const HeroBanner1 = () => {
               <p className="cs_hero_subtitle cs_accent_color cs_semibold">Best Of Your Growth, Our Mission</p>
               <h1 className="cs_hero_title cs_extra_bold wow fadeInDown">Digital  Marketing <span className="cs_accent_color cs_semibold">Solutions.</span></h1>
               <div className="cs_hero_text_wrapper">
-                <p className="cs_hero_text cs_medium wow fadeInRight">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even</p>
+                <p className="cs_hero_text cs_medium wow fadeInRight">We deliver innovative digital marketing solutions that drive growth and maximize your business potential.</p>
                 <div className="cs_hero_feature_wrapper">
                   <Link href="/about" className="cs_totating_logo cs_heading_bg cs_radius_50 position-relative wow zoomIn">
                   <Image src="/assets/img/circular_text.svg" alt="img" width={94} height={94}   />

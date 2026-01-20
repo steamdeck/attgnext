@@ -34,7 +34,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative"
                     name="Basic Plan"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Perfect for startups and small businesses looking to establish their online presence"
                     content2="Up to 10 users + 1.99 per user"
                     price="$149"
                     duration="Par month"
@@ -46,7 +46,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
@@ -55,7 +55,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative active"
                     name="Most Popular"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Ideal for growing businesses that need comprehensive digital marketing solutions"
                     content2="Up to 10 users + 1.99 per user"
                     price="$179"
                     duration="Par month"
@@ -67,7 +67,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
@@ -76,7 +76,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative"
                     name="Premium Plan"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Enterprise-level solution for businesses requiring advanced features and support"
                     content2="Up to 10 users + 1.99 per user"
                     price="$199"
                     duration="Par month"
@@ -88,7 +88,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
@@ -101,7 +101,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative"
                     name="Basic Plan"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Perfect for startups and small businesses looking to establish their online presence"
                     content2="Up to 10 users + 1.99 per user"
                     price="$449"
                     duration="Par month"
@@ -113,7 +113,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
@@ -121,7 +121,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative active"
                     name="Most Popular"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Ideal for growing businesses that need comprehensive digital marketing solutions"
                     content2="Up to 10 users + 1.99 per user"
                     price="$579"
                     duration="Par month"
@@ -133,7 +133,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
@@ -141,7 +141,7 @@ const Pricing2 = () => {
                 <PricingCard2
                     addclass="cs_pricing_table cs_style_1 cs_type_1 cs_white_bg cs_radius_20 position-relative"
                     name="Premium Plan"
-                    content1="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                    content1="Enterprise-level solution for businesses requiring advanced features and support"
                     content2="Up to 10 users + 1.99 per user"
                     price="$699"
                     duration="Par month"
@@ -153,7 +153,7 @@ const Pricing2 = () => {
                         "Dedicated IP Address",
                     ]}
                     btnname="choose Plan"
-                    btnurl="/contact"                    
+                    btnurl="/contact"
                 ></PricingCard2>
 
                 </div>
