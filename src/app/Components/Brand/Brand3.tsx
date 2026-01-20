@@ -76,7 +76,7 @@ const Brand3 = () => {
                     </p>
                     <h2 className="cs_fs_48 mb-0 wow fadeInUp">Empower Your Business With Innovation</h2>
                   </div>
-                  <p className="cs_mb_32">There are many variations of passages of Lorem available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going</p>
+                  <p className="cs_mb_32">We help businesses grow through innovative digital solutions and strategic marketing approaches tailored to your unique needs.</p>
                   <div className="cs_features_wrapper">
                     <div className="cs_iconbox cs_style_1">
                       <span className="cs_iconbox_icon cs_center cs_blue_bg cs_radius_50">

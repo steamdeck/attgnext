@@ -33,7 +33,7 @@ const Pricing1 = () => {
                         <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20"
                             name="Basic Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Perfect for startups and small businesses looking to establish their online presence"
                             price="$129"
                             duration="/Par month"
                             featurelist={[
@@ -53,7 +53,7 @@ const Pricing1 = () => {
                     <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20 position-relative active"
                             name="Standard Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Ideal for growing businesses that need comprehensive digital marketing solutions"
                             price="$250"
                             duration="/Par month"
                             featurelist={[
@@ -73,7 +73,7 @@ const Pricing1 = () => {
                     <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20"
                             name="Premium Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Enterprise-level solution for businesses requiring advanced features and support"
                             price="$500"
                             duration="/Par month"
                             featurelist={[
@@ -97,7 +97,7 @@ const Pricing1 = () => {
                     <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20"
                             name="Basic Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Perfect for startups and small businesses looking to establish their online presence"
                             price="$450"
                             duration="/Par month"
                             featurelist={[
@@ -117,7 +117,7 @@ const Pricing1 = () => {
                     <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20 position-relative active"
                             name="Standard Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Ideal for growing businesses that need comprehensive digital marketing solutions"
                             price="$250"
                             duration="/Par month"
                             featurelist={[
@@ -137,7 +137,7 @@ const Pricing1 = () => {
                     <PricingCard
                             addclass="cs_pricing_table cs_style_1 cs_white_bg cs_radius_20"
                             name="Premium Plan"
-                            content="Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et"
+                            content="Enterprise-level solution for businesses requiring advanced features and support"
                             price="$500"
                             duration="/Par month"
                             featurelist={[

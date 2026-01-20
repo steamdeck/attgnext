@@ -36,7 +36,7 @@ const TeamDetails = () => {
                     </a>
                   </div>
                 </div>
-                <p className="team_subtitle cs_mb_27">Sed ut perspiciatis unde omnis iste natus error sit food voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                <p className="team_subtitle cs_mb_27">Kathryn is a talented UI/UX designer with extensive experience in creating user-centered digital experiences that drive business growth.</p>
                 <div className="cs_team_skills">
                   <h3 className="cs_fs_20 cs_mb_31">Skills:</h3>
                   <div className="cs_progress_info_wrapper">

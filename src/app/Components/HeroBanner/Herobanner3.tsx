@@ -77,7 +77,7 @@ const Herobanner3 = () => {
                 <span>Busi<span className="cs_stroke_text">ness</span></span>
                 <span>strategy</span>
               </h1>
-              <p className="cs_hero_subtitle cs_medium cs_white_color cs_mb_32 wow fadeInUp">Curabitur faucibus tellus nisi, vel vulputate risus aliquam et. Nunc nec lacinia mi. Integer ut <br/> posuere ipsum. In mattis quam ut velit porttitor tristique. Etiam pulvinar consequat <br/> condimentum. Phasellus ac tempus ex, at scelerisque lacus.</p>
+              <p className="cs_hero_subtitle cs_medium cs_white_color cs_mb_32 wow fadeInUp">Transform your business with our strategic approach and innovative solutions designed for growth.</p>
               <div className="cs_btn_group">
                 <Link href="/contact" aria-label="Contact button" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>GET IN TOUCH</span></Link>
                 <div className="cs_client_info_wrapper wow fadeInRight">

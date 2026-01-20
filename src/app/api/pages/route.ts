@@ -29,7 +29,7 @@ const mockPages = [
         name: 'Hero Description - Line 41',
         path: '1',
         type: 'description' as const,
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even',
+        content: 'We deliver innovative digital marketing solutions that drive growth and maximize your business potential.',
         position: { line: 41, column: 0 },
         context: '<p className="cs_hero_text cs_medium wow fadeInRight">'
       }
