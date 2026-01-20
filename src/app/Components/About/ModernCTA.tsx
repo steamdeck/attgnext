@@ -38,7 +38,6 @@ const ModernCTA = () => {
                 }}></div>
             </div>
 
-            <div className="cs_height_100 cs_height_lg_80"></div>
             <div className="container position-relative" style={{ zIndex: '1' }}>
                 <div className="row">
                     <div className="col-12">
@@ -167,7 +166,6 @@ const ModernCTA = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
         </section>
     );
 };

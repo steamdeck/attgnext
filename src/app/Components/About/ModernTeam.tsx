@@ -37,7 +37,6 @@ const ModernTeam = () => {
 
     return (
         <section className="position-relative overflow-hidden" style={{ background: '#F6F3FE' }}>
-            <div className="cs_height_100 cs_height_lg_80"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -159,7 +158,6 @@ const ModernTeam = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
         </section>
     );
 };

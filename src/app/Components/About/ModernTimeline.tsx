@@ -50,7 +50,6 @@ const ModernTimeline = () => {
 
     return (
         <section className="cs_about cs_style_1 position-relative overflow-hidden">
-            <div className="cs_height_100 cs_height_lg_80"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -198,7 +197,6 @@ const ModernTimeline = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
         </section>
     );
 };

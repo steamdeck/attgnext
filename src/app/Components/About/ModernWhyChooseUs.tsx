@@ -44,7 +44,6 @@ const ModernWhyChooseUs = () => {
 
     return (
         <section className="cs_gray_bg_2 position-relative overflow-hidden">
-            <div className="cs_height_100 cs_height_lg_80"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -138,10 +137,6 @@ const ModernWhyChooseUs = () => {
                                         background: white;
                                         color: #3F66EF;
                                     }
-                                    .cs_card:hover h3,
-                                    .cs_card:hover p {
-                                        color: white;
-                                    }
                                     .cs_card:hover .position-absolute {
                                         opacity: 1;
                                     }
@@ -181,7 +176,6 @@ const ModernWhyChooseUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
         </section>
     );
 };
