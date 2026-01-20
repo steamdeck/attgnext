@@ -38,7 +38,6 @@ const ModernFAQ = () => {
 
     return (
         <section className="cs_gray_bg_2 position-relative overflow-hidden">
-            <div className="cs_height_100 cs_height_lg_80"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -119,7 +118,16 @@ const ModernFAQ = () => {
                                     style={{
                                         background: 'white',
                                         color: '#3F66EF',
-                                        borderColor: 'white'
+                                        borderColor: 'white',
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = '#3F66EF';
+                                        e.currentTarget.style.color = 'white';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = 'white';
+                                        e.currentTarget.style.color = '#3F66EF';
                                     }}
                                     aria-label="Contact us for more information"
                                 >
@@ -131,7 +139,6 @@ const ModernFAQ = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
             
             <style jsx>{`
                 @keyframes fadeIn {

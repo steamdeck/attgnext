@@ -46,7 +46,7 @@ const Footer2 = () => {
                   </span>
                   <div className="cs_iconbox_info">
                     <p className="cs_iconbox_subtitle cs_fs_14 cs_white_color_2 cs_mb_1">call emergency</p>
-                    <a href="tel:+447469369962" aria-label="Phone call button" className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color">+44 7469 369962</a>
+                    <a href="tel:+919266812465" aria-label="Phone call button" className="cs_iconbox_title cs_fs_20 cs_bold cs_white_color">+91 92668 12465</a>
                   </div>
                 </div>
               </div>

@@ -125,7 +125,6 @@ const ModernAboutHero = () => {
                     </div>
                 </div>
             </div>
-            <div className="cs_height_100 cs_height_lg_80"></div>
         </section>
     );
 };

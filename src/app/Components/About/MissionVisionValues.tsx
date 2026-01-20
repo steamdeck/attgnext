@@ -29,7 +29,7 @@ const MissionVisionValues = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="cs_section_heading cs_style_1 text-center cs_mb_50">
-                            <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20">
+                            <p className="cs_section_subtitle cs_center cs_fs-18 cs_semibold cs_accent_color cs_mb_20" style={{ textShadow: '0 2px 4px rgba(255,255,255,0.5)' }}>
                                 <span className="cs_shape_right"></span>Our Foundation<span className="cs_shape_right"></span>
                             </p>
                             <h2 className="cs_fs_48 mb-0">Mission, Vision & Values That Drive Our Success</h2>
