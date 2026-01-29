@@ -12,7 +12,8 @@ export default function SettingsPage() {
       facebook: 'https://facebook.com/attechglobal',
       twitter: 'https://twitter.com/attechglobal',
       linkedin: 'https://linkedin.com/company/attechglobal',
-      instagram: 'https://instagram.com/attechglobal'
+      instagram: 'https://instagram.com/attechglobal',
+      youtube: 'https://www.youtube.com/@ATTechGlobal'
     },
     seo: {
       metaTitle: 'AT Tech Global - Digital Marketing Agency',

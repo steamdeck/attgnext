@@ -15,8 +15,7 @@ import Testimonial1 from './Components/Testimonial/Testimonial1';
 import { 
   DynamicProject1, 
   DynamicServices1, 
-  DynamicTeam1, 
-  DynamicBlog1 
+  DynamicTeam1 
 } from './Components/Common/DynamicWrapper';
 
 const HomePage = () => {
@@ -55,9 +54,6 @@ const HomePage = () => {
             </LazyWrapper>
             <LazyWrapper>
                 <Contact1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <DynamicBlog1 />
             </LazyWrapper>
             <Footer1 />
         </div>

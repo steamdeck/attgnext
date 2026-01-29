@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server'
-import { initDatabase, allQuery, getQuery } from '@/lib/database'
+import { initDatabase, allQuery, getQuery, runQuery } from '@/lib/database'
 
 // Initialize database on first request
 let dbInitialized = false
@@ -56,6 +56,50 @@ export async function GET(request: NextRequest) {
 
   } catch (error) {
     console.error('Error fetching blogs:', error)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+  }
+}
+
+// POST /api/blogs - Create a new blog post
+export async function POST(request: NextRequest) {
+  try {
+    await ensureDatabase()
+
+    const body = await request.json()
+    const { title, content, excerpt, image, slug, category, author, published_date } = body
+
+    // Validate required fields
+    if (!title || !slug) {
+      return NextResponse.json({ error: 'Title and slug are required' }, { status: 400 })
+    }
+
+    // Insert the blog
+    const insertQuery = `
+      INSERT INTO blogs (title, content, excerpt, image, slug, category, author, published_date, status)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'published')
+    `
+    const result = await runQuery(insertQuery, [
+      title,
+      content || '',
+      excerpt || '',
+      image || '/assets/img/post_1.jpg',
+      slug,
+      category || 'General',
+      author || 'Admin',
+      published_date || new Date().toISOString()
+    ])
+
+    return NextResponse.json({
+      success: true,
+      id: result.id,
+      message: 'Blog created successfully'
+    }, { status: 201 })
+
+  } catch (error: any) {
+    console.error('Error creating blog:', error)
+    if (error.message?.includes('UNIQUE constraint failed')) {
+      return NextResponse.json({ error: 'A blog with this slug already exists' }, { status: 409 })
+    }
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }

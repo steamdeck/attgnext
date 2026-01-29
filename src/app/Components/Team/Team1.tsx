@@ -5,10 +5,10 @@ import React from 'react';
 const Team1 = () => {
 
     const teamContent = [
-        {img:'/assets/img/team_1.jpg', name:'Alex Thomax', content:'Founder & Director'},
-        {img:'/assets/img/team_2.jpg', name:'Hardik Vaish', content:'Senior Developer'},
-        {img:'/assets/img/team_3.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head'},
-        {img:'/assets/img/team_4.jpg', name:'Floyd Miles', content:'Senior Developer'},
+        {img:'https://i.ibb.co/rK6Nw1zF/Alex-Thomas.jpg', name:'Alex Thomax', content:'Founder & Director'},
+        {img:'https://i.ibb.co/PvwSYB7M/Hardik-Vaish.jpg', name:'Hardik Vaish', content:'Senior Developer'},
+        {img:'https://i.ibb.co/1twVNRFX/Vinit-Pushpak.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head'},
+        {img:'https://i.ibb.co/JjvsyF78/Rishi.jpg', name:'Rishi', content:'Digital Marketing Assistant'},
       ];
 
     return (

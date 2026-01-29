@@ -44,6 +44,9 @@ const Footer1 = () => {
                 <a href="https://wa.me/919266812465" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
                   <i className="bi bi-whatsapp"></i>
                 </a>
+                <a href="https://www.youtube.com/@ATTechGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="cs_center cs_radius_50">
+                  <i className="bi bi-youtube"></i>
+                </a>
               </div>
             </div>
             <div className="cs_footer_links_wrapper">
@@ -80,18 +83,6 @@ const Footer1 = () => {
                   </li>
                 
                 </ul>
-              </div>
-              <div className="cs_footer_widget">
-                <h2 className="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_27 position-relative">Newsletter</h2>
-                <p className="cs_mb_27">Sign up to seargin weekly newsletter to get the latest updates.</p>
-                <div className="cs_footer_newsletter cs_style_1">
-                  <form action="#" className="cs_footer_newsletter_form cs_radius_8">
-                    <input type="text" placeholder="Enter Email Address" />
-                    <button aria-label="Subscribe button" className="cs_btn cs_style_1 cs_center">
-                    <span><i className="bi bi-send"></i></span>
-                    </button>
-                  </form>
-                </div>
               </div>
             </div>
           </div>

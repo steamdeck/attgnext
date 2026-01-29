@@ -5,6 +5,7 @@ import React from 'react';
 const Blog4 = () => {
 
     const chooseContent = [
+        {img:'https://i.ibb.co/B5JBLqQv/Gurgaon-Digital-Marketing-Sprouting-in-New-Strategy.jpg', title:'Gurgaon Digital Marketing Sprouting in New Strategy.', content:'Digital Marketing', link:'/blog/gurgaon-digital-marketing-sprouting-new-strategy', date:'29'},
         {img:'/assets/img/post_6.jpg', title:'Digital Marketing Agency in Gurugram: Your Gateway to Business Growth', content:'Digital Marketing', link:'/blog/digital-marketing-agency-in-gurugram', date:'15'},
         {img:'/assets/img/post_7.jpg', title:'Unlocking Potential Through Technology', content:'Marketing', link:'/blog/blog-details', date:'14'},
         {img:'/assets/img/post_8.jpg', title:'Simplify Streamline Succeed IT Solutions', content:'Technology', link:'/blog/blog-details', date:'13'},
