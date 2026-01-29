@@ -82,6 +82,9 @@ export default function Header4({ variant } : any ) {
                   <a href="https://wa.me/447469369962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50">
                     <i className="bi bi-whatsapp"></i>
                   </a>
+                  <a href="https://www.youtube.com/@ATTechGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="cs_center cs_radius_50">
+                    <i className="bi bi-youtube"></i>
+                  </a>
                 </div>
               </div>
             </div>

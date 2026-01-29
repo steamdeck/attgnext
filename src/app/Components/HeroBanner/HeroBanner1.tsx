@@ -10,7 +10,7 @@ const HeroBanner1 = () => {
     const [toggle, setToggle] = useState(false);
   
     const handelClick = () => {
-      setIframeSrc("https://www.youtube.com/embed/HC-tgFdIcB0");
+      setIframeSrc("https://www.youtube.com/embed/pqbZC2wEEwg?si=LITKDmYy1Cmsnbqj");
       setToggle(!toggle);
     };
     const handelClose = () => {
@@ -106,11 +106,7 @@ const HeroBanner1 = () => {
               <span className="cs_social_text">LinkedIn</span>
               <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-linkedin"></i></span>
               </a>
-              <a href="#" aria-label="Social link">
-              <span className="cs_social_text">Twitter</span>
-              <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-twitter-x"></i></span>
-              </a>
-              <a href="#" aria-label="Social link">
+              <a href="https://www.youtube.com/@ATTechGlobal" aria-label="Social link">
               <span className="cs_social_text">YouTube</span>
               <span className="cs_social_icon cs_heading_bg cs_center cs_accent_color cs_radius_50"><i className="bi bi-youtube"></i></span>
               </a>

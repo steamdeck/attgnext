@@ -72,6 +72,9 @@ const Footer2 = () => {
                 <a href="#" aria-label="Social link" className="cs_center cs_radius_50">
                 <i className="bi bi-instagram"></i>
                 </a>
+                <a href="https://www.youtube.com/@ATTechGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="cs_center cs_radius_50">
+                  <i className="bi bi-youtube"></i>
+                </a>
                 </div>
               </div>
               <div className="cs_footer_links_wrapper">

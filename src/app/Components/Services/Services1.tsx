@@ -5,10 +5,10 @@ import React from 'react';
 const Services1 = () => {
 
     const chooseContent = [
-        {img:'/assets/img/service_item_bg.jpg', title:'Brand design identity', content:'In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful'},
-        {img:'/assets/img/service_item_bg.jpg', title:'web app development', content:'In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful'},
-        {img:'/assets/img/service_item_bg.jpg', title:'UI/UX Design', content:'In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful'},
-        {img:'/assets/img/service_item_bg.jpg', title:'SEO & Analytics', content:'In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful'},
+        {img:'/assets/img/service_item_bg.jpg', title:'Brand design identity', content:'We create compelling brand identities that resonate with your target audience and establish a strong market presence.'},
+        {img:'/assets/img/service_item_bg.jpg', title:'Web App Development', content:'Building robust, scalable, and high-performance web applications tailored to your business needs using modern technologies.'},
+        {img:'/assets/img/service_item_bg.jpg', title:'UI/UX Design', content:'Crafting intuitive and engaging user experiences through meticulous interface design and user-centric research.'},
+        {img:'/assets/img/service_item_bg.jpg', title:'SEO & Analytics', content:'Optimizing your digital presence to improve search rankings and providing data-driven insights to enhance performance.'},
       ]; 
 
     return (

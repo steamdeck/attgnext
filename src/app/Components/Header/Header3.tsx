@@ -73,6 +73,9 @@ export default function Header3({ variant } : any ) {
                     <a href="#" aria-label="Social link" className="cs_center">
                     <i className="bi bi-instagram"></i>
                     </a>
+                    <a href="https://www.youtube.com/@ATTechGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="cs_center">
+                      <i className="bi bi-youtube"></i>
+                    </a>
                   </div>
                 </div>
               </div>

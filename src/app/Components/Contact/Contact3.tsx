@@ -173,6 +173,7 @@ const Contact3 = () => {
                         <a href="https://www.instagram.com/at_tech_global/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="cs_center cs_radius_50"><i className="bi bi-instagram"></i></a>
                         <a href="https://www.threads.com/@at_tech_global" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="cs_center cs_radius_50"><i className="bi bi-at"></i></a>
                         <a href="https://wa.me/447469369962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="cs_center cs_radius_50"><i className="bi bi-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@ATTechGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="cs_center cs_radius_50"><i className="bi bi-youtube"></i></a>
                       </div>
                     </div>
                   </div>

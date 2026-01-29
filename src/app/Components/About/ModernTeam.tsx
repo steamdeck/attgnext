@@ -6,31 +6,31 @@ import Image from 'next/image';
 const ModernTeam = () => {
     const team = [
         {
-            name: 'Alex Thompson',
-            role: 'Founder & CEO',
-            image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-            bio: 'Digital marketing expert with 15+ years of experience helping businesses scale.',
+            name: 'Alex Thomax',
+            role: 'Founder & Director',
+            image: 'https://i.ibb.co/rK6Nw1zF/Alex-Thomas.jpg',
+            bio: 'Visionary leader with expertise in building innovative digital solutions and driving business growth.',
             social: { linkedin: '#', twitter: '#', email: '#' }
         },
         {
-            name: 'Sarah Chen',
-            role: 'Head of Strategy',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-            bio: 'Strategic thinker specializing in data-driven campaign optimization.',
+            name: 'Hardik Vaish',
+            role: 'Senior Developer',
+            image: 'https://i.ibb.co/PvwSYB7M/Hardik-Vaish.jpg',
+            bio: 'Skilled developer specializing in building scalable web applications and delivering high-quality solutions.',
             social: { linkedin: '#', twitter: '#', email: '#' }
         },
         {
-            name: 'Marcus Rodriguez',
-            role: 'Technical Director',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-            bio: 'Full-stack developer focused on performance and user experience.',
+            name: 'Vinit Pushpak',
+            role: 'Digital Marketing Head',
+            image: 'https://i.ibb.co/1twVNRFX/Vinit-Pushpak.jpg',
+            bio: 'Digital marketing strategist driving brand growth through data-driven campaigns and innovative strategies.',
             social: { linkedin: '#', twitter: '#', email: '#' }
         },
         {
-            name: 'Emily Watson',
-            role: 'Creative Lead',
-            image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-            bio: 'Award-winning designer bringing brands to life through visual storytelling.',
+            name: 'Rishi',
+            role: 'Digital Marketing Assistant',
+            image: 'https://i.ibb.co/JjvsyF78/Rishi.jpg',
+            bio: 'Enthusiastic marketing professional assisting in campaign execution and social media management.',
             social: { linkedin: '#', twitter: '#', email: '#' }
         }
     ];

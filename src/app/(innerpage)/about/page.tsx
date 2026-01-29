@@ -98,7 +98,8 @@ const structuredData = {
     "https://facebook.com/attechglobal",
     "https://twitter.com/attechglobal",
     "https://linkedin.com/company/attechglobal",
-    "https://instagram.com/attechglobal"
+    "https://instagram.com/attechglobal",
+    "https://www.youtube.com/@ATTechGlobal"
   ],
   "serviceArea": {
     "@type": "Place",
