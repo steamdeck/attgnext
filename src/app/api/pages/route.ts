@@ -29,7 +29,7 @@ const mockPages = [
         name: 'Hero Description - Line 41',
         path: '1',
         type: 'description' as const,
-        content: 'We deliver innovative digital marketing solutions that drive growth and maximize your business potential.',
+        content: 'We deliver innovative, results-driven Digital Marketing solutions designed to accelerate growth, strengthen your brand presence, and maximize your business potential. By combining data-backed strategies, creative execution, and the latest digital technologies, we help you reach the right audience, increase engagement, and convert opportunities into measurable success. Our approach is tailored to your unique goals, ensuring sustainable growth and long-term competitive advantage in the digital landscape.',
         position: { line: 41, column: 0 },
         context: '<p className="cs_hero_text cs_medium wow fadeInRight">'
       }
