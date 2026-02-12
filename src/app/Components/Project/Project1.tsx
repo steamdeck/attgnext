@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
 const Project1 = () => {
@@ -30,23 +29,17 @@ const Project1 = () => {
           <div className="cs_horizontal_slider_in">
             <div className="cs_project_list">
             {chooseContent.map((item, i) => (
-              <Link key={i} href="/project/project-details" aria-label="Case study details page link" className="cs_card cs_style_1 cs_center position-relative">
+              <div key={i} className="cs_card cs_style_1 cs_center position-relative">
               <Image src={item.img} alt="Project Image" width={300} height={200} priority={i < 3} />
-              <span className="cs_card_btn cs_center position-absolute">
-                <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
-              </span>
-              </Link>
+              </div>
                ))}
 
             </div>
             <div className="cs_project_list">
             {chooseContent.map((item, i) => (
-              <Link key={i} href="/project/project-details" aria-label="Case study details page link" className="cs_card cs_style_1 cs_center position-relative">
+              <div key={i} className="cs_card cs_style_1 cs_center position-relative">
               <Image src={item.img} alt="Project Image" width={300} height={200} />
-              <span className="cs_card_btn cs_center position-absolute">
-              <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23}   />
-              </span>
-              </Link>
+              </div>
               ))}
 
             </div>

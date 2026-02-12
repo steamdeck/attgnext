@@ -9,20 +9,9 @@ import ModernCTA from '../../Components/About/ModernCTA';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'About AT Tech Global | Your Partner in Digital Excellence',
-  description: 'Discover the story behind AT Tech Global. Since 2020, we\'ve helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.',
-  keywords: [
-    'about AT Tech Global',
-    'digital marketing agency',
-    'our story',
-    'digital marketing experts',
-    'business growth partners',
-    'digital transformation agency',
-    'SEO marketing company',
-    'social media agency',
-    'web development experts',
-    'digital strategy'
-  ],
+  title: 'META TITLE TEST - 2026-02-11T17-30-00',
+  description: 'This is a test description update. We\'ve helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.',
+  keywords: ['about AT Tech Global', 'digital marketing agency', 'our story', 'digital marketing experts', 'business growth partners', 'digital transformation agency', 'SEO marketing company', 'social media agency', 'web development experts', 'digital strategy'],
   authors: [{ name: 'AT Tech Global' }],
   creator: 'AT Tech Global',
   publisher: 'AT Tech Global',

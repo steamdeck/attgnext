@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 export const dynamic = 'force-dynamic'
-import { initDatabase, getDatabase, allQuery, runQuery, getQuery } from '../../../lib/database'
+import { initDatabase, getDatabase, allQuery, runQuery, getQuery } from '@/lib/database'
 import path from 'path'
 import fs from 'fs'
 

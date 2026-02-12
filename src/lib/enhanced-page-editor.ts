@@ -37,8 +37,6 @@ export class EnhancedPageEditor {
   
   private pageConfigs = [
     { route: '/', name: 'Home Page', filePath: 'src/app/page.tsx' },
-    { route: '/home2', name: 'Home Page 2', filePath: 'src/app/home2/page.tsx' },
-    { route: '/home3', name: 'Home Page 3', filePath: 'src/app/home3/page.tsx' },
     { route: '/about', name: 'About Page', filePath: 'src/app/(innerpage)/about/page.tsx' },
     { route: '/service', name: 'Services Page', filePath: 'src/app/(innerpage)/service/page.tsx' },
     { route: '/project', name: 'Projects Page', filePath: 'src/app/(innerpage)/project/page.tsx' },

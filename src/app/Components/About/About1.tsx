@@ -35,23 +35,6 @@ const About1 = () => {
                 <Link href="/about" aria-label="Click to visit about us page" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>About Us</span></Link>
                 <Link href="/service" aria-label="Click to view services" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Our Services</span></Link>
                 <Link href="/contact" aria-label="Click to contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Contact Us</span></Link>
-                <div className="cs_client_info_wrapper wow fadeInRight">
-                  <div className="cs_client_info_header cs_mb_15">
-                    <Image src="/assets/img/icons/star.svg" alt="img" width={18} height={18}   />
-                    <span className="cs_fs_20 cs_bold cs_heading_color">Trustipilot</span>
-                  </div>
-                  <div className="cs_client_review_content">
-                    <div className="cs_client_thumb">
-                      <Image src="/assets/img/depositphotos_659029902-stock-photo-button-empty-button-illustration.jpg" alt="img" width={126} height={42}   />
-                    </div>
-                    <div className="cs_client_rating_info">
-                      <div className="cs_rating" data-rating="4">
-                        <div className="cs_rating_percentage"></div>
-                      </div>
-                      <p className="cs_fs_14 cs_heading_color mb-0">450+ reviews</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -11,33 +11,7 @@ const public_sans = Public_Sans({
   variable: '--body-color-font',
 });
 
-
-export const metadata = {
-  title: {
-    absolute: '',
-    default: 'AT Tech Global - Digital Agency',
-    template: '%s | AT Tech Global - Digital Agency',
-  },
-  description: 'AT Tech Global - Digital Agency in Gurugram',
-  openGraph: {
-    title: 'AT Tech Global - Digital Agency',
-    description: 'AT Tech Global - Digital Agency in Gurugram',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  icons: {
-    icon: [
-      { url: '/assets/img/logo-3.png', sizes: 'any' },
-      { url: '/icon.png', sizes: 'any' },
-    ],
-    shortcut: '/assets/img/logo-3.png',
-    apple: '/assets/img/logo-3.png',
-  },
-};
-
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>

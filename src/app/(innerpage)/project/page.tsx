@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import BreadCumb from '../../Components/Common/BreadCumb';
 
 const page = () => {
@@ -48,30 +47,14 @@ const page = () => {
                     gap: '30px',
                   }}>
                     {latestWorkImages.map((item, i) => (
-                      <Link 
+                      <div 
                         key={i} 
-                        href="/project/project-details" 
-                        aria-label="Case study details page link"
                         className="cs_card cs_style_1 cs_center position-relative"
                         style={{
                           display: 'block',
                           position: 'relative',
                           overflow: 'hidden',
-                          borderRadius: '8px',
-                          transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                          textDecoration: 'none'
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.transform = 'translateY(-5px)';
-                          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-                          const btn = e.currentTarget.querySelector('.cs_card_btn') as HTMLElement;
-                          if (btn) btn.style.opacity = '1';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.transform = 'translateY(0)';
-                          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
-                          const btn = e.currentTarget.querySelector('.cs_card_btn') as HTMLElement;
-                          if (btn) btn.style.opacity = '0';
+                          borderRadius: '8px'
                         }}
                       >
                         <Image 
@@ -87,27 +70,7 @@ const page = () => {
                             borderRadius: '8px'
                           }}
                         />
-                        <span 
-                          className="cs_card_btn cs_center position-absolute"
-                          style={{
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            width: '50px',
-                            height: '50px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                            borderRadius: '50%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            opacity: 0,
-                            transition: 'opacity 0.3s ease',
-                            pointerEvents: 'none'
-                          }}
-                        >
-                          <Image src="/assets/img/icons/arrow_right.svg" alt="img" width={23} height={23} />
-                        </span>
-                      </Link>
+                      </div>
                     ))}
                   </div>
                 </div>
