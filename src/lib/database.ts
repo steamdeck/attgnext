@@ -59,6 +59,27 @@ export interface BlogRecord {
   status: string
 }
 
+export interface PageMetadataRecord {
+  id: number
+  route: string
+  page_name: string
+  title: string
+  meta_title: string
+  meta_description: string
+  keywords: string
+  og_title: string
+  og_description: string
+  og_image: string
+  canonical_url: string
+  robots_index: boolean
+  robots_follow: boolean
+  twitter_title: string
+  twitter_description: string
+  twitter_image: string
+  created_at: string
+  updated_at: string
+}
+
 // Initialize database
 export function initDatabase(): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -132,6 +153,30 @@ async function createTables(): Promise<void> {
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       status VARCHAR(50) DEFAULT 'published'
+    )
+  `)
+
+  // Page metadata table
+  await run(`
+    CREATE TABLE IF NOT EXISTS page_metadata (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      route VARCHAR(500) UNIQUE NOT NULL,
+      page_name VARCHAR(255) NOT NULL,
+      title VARCHAR(255),
+      meta_title VARCHAR(255),
+      meta_description TEXT,
+      keywords TEXT,
+      og_title VARCHAR(255),
+      og_description TEXT,
+      og_image VARCHAR(500),
+      canonical_url VARCHAR(500),
+      robots_index BOOLEAN DEFAULT 1,
+      robots_follow BOOLEAN DEFAULT 1,
+      twitter_title VARCHAR(255),
+      twitter_description TEXT,
+      twitter_image VARCHAR(500),
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `)
 

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Header1 from './Components/Header/Header1';
 import Footer1 from './Components/Footer/Footer1';
@@ -17,46 +19,55 @@ import {
   DynamicServices1, 
   DynamicTeam1 
 } from './Components/Common/DynamicWrapper';
+import SEOHead from './Components/Common/SEOHead';
 
 const HomePage = () => {
     return (
-        <div className='main-page-area'>
-            <Header1 />
-            <HeroBanner1 />
-            <About1 />
-            <Counter1 />
-            <LazyWrapper>
-                <DynamicServices1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <DynamicProject1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Marquee />
-            </LazyWrapper>
-            <LazyWrapper>
-                <HowWeDo />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Process1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Video1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Brand1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Testimonial1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <DynamicTeam1 />
-            </LazyWrapper>
-            <LazyWrapper>
-                <Contact1 />
-            </LazyWrapper>
-            <Footer1 />
-        </div>
+        <>
+            <SEOHead 
+                route="/"
+                defaultTitle="AT Tech Global - Digital Marketing Agency in Gurugram"
+                defaultDescription="Leading digital marketing agency in Gurugram offering SEO, PPC, social media marketing, and web development services. Grow your business with our expert digital solutions."
+                defaultKeywords="digital marketing agency, seo services, web development, ppc advertising, social media marketing, gurugram"
+            />
+            <div className='main-page-area'>
+                <Header1 />
+                <HeroBanner1 />
+                <About1 />
+                <Counter1 />
+                <LazyWrapper>
+                    <DynamicServices1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <DynamicProject1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Marquee />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <HowWeDo />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Process1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Video1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Brand1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Testimonial1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <DynamicTeam1 />
+                </LazyWrapper>
+                <LazyWrapper>
+                    <Contact1 />
+                </LazyWrapper>
+                <Footer1 />
+            </div>
+        </>
     );
 };
 
