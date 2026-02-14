@@ -75,14 +75,12 @@ const Footer1 = () => {
               </div>
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_27 position-relative">Contact Us</h2>
-                <p className="cs_mb_24">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
-                <h3 className="cs_fs_16 cs_white_color cs_mb_10">Phone Call:</h3>
-                <ul className="cs_footer_contact_list cs_mp_0">
-                  <li>
-                    <a href="tel:+919266812465" aria-label="Phone call link">+91 92668 12465</a>
-                  </li>
-                
-                </ul>
+                <p className="cs_mb_4"><b>India</b></p>
+                <p className="cs_mb_4">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                <p className="cs_mb_4"><b>+91 92668 12465</b></p><br />
+                <p className="cs_mb_4"><b>UK</b></p>
+                <p className="cs_mb_4">6 Armadale Drive, Leicester, LE5 1HE, United Kingdom</p>
+                <p className="cs_mb_24"><b>+44 7469 369962</b></p>
               </div>
             </div>
           </div>

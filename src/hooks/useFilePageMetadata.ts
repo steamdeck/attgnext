@@ -82,6 +82,7 @@ export function useAllFilePageMetadata(initialPage = 1, initialSearch = ''): Use
 
   const fetchAllMetadata = async (page: number, searchTerm: string) => {
     try {
+      console.log('fetchAllMetadata called with page:', page, 'search:', searchTerm)
       setLoading(true)
       setError(null)
       
@@ -121,14 +122,17 @@ export function useAllFilePageMetadata(initialPage = 1, initialSearch = ''): Use
 
   useEffect(() => {
     fetchAllMetadata(pagination.currentPage, search)
-  }, [])
+  }, [pagination.currentPage, search])
 
   return {
     metadata,
     loading,
     error,
     pagination,
-    refresh: () => fetchAllMetadata(pagination.currentPage, search),
+    refresh: () => {
+      console.log('Refreshing metadata list...', pagination.currentPage, search)
+      fetchAllMetadata(pagination.currentPage, search)
+    },
     setPage,
     setSearch
   }
@@ -142,6 +146,7 @@ export function useUpdateFilePageMetadata(_route?: string) {
     try {
       setLoading(true)
       setError(null)
+      console.log('updateMetadata called with route:', route, 'updates:', updates)
       
       const encodedRoute = encodeURIComponent(route)
       const response = await fetch(`/api/seo/files/${encodedRoute}`, {
@@ -152,7 +157,9 @@ export function useUpdateFilePageMetadata(_route?: string) {
         body: JSON.stringify(updates)
       })
       
+      console.log('API response status:', response.status)
       const result = await response.json()
+      console.log('API response data:', result)
       
       if (result.success) {
         return { success: true, data: result.data }

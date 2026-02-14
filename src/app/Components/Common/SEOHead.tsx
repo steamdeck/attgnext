@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { usePageMetadata } from '../../../hooks/usePageMetadata'
+import { useFilePageMetadata } from '../../../hooks/useFilePageMetadata'
 
 interface SEOHeadProps {
   route: string
@@ -17,7 +17,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   defaultKeywords = 'digital marketing, seo, web development',
   children 
 }) => {
-  const { metadata, loading } = usePageMetadata(route)
+  const { metadata, loading } = useFilePageMetadata(route)
 
   // If metadata is loading or not found, use defaults
   if (loading || !metadata) {
