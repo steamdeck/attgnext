@@ -125,11 +125,15 @@ export async function parseComponentMetadata(filePath: string): Promise<FileBase
     // Extract route from file path
     const route = FILE_TO_ROUTE_MAP[filePath] || `/${filePath.replace('(innerpage)/', '').replace('/page.tsx', '').replace('page.tsx', '')}`
     
-    // Extract page name from comments or file structure
-    const pageNameMatch = content.match(/\/\/\s*(.+?)\s*Page\s*$/m) || 
-                         content.match(/const\s+(\w+)Page\s*=/) ||
-                         content.match(/export\s+default\s+(\w+)/)
-    const pageName = pageNameMatch ? pageNameMatch[1].replace(/Page$/, '') + ' Page' : filePath.split('/').pop()?.replace('.tsx', '') || 'Page'
+    // Extract page name from file path (most reliable)
+    const pathParts = filePath.replace('(innerpage)/', '').replace('/page.tsx', '').replace('page.tsx', '').split('/')
+    const pageFolderName = pathParts[pathParts.length - 1] || 'home'
+    
+    // Convert folder name to readable page name (e.g., "digital-marketing" -> "Digital Marketing")
+    const pageName = pageFolderName
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ') + ' Page'
     
     // Extract metadata values using regex patterns
     const titleMatch = content.match(/title:\s*['"`]([^'"`]+)['"`]/)
@@ -184,94 +188,108 @@ export async function updateComponentMetadata(
     const fullPath = path.join(process.cwd(), 'src/app', filePath)
     let content = await fs.readFile(fullPath, 'utf8')
     
-    // More robust regex patterns that handle multiline and various quote types
     const escapeQuotes = (str: string) => str.replace(/'/g, "\\'").replace(/"/g, '\\"')
     
-    // Update title - handles both single and double quotes, multiline
-    // Use meta_title if provided, otherwise fall back to title
-    const titleValue = metadata.meta_title !== undefined ? metadata.meta_title : metadata.title
-    if (titleValue !== undefined) {
-      const titlePatterns = [
-        /(export const metadata:\s*Metadata\s*=\s*{[^}]*?)title:\s*['"`]([^'"`]*?)['"`]/gs,
-        /(export const metadata:[^}]*?)title:\s*(['"`])((?:(?!\2).)*)\2/gs
-      ]
-      
-      for (const pattern of titlePatterns) {
-        if (pattern.test(content)) {
-          content = content.replace(pattern, `$1title: '${escapeQuotes(titleValue)}'`)
-          break
+    // Check if file uses SEOHead component or Next.js metadata
+    const usesSEOHead = content.includes('<SEOHead')
+    
+    if (usesSEOHead) {
+      // Update SEOHead component props
+      const titleValue = metadata.meta_title !== undefined ? metadata.meta_title : metadata.title
+      if (titleValue !== undefined) {
+        const seoHeadTitlePattern = /(<SEOHead[^>]*?defaultTitle=)["']([^"']*?)["']/g
+        if (seoHeadTitlePattern.test(content)) {
+          content = content.replace(seoHeadTitlePattern, `$1"${escapeQuotes(titleValue)}"`)
         }
       }
-    }
-    
-    // Update description - handles multiline strings
-    if (metadata.meta_description !== undefined) {
-      const descPatterns = [
-        /(export const metadata:\s*Metadata\s*=\s*{[^}]*?)description:\s*['"`]([^'"`]*?)['"`]/gs,
-        /(export const metadata:[^}]*?)description:\s*(['"`])((?:(?!\2).)*)\2/gs
-      ]
       
-      for (const pattern of descPatterns) {
-        if (pattern.test(content)) {
-          content = content.replace(pattern, `$1description: '${escapeQuotes(metadata.meta_description)}'`)
-          break
+      if (metadata.meta_description !== undefined) {
+        const seoHeadDescPattern = /(<SEOHead[^>]*?defaultDescription=)["']([^"']*?)["']/g
+        if (seoHeadDescPattern.test(content)) {
+          content = content.replace(seoHeadDescPattern, `$1"${escapeQuotes(metadata.meta_description)}"`)
         }
       }
-    }
-    
-    // Update keywords
-    if (metadata.keywords !== undefined) {
-      const keywordsArray = metadata.keywords.split(',').map(k => k.trim()).filter(Boolean)
-      const keywordsString = keywordsArray.map(k => `'${escapeQuotes(k)}'`).join(', ')
       
-      const keywordsPattern = /(export const metadata:[^}]*?)keywords:\s*\[[^\]]*\]/gs
-      if (keywordsPattern.test(content)) {
-        content = content.replace(keywordsPattern, `$1keywords: [${keywordsString}]`)
+      if (metadata.keywords !== undefined) {
+        const seoHeadKeywordsPattern = /(<SEOHead[^>]*?defaultKeywords=)["']([^"']*?)["']/g
+        if (seoHeadKeywordsPattern.test(content)) {
+          content = content.replace(seoHeadKeywordsPattern, `$1"${escapeQuotes(metadata.keywords)}"`)
+        }
       }
-    }
-    
-    // Update Open Graph title
-    if (metadata.og_title !== undefined) {
-      const ogTitlePattern = /(openGraph:\s*{[^}]*?)title:\s*(['"`])((?:(?!\2).)*)\2/gs
-      if (ogTitlePattern.test(content)) {
-        content = content.replace(ogTitlePattern, `$1title: '${escapeQuotes(metadata.og_title)}'`)
+    } else {
+      // Update Next.js metadata export
+      const titleValue = metadata.meta_title !== undefined ? metadata.meta_title : metadata.title
+      if (titleValue !== undefined) {
+        const titlePattern1 = /(export const metadata:\s*Metadata\s*=\s*{[^}]*?)title:\s*['"`]([^'"`]*?)['"`]/
+        const titlePattern2 = /(export const metadata:[^}]*?)title:\s*(['"`])((?:(?!\2).)*)\2/
+        
+        if (titlePattern1.test(content)) {
+          content = content.replace(titlePattern1, `$1title: '${escapeQuotes(titleValue)}'`)
+        } else if (titlePattern2.test(content)) {
+          content = content.replace(titlePattern2, `$1title: '${escapeQuotes(titleValue)}'`)
+        }
       }
-    }
-    
-    // Update Open Graph description
-    if (metadata.og_description !== undefined) {
-      const ogDescPattern = /(openGraph:\s*{[^}]*?)description:\s*(['"`])((?:(?!\2).)*)\2/gs
-      if (ogDescPattern.test(content)) {
-        content = content.replace(ogDescPattern, `$1description: '${escapeQuotes(metadata.og_description)}'`)
+      
+      if (metadata.meta_description !== undefined) {
+        const descPattern1 = /(export const metadata:\s*Metadata\s*=\s*{[^}]*?)description:\s*['"`]([^'"`]*?)['"`]/
+        const descPattern2 = /(export const metadata:[^}]*?)description:\s*(['"`])((?:(?!\2).)*)\2/
+        
+        if (descPattern1.test(content)) {
+          content = content.replace(descPattern1, `$1description: '${escapeQuotes(metadata.meta_description)}'`)
+        } else if (descPattern2.test(content)) {
+          content = content.replace(descPattern2, `$1description: '${escapeQuotes(metadata.meta_description)}'`)
+        }
       }
-    }
-    
-    // Update Open Graph image
-    if (metadata.og_image !== undefined) {
-      const ogImagePattern = /(openGraph:\s*{[^}]*?images:\s*\[\s*{\s*)url:\s*(['"`])((?:(?!\2).)*)\2/gs
-      if (ogImagePattern.test(content)) {
-        content = content.replace(ogImagePattern, `$1url: '${escapeQuotes(metadata.og_image)}'`)
+      
+      if (metadata.keywords !== undefined) {
+        const keywordsArray = metadata.keywords.split(',').map(k => k.trim()).filter(Boolean)
+        const keywordsString = keywordsArray.map(k => `'${escapeQuotes(k)}'`).join(', ')
+        
+        const keywordsPattern = /(export const metadata:[^}]*?)keywords:\s*\[[^\]]*\]/
+        if (keywordsPattern.test(content)) {
+          content = content.replace(keywordsPattern, `$1keywords: [${keywordsString}]`)
+        }
       }
-    }
-    
-    // Update robots index
-    if (metadata.robots_index !== undefined) {
-      const robotsIndexPattern = /(robots:\s*{[^}]*?)index:\s*(true|false)/gs
-      if (robotsIndexPattern.test(content)) {
-        content = content.replace(robotsIndexPattern, `$1index: ${metadata.robots_index}`)
+      
+      if (metadata.og_title !== undefined) {
+        const ogTitlePattern = /(openGraph:\s*{[^}]*?)title:\s*(['"`])((?:(?!\2).)*)\2/
+        if (ogTitlePattern.test(content)) {
+          content = content.replace(ogTitlePattern, `$1title: '${escapeQuotes(metadata.og_title)}'`)
+        }
       }
-    }
-    
-    // Update robots follow
-    if (metadata.robots_follow !== undefined) {
-      const robotsFollowPattern = /(robots:\s*{[^}]*?)follow:\s*(true|false)/gs
-      if (robotsFollowPattern.test(content)) {
-        content = content.replace(robotsFollowPattern, `$1follow: ${metadata.robots_follow}`)
+      
+      if (metadata.og_description !== undefined) {
+        const ogDescPattern = /(openGraph:\s*{[^}]*?)description:\s*(['"`])((?:(?!\2).)*)\2/
+        if (ogDescPattern.test(content)) {
+          content = content.replace(ogDescPattern, `$1description: '${escapeQuotes(metadata.og_description)}'`)
+        }
+      }
+      
+      if (metadata.og_image !== undefined) {
+        const ogImagePattern = /(openGraph:\s*{[^}]*?images:\s*\[\s*{\s*)url:\s*(['"`])((?:(?!\2).)*)\2/
+        if (ogImagePattern.test(content)) {
+          content = content.replace(ogImagePattern, `$1url: '${escapeQuotes(metadata.og_image)}'`)
+        }
+      }
+      
+      if (metadata.robots_index !== undefined) {
+        const robotsIndexPattern = /(robots:\s*{[^}]*?)index:\s*(true|false)/
+        if (robotsIndexPattern.test(content)) {
+          content = content.replace(robotsIndexPattern, `$1index: ${metadata.robots_index}`)
+        }
+      }
+      
+      if (metadata.robots_follow !== undefined) {
+        const robotsFollowPattern = /(robots:\s*{[^}]*?)follow:\s*(true|false)/
+        if (robotsFollowPattern.test(content)) {
+          content = content.replace(robotsFollowPattern, `$1follow: ${metadata.robots_follow}`)
+        }
       }
     }
     
     // Write updated content back to file
     await fs.writeFile(fullPath, content, 'utf8')
+    console.log(`Updated metadata for ${filePath}`)
     return true
   } catch (error) {
     console.error(`Error updating component ${filePath}:`, error)

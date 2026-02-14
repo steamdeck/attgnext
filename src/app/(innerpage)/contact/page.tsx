@@ -10,9 +10,9 @@ const page = () => {
     <>
       <SEOHead 
         route="/contact"
-        defaultTitle="Contact AT Tech Global | Digital Marketing Agency"
-        defaultDescription="Get in touch with AT Tech Global for digital marketing services. Contact our experts for SEO, web development, and marketing solutions."
-        defaultKeywords="contact digital marketing agency, seo consultation, web development inquiry, marketing services"
+        defaultTitle="SRHRS HSR S4YAEH RK7 R"
+        defaultDescription=""
+        defaultKeywords=""
       />
       <div>
         <BreadCumb

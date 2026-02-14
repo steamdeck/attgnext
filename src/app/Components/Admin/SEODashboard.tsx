@@ -1,11 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useAllFilePageMetadata, useUpdateFilePageMetadata, useCreateFilePageMetadata } from '@/hooks/useFilePageMetadata'
 import { PageMetadataRecord } from '@/lib/database'
 
 const SEODashboard = () => {
   const [activeTab, setActiveTab] = useState<'list' | 'editor'>('list')
+  const [editorView, setEditorView] = useState<'form' | 'json'>('form')
+  const [jsonError, setJsonError] = useState<string | null>(null)
   const [editingPage, setEditingPage] = useState<PageMetadataRecord | null>(null)
   const [showCreateForm, setShowCreateForm] = useState(false)
   const [showImportExport, setShowImportExport] = useState(false)
@@ -26,8 +28,10 @@ const SEODashboard = () => {
   // Wrapper to ensure correct route is used
   const updateMetadata = async (updates: Partial<PageMetadataRecord>) => {
     if (!editingPage?.route) {
+      console.error('No route selected for update')
       return { success: false, error: 'No route selected' }
     }
+    console.log('Updating metadata for route:', editingPage.route, 'with updates:', updates)
     return updateFileMetadata(editingPage.route, updates)
   }
 
@@ -48,6 +52,15 @@ const SEODashboard = () => {
     twitter_description: '',
     twitter_image: ''
   })
+
+  const [jsonData, setJsonData] = useState('')
+
+  // Initialize JSON editor when switching to JSON view
+  useEffect(() => {
+    if (editorView === 'json' && !jsonData) {
+      initJsonEditor()
+    }
+  }, [editorView])
 
   // Import/Export handlers
   const handleExport = () => {
@@ -152,6 +165,8 @@ const SEODashboard = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    console.log('Form submitted, editingPage:', editingPage)
+    console.log('FormData:', formData)
     
     try {
       let result
@@ -159,18 +174,24 @@ const SEODashboard = () => {
         // Update existing page
         const updates = { ...formData }
         delete (updates as any).route // Don't update route
+        console.log('Calling updateMetadata with updates:', updates)
         result = await updateMetadata(updates)
       } else {
         // Create new page
+        console.log('Calling createMetadata with formData:', formData)
         result = await createMetadata(formData)
       }
       
+      console.log('API result:', result)
+      
       if (result.success) {
+        console.log('Save successful, refreshing...')
         refresh()
         setActiveTab('list')
         setShowCreateForm(false)
         setEditingPage(null)
       } else {
+        console.error('Save failed:', result.error)
         alert(`Error saving: ${result.error || 'Unknown error'}`)
       }
     } catch (error) {
@@ -183,15 +204,144 @@ const SEODashboard = () => {
     setActiveTab('list')
     setShowCreateForm(false)
     setEditingPage(null)
+    setEditorView('form')
+    setJsonError(null)
+  }
+
+  // Initialize JSON data when entering editor
+  const initJsonEditor = () => {
+    const data = editingPage
+      ? {
+          route: formData.route,
+          page_name: formData.page_name,
+          title: formData.title,
+          meta_title: formData.meta_title,
+          meta_description: formData.meta_description,
+          keywords: formData.keywords,
+          og_title: formData.og_title,
+          og_description: formData.og_description,
+          og_image: formData.og_image,
+          canonical_url: formData.canonical_url,
+          robots_index: formData.robots_index,
+          robots_follow: formData.robots_follow,
+          twitter_title: formData.twitter_title,
+          twitter_description: formData.twitter_description,
+          twitter_image: formData.twitter_image
+        }
+      : { ...formData }
+    setJsonData(JSON.stringify(data, null, 2))
+    setJsonError(null)
+  }
+
+  const switchToJsonView = () => {
+    initJsonEditor()
+    setEditorView('json')
+  }
+
+  const switchToFormView = () => {
+    // Parse JSON and update formData before switching
+    try {
+      const parsed = JSON.parse(jsonData)
+      setFormData({
+        route: parsed.route || '',
+        page_name: parsed.page_name || '',
+        title: parsed.title || '',
+        meta_title: parsed.meta_title || '',
+        meta_description: parsed.meta_description || '',
+        keywords: parsed.keywords || '',
+        og_title: parsed.og_title || '',
+        og_description: parsed.og_description || '',
+        og_image: parsed.og_image || '',
+        canonical_url: parsed.canonical_url || '',
+        robots_index: parsed.robots_index ?? true,
+        robots_follow: parsed.robots_follow ?? true,
+        twitter_title: parsed.twitter_title || '',
+        twitter_description: parsed.twitter_description || '',
+        twitter_image: parsed.twitter_image || ''
+      })
+    } catch (e) {
+      // If JSON is invalid, keep current formData
+      console.warn('Failed to parse JSON when switching to form view')
+    }
+    setEditorView('form')
+    setJsonError(null)
+    setJsonData('')
+  }
+
+  const handleJsonSubmit = async () => {
+    try {
+      setJsonError(null)
+      const parsed = JSON.parse(jsonData)
+
+      // Validate required fields
+      if (!parsed.route || !parsed.page_name) {
+        setJsonError('Route and Page Name are required fields')
+        return
+      }
+
+      let result
+      if (editingPage) {
+        // Update existing page - preserve original route
+        const updates = { ...parsed }
+        delete updates.route
+        result = await updateMetadata(updates)
+      } else {
+        // Create new page
+        result = await createMetadata(parsed)
+      }
+
+      if (result.success) {
+        refresh()
+        setActiveTab('list')
+        setShowCreateForm(false)
+        setEditingPage(null)
+        setEditorView('form')
+      } else {
+        setJsonError(result.error || 'Unknown error')
+      }
+    } catch (error) {
+      if (error instanceof SyntaxError) {
+        setJsonError('Invalid JSON syntax. Please check your input.')
+      } else {
+        setJsonError('Error saving: ' + (error instanceof Error ? error.message : 'Unknown error'))
+      }
+    }
   }
 
   if (activeTab === 'editor') {
     return (
       <div className="space-y-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-gray-900">
-            {editingPage ? 'Edit Page SEO' : 'Create New Page SEO'}
-          </h2>
+          <div className="flex items-center gap-4">
+            <h2 className="text-2xl font-bold text-gray-900">
+              {editingPage ? 'Edit Page SEO' : 'Create New Page SEO'}
+            </h2>
+            {/* View Toggle */}
+            <div className="flex bg-gray-100 rounded-lg p-1">
+              <button
+                type="button"
+                onClick={switchToFormView}
+                className={`px-3 py-1 text-sm rounded-md transition-colors ${
+                  editorView === 'form'
+                    ? 'bg-white text-indigo-600 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Form
+              </button>
+              <button
+                type="button"
+                onClick={switchToJsonView}
+                className={`px-3 py-1 text-sm rounded-md transition-colors ${
+                  editorView === 'json'
+                    ? 'bg-white text-indigo-600 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                JSON
+              </button>
+            </div>
+          </div>
           <button
             onClick={handleCancel}
             className="px-4 py-2 text-gray-600 hover:text-gray-800"
@@ -200,8 +350,52 @@ const SEODashboard = () => {
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* JSON Editor View */}
+        {editorView === 'json' && (
+          <div className="bg-white rounded-lg shadow">
+            <div className="p-4 border-b bg-gray-50">
+              <h3 className="font-medium text-gray-900">JSON Editor</h3>
+              <p className="text-sm text-gray-500 mt-1">
+                Edit metadata directly as JSON. Make sure the JSON is valid before saving.
+              </p>
+            </div>
+            <div className="p-4">
+              <textarea
+                value={jsonData}
+                onChange={(e) => setJsonData(e.target.value)}
+                className="w-full h-96 font-mono text-sm p-4 border rounded-md bg-gray-900 text-green-400 focus:ring-2 focus:ring-indigo-500 resize-none"
+                spellCheck={false}
+              />
+              {jsonError && (
+                <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-md">
+                  <p className="text-sm text-red-700">{jsonError}</p>
+                </div>
+              )}
+            </div>
+            <div className="px-4 py-3 border-t bg-gray-50 flex justify-end gap-3">
+              <button
+                type="button"
+                onClick={handleCancel}
+                className="px-4 py-2 text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={handleJsonSubmit}
+                disabled={updateLoading || createLoading}
+                className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:opacity-50"
+              >
+                {updateLoading || createLoading ? 'Saving...' : (editingPage ? 'Update Page' : 'Create Page')}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Form Editor View */}
+        {editorView === 'form' && (
+          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Route *
@@ -392,7 +586,8 @@ const SEODashboard = () => {
               {updateLoading || createLoading ? 'Saving...' : (editingPage ? 'Update Page' : 'Create Page')}
             </button>
           </div>
-        </form>
+          </form>
+        )}
       </div>
     )
   }
@@ -402,6 +597,12 @@ const SEODashboard = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-gray-900">SEO Management</h2>
         <div className="flex space-x-3">
+          <button
+            onClick={refresh}
+            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          >
+            Refresh
+          </button>
           <button
             onClick={() => setShowImportExport(!showImportExport)}
             className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700"

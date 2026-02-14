@@ -7,7 +7,9 @@
     "build": "next build",
     "build:cpanel": "set CPANEL_EXPORT=true && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "metadata": "node scripts/generate-metadata.js",
+    "metadata:generate": "node scripts/generate-metadata.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",

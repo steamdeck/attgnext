@@ -9,8 +9,8 @@ import ModernCTA from '../../Components/About/ModernCTA';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'META TITLE TEST - 2026-02-11T17-30-00',
-  description: 'This is a test description update. We\'ve helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.',
+  title: 'JSON EDIT TEST',
+  description: 'Form view edit test - new description've helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.',
   keywords: ['about AT Tech Global', 'digital marketing agency', 'our story', 'digital marketing experts', 'business growth partners', 'digital transformation agency', 'SEO marketing company', 'social media agency', 'web development experts', 'digital strategy'],
   authors: [{ name: 'AT Tech Global' }],
   creator: 'AT Tech Global',
