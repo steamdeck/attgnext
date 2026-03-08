@@ -18,13 +18,13 @@ const About2 = () => {
                             "description": "Leading digital marketing agency specializing in SEO, social media marketing, web development, and comprehensive digital solutions for businesses worldwide.",
                             "url": "https://attechglobal.com",
                             "foundingDate": "2020",
-                            "numberOfEmployees": "50-100",
+                            "numberOfEmployees": "49+",
                             "slogan": "Transforming Businesses Through Digital Excellence"
                         }
                     })
                 }}
             />
-            
+
             {/* Hero Stats Bar */}
             <section className="cs_stats_bar cs_primary_bg">
                 <div className="container">
@@ -32,7 +32,7 @@ const About2 = () => {
                     <div className="row text-center">
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="cs_stat_item">
-                                <h3 className="cs_fs_48 cs_white_color cs_mb_5 cs_bold">500+</h3>
+                                <h3 className="cs_fs_48 cs_white_color cs_mb_5 cs_bold">389+</h3>
                                 <p className="cs_white_color cs_fs_16 mb-0">Happy Clients</p>
                             </div>
                         </div>
@@ -65,16 +65,16 @@ const About2 = () => {
                     <div className="row cs_gap_y_40 align-items-center">
                         <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
                             <div className="cs_about_thumbnail_group position-relative">
-                                <div className="cs_main_thumbnail cs_radius_15 overflow-hidden" style={{boxShadow: '0 20px 60px rgba(0,123,255,0.15)'}}>
-                                    <Image 
-                                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&h=600&q=80" 
-                                        alt="AT Tech Global Digital Marketing Team - Professional digital marketing experts collaborating" 
-                                        width={700} 
+                                <div className="cs_main_thumbnail cs_radius_15 overflow-hidden" style={{ boxShadow: '0 20px 60px rgba(0,123,255,0.15)' }}>
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&h=600&q=80"
+                                        alt="AT Tech Global Digital Marketing Team - Professional digital marketing experts collaborating"
+                                        width={700}
                                         height={600}
                                         priority
                                         unoptimized={true}
                                         itemProp="image"
-                                        style={{width: '100%', height: 'auto'}}
+                                        style={{ width: '100%', height: 'auto' }}
                                     />
                                 </div>
                                 {/* Floating Badge */}
@@ -90,7 +90,7 @@ const About2 = () => {
                                     <div className="text-center">
                                         <h4 className="cs_fs_36 cs_white_color cs_bold mb-0">4.9/5</h4>
                                         <p className="cs_white_color cs_fs_14 mb-0">Client Rating</p>
-                                        <div className="cs_rating mt-2" style={{color: '#ffc107'}}>
+                                        <div className="cs_rating mt-2" style={{ color: '#ffc107' }}>
                                             <i className="bi bi-star-fill"></i>
                                             <i className="bi bi-star-fill"></i>
                                             <i className="bi bi-star-fill"></i>
@@ -131,11 +131,11 @@ const About2 = () => {
                                             From innovative <strong>SEO strategies</strong> that elevate your search visibility, to compelling <strong>social media campaigns</strong> that build communities, cutting-edge <strong>web development</strong> that captures attention, and data-driven <strong>PPC advertising</strong> that converts—we deliver results that matter. Our track record speaks volumes: over 500 businesses transformed, countless success stories written, and a relentless commitment to staying ahead of digital trends.
                                         </p>
                                         <p className="cs_section_heading_text mb-0 wow fadeInUp" data-wow-delay="500ms">
-                                            Whether you're a startup taking your first digital steps or an established enterprise seeking to amplify your online dominance, we're here to turn possibilities into realities. Let's embark on this journey together—where innovation meets results, and your vision meets our expertise. Discover our <Link href="/service" className="cs_accent_color" style={{textDecoration: 'underline'}} title="Digital Marketing Services">full range of services</Link> or explore <Link href="/project" className="cs_accent_color" style={{textDecoration: 'underline'}} title="Client Success Stories">how we've helped businesses like yours</Link> achieve extraordinary growth.
+                                            Whether you're a startup taking your first digital steps or an established enterprise seeking to amplify your online dominance, we're here to turn possibilities into realities. Let's embark on this journey together—where innovation meets results, and your vision meets our expertise. Discover our <Link href="/service" className="cs_accent_color" style={{ textDecoration: 'underline' }} title="Digital Marketing Services">full range of services</Link> or explore <Link href="/project" className="cs_accent_color" style={{ textDecoration: 'underline' }} title="Client Success Stories">how we've helped businesses like yours</Link> achieve extraordinary growth.
                                         </p>
                                     </div>
                                 </div>
-                                
+
                                 {/* Key Benefits List */}
                                 <div className="cs_about_features cs_mb_30">
                                     <ul className="cs_list cs_style_1 cs_medium cs_heading_color cs_mp_0">
@@ -160,19 +160,19 @@ const About2 = () => {
 
                                 <div className="cs_about_btn_group">
                                     <div className="cs_btn_wrapper d-flex flex-wrap gap-3 align-items-center">
-                                        <Link 
-                                            href="/service" 
-                                            aria-label="Explore AT Tech Global digital marketing services" 
+                                        <Link
+                                            href="/service"
+                                            aria-label="Explore AT Tech Global digital marketing services"
                                             className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"
                                             title="View Our Digital Marketing Services"
                                         >
                                             <span>Our Services</span>
                                             <i className="bi bi-arrow-right ms-2"></i>
                                         </Link>
-                                        <Link 
-                                            href="/contact" 
-                                            aria-label="Contact AT Tech Global for free consultation" 
-                                            className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" 
+                                        <Link
+                                            href="/contact"
+                                            aria-label="Contact AT Tech Global for free consultation"
+                                            className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"
                                             data-wow-delay="0.2s"
                                             title="Get Free Digital Marketing Consultation"
                                         >
@@ -180,12 +180,12 @@ const About2 = () => {
                                             <i className="bi bi-telephone-fill ms-2"></i>
                                         </Link>
                                     </div>
-                                    
+
                                     <div className="cs_client_info_wrapper wow fadeInRight" itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
                                         <div className="cs_client_info_header cs_mb_1">
                                             <span className="cs_fs_20 cs_semibold">
-                                                <span itemProp="ratingValue">4.9</span>/5 Rating • 
-                                                <span itemProp="reviewCount">500+</span> Reviews
+                                                <span itemProp="ratingValue">4.9</span>/5 Rating •
+                                                <span itemProp="reviewCount">389+</span> Reviews
                                             </span>
                                             <meta itemProp="bestRating" content="5" />
                                         </div>
@@ -194,7 +194,7 @@ const About2 = () => {
                                                 <Image src="/assets/img/upwork.svg" alt="Upwork Top Rated Agency" width={73} height={22} />
                                             </div>
                                             <div className="cs_rating" data-rating="4.9">
-                                                <div className="cs_rating_percentage" style={{width: '98%'}}></div>
+                                                <div className="cs_rating_percentage" style={{ width: '98%' }}></div>
                                             </div>
                                         </div>
                                     </div>

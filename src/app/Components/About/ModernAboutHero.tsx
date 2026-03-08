@@ -26,11 +26,11 @@ const ModernAboutHero = () => {
                                     Since 2020, we've been at the forefront of digital innovation, helping businesses worldwide achieve remarkable growth through strategic marketing, creative solutions, and unwavering commitment to results.
                                 </p>
                             </div>
-                            
+
                             <div className="cs_hero_stats cs_mb_40 wow fadeInUp" data-wow-delay="0.3s">
                                 <div className="d-flex flex-wrap gap-4">
                                     <div className="cs_counter_wrapper cs_type_1">
-                                        <h3 className="cs_fs_36 cs_accent_color cs_bold mb-0">500+</h3>
+                                        <h3 className="cs_fs_36 cs_accent_color cs_bold mb-0">389+</h3>
                                         <p className="mb-0">Happy Clients</p>
                                     </div>
                                     <div className="cs_counter_wrapper cs_type_1">
@@ -45,16 +45,16 @@ const ModernAboutHero = () => {
                             </div>
 
                             <div className="cs_about_btn_group wow fadeInUp" data-wow-delay="0.4s">
-                                <Link 
-                                    href="/service" 
+                                <Link
+                                    href="/service"
                                     className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase"
                                     aria-label="Explore our services"
                                 >
                                     <span>Our Services</span>
                                     <i className="bi bi-arrow-right ms-2"></i>
                                 </Link>
-                                <Link 
-                                    href="/contact" 
+                                <Link
+                                    href="/contact"
                                     className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase"
                                     aria-label="Get in touch with us"
                                 >
@@ -66,7 +66,7 @@ const ModernAboutHero = () => {
                     <div className="col-lg-6">
                         <div className="cs_hero_thumbnail position-relative wow fadeInUp" data-wow-delay="0.5s">
                             <div className="position-relative" style={{ borderRadius: '20px', overflow: 'hidden' }}>
-                                <Image 
+                                <Image
                                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
                                     alt="AT Tech Global team collaborating on digital projects"
                                     width={600}
@@ -76,7 +76,7 @@ const ModernAboutHero = () => {
                                     style={{ width: '100%', height: 'auto', display: 'block' }}
                                 />
                             </div>
-                            
+
                             {/* Floating Badge */}
                             <div className="position-absolute" style={{
                                 bottom: '30px',
@@ -111,7 +111,7 @@ const ModernAboutHero = () => {
                                 borderRadius: '50%',
                                 zIndex: '-1'
                             }}></div>
-                            
+
                             <div className="position-absolute" style={{
                                 top: '40px',
                                 right: '-30px',

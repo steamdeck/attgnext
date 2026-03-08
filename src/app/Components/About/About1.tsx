@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 const About1 = () => {
-    return (
-<section className="cs_about cs_style_1 position-relative overflow-hidden">
+  return (
+    <section className="cs_about cs_style_1 position-relative overflow-hidden">
       <div className="cs_height_120 cs_height_lg_80"></div>
       <div className="container">
         <div className="row cs_gap_y_40 cs_tab_reverse">
@@ -15,7 +15,7 @@ const About1 = () => {
                   About Us<span className="cs_shape_right"></span>
                 </p>
                 <h2 className="cs_fs_48 cs_mb_21 wow fadeInDown">we're strategic digital marketing agency</h2>
-                <p className="cs_section_heading_text mb-0">In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Explore our <Link href="/service" className="cs_accent_color" style={{textDecoration: 'underline'}}>comprehensive services</Link> or view our <Link href="/project" className="cs_accent_color" style={{textDecoration: 'underline'}}>successful projects</Link>.</p>
+                <p className="cs_section_heading_text mb-0">In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Explore our <Link href="/service" className="cs_accent_color" style={{ textDecoration: 'underline' }}>comprehensive services</Link> or view our <Link href="/project" className="cs_accent_color" style={{ textDecoration: 'underline' }}>successful projects</Link>.</p>
               </div>
               <ul className="cs_list cs_style_1 cs_medium cs_heading_color cs_mp_0">
                 <li>
@@ -33,44 +33,44 @@ const About1 = () => {
               </ul>
               <div className="cs_about_btn_group">
                 <Link href="/about" aria-label="Click to visit about us page" className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase wow fadeInLeft"><span>About Us</span></Link>
-                <Link href="/service" aria-label="Click to view services" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Our Services</span></Link>
-                <Link href="/contact" aria-label="Click to contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{marginLeft: '15px'}}><span>Contact Us</span></Link>
+                <Link href="/service" aria-label="Click to view services" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{ marginLeft: '15px' }}><span>Our Services</span></Link>
+                <Link href="/contact" aria-label="Click to contact us" className="cs_btn cs_style_2 cs_fs_14 cs_bold text-uppercase wow fadeInLeft" style={{ marginLeft: '15px' }}><span>Contact Us</span></Link>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="cs_about_thumbnail_wrapper wow fadeInUp">
               <div className="cs_about_thumbnail position-relative">
-                <Image src="/assets/img/0ac59dd4-e925-4b6b-b16a-b5b6a6170224.jpg" alt="img" width={260} height={353}   />
+                <Image src="/assets/img/0ac59dd4-e925-4b6b-b16a-b5b6a6170224.jpg" alt="img" width={260} height={353} />
                 <div className="cs_project_infobox_wrapper">
                   <div className="cs_project_infobox cs_blue_bg">
-                    <h3 className="cs_fs_48 cs_white_color">5K+</h3>
-                    <p className="cs_white_color mb-0">Project Completed</p>
+                    <h3 className="cs_fs_48 cs_white_color">421+</h3>
+                    <p className="cs_white_color mb-0">Projects Delivered</p>
                   </div>
                 </div>
                 <div className="cs_vector_shape position-absolute">
-                  <Image src="/assets/img/vector_line.svg" alt="img" width={57} height={19}   />
+                  <Image src="/assets/img/vector_line.svg" alt="img" width={57} height={19} />
                 </div>
               </div>
               <div className="cs_about_thumbnail position-relative">
-                <Image src="/assets/img/13e7b2e9-d112-41d9-a700-109bf7f8ec1d.jpg" alt="img" width={269} height={453}   />
+                <Image src="/assets/img/13e7b2e9-d112-41d9-a700-109bf7f8ec1d.jpg" alt="img" width={269} height={453} />
                 <div className="cs_about_shape_3 position-absolute">
-                  <Image src="/assets/img/about_shape_1.svg" alt="img" width={99} height={86}   />
+                  <Image src="/assets/img/about_shape_1.svg" alt="img" width={99} height={86} />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="cs_about_shape_1 position-absolute">
-          <Image src="/assets/img/blob_shape.svg" alt="img" width={831} height={932}   />
+          <Image src="/assets/img/blob_shape.svg" alt="img" width={831} height={932} />
         </div>
         <div className="cs_about_shape_2 position-absolute">
-          <Image src="/assets/img/circle_1.svg" alt="img" width={93} height={93}   />
+          <Image src="/assets/img/circle_1.svg" alt="img" width={93} height={93} />
         </div>
       </div>
       <div className="cs_height_120 cs_height_lg_80"></div>
     </section>
-    );
+  );
 };
 
 export default About1;
