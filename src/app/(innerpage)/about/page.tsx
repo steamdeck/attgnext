@@ -1,63 +1,26 @@
 import { Metadata } from 'next';
+import { getMetadata } from '@/lib/jsonDatabase';
+import { convertToNextJsMetadata } from '@/lib/fileSeoUtils';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata = await getMetadata('/about');
+  if (metadata) {
+    return convertToNextJsMetadata(metadata);
+  }
+  return {
+    title: 'About AT Tech Global - Your Digital Success Partner',
+    description: "We've helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.",
+    keywords: ['about AT Tech Global', 'digital marketing agency', 'our story', 'digital marketing experts', 'business growth partners', 'digital transformation agency', 'SEO marketing company', 'social media agency', 'web development experts', 'digital strategy'],
+  };
+}
+
 import ModernAboutHero from '../../Components/About/ModernAboutHero';
-import ModernMissionVision from '../../Components/About/ModernMissionVision';
 import ModernWhyChooseUs from '../../Components/About/ModernWhyChooseUs';
 import ModernTimeline from '../../Components/About/ModernTimeline';
 import ModernTeam from '../../Components/About/ModernTeam';
-import ModernFAQ from '../../Components/About/ModernFAQ';
 import ModernCTA from '../../Components/About/ModernCTA';
-
-// SEO Metadata
-export const metadata: Metadata = {
-  title: 'JSON EDIT TEST',
-  description: "Form view edit test - new description we've helped 500+ businesses achieve digital success through innovative marketing strategies, creative solutions, and unwavering commitment to results.",
-  keywords: ['about AT Tech Global', 'digital marketing agency', 'our story', 'digital marketing experts', 'business growth partners', 'digital transformation agency', 'SEO marketing company', 'social media agency', 'web development experts', 'digital strategy'],
-  authors: [{ name: 'AT Tech Global' }],
-  creator: 'AT Tech Global',
-  publisher: 'AT Tech Global',
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  openGraph: {
-    title: 'About AT Tech Global - Your Digital Success Partner',
-    description: 'Meet the team transforming businesses through strategic digital marketing. Learn our story, explore our values, and see why 500+ businesses trust us with their digital growth.',
-    url: 'https://attechglobal.com/about',
-    siteName: 'AT Tech Global',
-    images: [
-      {
-        url: 'https://attechglobal.com/assets/img/about-og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'AT Tech Global - Digital Marketing Agency Team',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'About AT Tech Global - Your Digital Success Partner',
-    description: 'Meet the team transforming businesses through strategic digital marketing. Discover our story, values, and commitment to your success.',
-    images: ['https://attechglobal.com/assets/img/about-twitter-image.jpg'],
-    creator: '@attechglobal',
-  },
-  alternates: {
-    canonical: 'https://attechglobal.com/about',
-  },
-  other: {
-    'article:author': 'AT Tech Global',
-    'article:section': 'About',
-    'og:image:alt': 'AT Tech Global Digital Marketing Agency Team',
-  },
-};
+import SEOHead from '../../Components/Common/SEOHead';
+import AboutClientComponents from '../../Components/About/AboutClientComponents';
 
 // Structured Data for SEO
 const structuredData = {
@@ -135,6 +98,7 @@ const structuredData = {
 const AboutPage = () => {
   return (
     <>
+      <SEOHead route="/about" />
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -145,20 +109,8 @@ const AboutPage = () => {
         {/* Modern Hero Section */}
         <ModernAboutHero />
         
-        {/* Mission, Vision & Values */}
-        <ModernMissionVision />
-        
-        {/* Why Choose Us */}
-        <ModernWhyChooseUs />
-        
-        {/* Company Timeline */}
-        <ModernTimeline />
-        
-        {/* Our Team */}
-        <ModernTeam />
-        
-        {/* FAQ Section */}
-        <ModernFAQ />
+        {/* Mission, Vision & Values and FAQ Section */}
+        <AboutClientComponents />
         
         {/* Call to Action */}
         <ModernCTA />

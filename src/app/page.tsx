@@ -1,6 +1,21 @@
-'use client'
+import { Metadata } from 'next'
+import { getMetadata } from '@/lib/jsonDatabase'
+import { convertToNextJsMetadata } from '@/lib/fileSeoUtils'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata = await getMetadata('/')
+  if (metadata) {
+    return convertToNextJsMetadata(metadata)
+  }
+  return {
+    title: 'AT Tech Global - Digital Marketing Agency in Gurugram',
+    description: 'Leading digital marketing agency in Gurugram offering SEO, PPC, social media marketing, and web development services. Grow your business with our expert digital solutions.',
+    keywords: 'digital marketing agency, seo services, web development, ppc advertising, social media marketing, gurugram',
+  }
+}
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Header1 from './Components/Header/Header1';
 import Footer1 from './Components/Footer/Footer1';
 import HeroBanner1 from './Components/HeroBanner/HeroBanner1';
@@ -20,15 +35,13 @@ import {
   DynamicTeam1 
 } from './Components/Common/DynamicWrapper';
 import SEOHead from './Components/Common/SEOHead';
+import ClientWhatsAppButton from './Components/Common/ClientWhatsAppButton';
 
 const HomePage = () => {
     return (
         <>
             <SEOHead 
                 route="/"
-                defaultTitle="AT Tech Global - Digital Marketing Agency in Gurugram"
-                defaultDescription="Leading digital marketing agency in Gurugram offering SEO, PPC, social media marketing, and web development services. Grow your business with our expert digital solutions."
-                defaultKeywords="digital marketing agency, seo services, web development, ppc advertising, social media marketing, gurugram"
             />
             <div className='main-page-area'>
                 <Header1 />
@@ -65,6 +78,7 @@ const HomePage = () => {
                 <LazyWrapper>
                     <Contact1 />
                 </LazyWrapper>
+                <ClientWhatsAppButton />
                 <Footer1 />
             </div>
         </>

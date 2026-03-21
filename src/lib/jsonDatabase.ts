@@ -26,8 +26,18 @@ const METADATA_DIR = path.join(process.cwd(), 'data', 'metadata')
 
 // Helper to get file path for a route
 function getMetadataFilePath(route: string): string {
-  const fileName = route === '/' ? 'home.json' : route.replace(/\//g, '_').replace(/^_/, '') + '.json'
-  return path.join(METADATA_DIR, fileName)
+  if (route === '/') {
+    return path.join(METADATA_DIR, 'home.json')
+  }
+  
+  const parts = route.split('/').filter(Boolean)
+  if (parts.length === 1) {
+    return path.join(METADATA_DIR, `${parts[0]}.json`)
+  }
+  
+  const fileName = parts.join('_') + '.json'
+  const nestedPath = path.join(METADATA_DIR, ...parts.slice(0, -1), `${parts[parts.length - 1]}.json`)
+  return nestedPath
 }
 
 // Helper to ensure directory exists

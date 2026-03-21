@@ -1,9 +1,28 @@
+import { Metadata } from 'next'
+import { getMetadata } from '@/lib/jsonDatabase'
+import { convertToNextJsMetadata } from '@/lib/fileSeoUtils'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata = await getMetadata('/privacy-policy')
+  if (metadata) {
+    return convertToNextJsMetadata(metadata)
+  }
+  return {
+    title: 'Privacy Policy | AT Tech Global',
+    description: 'Read the privacy policy of AT Tech Global to understand how we collect, use, and protect your personal information.',
+    keywords: 'privacy policy, data protection, AT Tech Global',
+  }
+}
+
 import React from 'react';
 import BreadCumb from '../../Components/Common/BreadCumb';
+import SEOHead from '../../Components/Common/SEOHead';
 
 const PrivacyPolicyPage = () => {
   return (
-    <div>
+    <>
+      <SEOHead route="/privacy-policy" />
+      <div>
       <BreadCumb
         bgimg="https://placeholdr.ai/8f9e3f1a-c3b5-4361-a45f-bdb0661ea3a0/1024/412"
         Title="Privacy Policy"
@@ -103,7 +122,8 @@ const PrivacyPolicyPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

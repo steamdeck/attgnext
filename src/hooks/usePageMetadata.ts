@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { PageMetadataRecord } from '@/lib/database'
+import { PageMetadataRecord } from '@/lib/jsonDatabase'
 
 interface UsePageMetadataReturn {
   metadata: PageMetadataRecord | null
