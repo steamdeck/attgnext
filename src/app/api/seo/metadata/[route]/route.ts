@@ -6,10 +6,10 @@ export const dynamic = 'force-dynamic'
 // GET /api/seo/metadata/[route] - Get specific page metadata
 export async function GET(
   request: NextRequest,
-  { params }: { params: { route: string } }
+  { params }: { params: Promise<{ route: string }> }
 ) {
   try {
-    const { route } = params
+    const { route } = await params
     const decodedRoute = decodeURIComponent(route)
     
     const metadata = await getMetadata(decodedRoute)
@@ -37,10 +37,10 @@ export async function GET(
 // PUT /api/seo/metadata/[route] - Update page metadata
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { route: string } }
+  { params }: { params: Promise<{ route: string }> }
 ) {
   try {
-    const { route } = params
+    const { route } = await params
     const decodedRoute = decodeURIComponent(route)
     const body = await request.json()
     
@@ -70,10 +70,10 @@ export async function PUT(
 // DELETE /api/seo/metadata/[route] - Delete page metadata
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { route: string } }
+  { params }: { params: Promise<{ route: string }> }
 ) {
   try {
-    const { route } = params
+    const { route } = await params
     const decodedRoute = decodeURIComponent(route)
     
     const success = await deleteMetadata(decodedRoute)
