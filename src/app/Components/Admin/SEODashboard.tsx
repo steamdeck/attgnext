@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useAllFilePageMetadata, useUpdateFilePageMetadata, useCreateFilePageMetadata } from '@/hooks/useFilePageMetadata'
-import { PageMetadataRecord } from '@/lib/database'
+import { PageMetadataRecord } from '@/lib/jsonDatabase'
 
 const SEODashboard = () => {
   const [activeTab, setActiveTab] = useState<'list' | 'editor'>('list')

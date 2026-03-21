@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { PageMetadataRecord } from '@/lib/database'
+import { PageMetadataRecord } from '@/lib/jsonDatabase'
 
 interface UseFilePageMetadataReturn {
   metadata: PageMetadataRecord | null
@@ -21,7 +21,7 @@ export function useFilePageMetadata(route: string): UseFilePageMetadataReturn {
       setError(null)
       
       const encodedRoute = encodeURIComponent(route)
-      const response = await fetch(`/api/seo/files/${encodedRoute}`)
+      const response = await fetch(`/api/seo/json-metadata/${encodedRoute}`)
       const result = await response.json()
       
       if (result.success) {

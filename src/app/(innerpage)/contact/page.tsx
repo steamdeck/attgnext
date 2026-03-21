@@ -1,18 +1,31 @@
-'use client'
+
 
 import React from 'react'
 import BreadCumb from '../../Components/Common/BreadCumb'
 import Contact3 from '../../Components/Contact/Contact3'
 import SEOHead from '../../Components/Common/SEOHead'
 
+import { Metadata } from 'next'
+import { getMetadata } from '@/lib/jsonDatabase'
+import { convertToNextJsMetadata } from '@/lib/fileSeoUtils'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata = await getMetadata('/contact')
+  if (metadata) {
+    return convertToNextJsMetadata(metadata)
+  }
+  return {
+    title: 'Contact AT Tech Global - Digital Marketing Experts',
+    description: 'Get in touch with AT Tech Global for digital marketing, web development, and SEO services. Contact us today to transform your business.',
+    keywords: 'contact at tech global, digital marketing agency, web development, seo services, gurugram',
+  }
+}
+
 const page = () => {
   return (
     <>
       <SEOHead 
         route="/contact"
-        defaultTitle="SRHRS HSR S4YAEH RK7 R"
-        defaultDescription=""
-        defaultKeywords=""
       />
       <div>
         <BreadCumb

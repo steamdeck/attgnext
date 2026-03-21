@@ -44,11 +44,11 @@ export interface FileBasedPageMetadata extends PageMetadataRecord {
 /**
  * Convert metadata object to Next.js metadata format
  */
-function convertToNextJsMetadata(metadata: Partial<PageMetadataRecord>): any {
+export function convertToNextJsMetadata(metadata: Partial<PageMetadataRecord>): any {
   const nextJsMetadata: any = {}
 
-  if (metadata.title) {
-    nextJsMetadata.title = metadata.title
+  if (metadata.meta_title || metadata.title) {
+    nextJsMetadata.title = metadata.meta_title || metadata.title
   }
 
   if (metadata.meta_description) {

@@ -1,9 +1,28 @@
+import { Metadata } from 'next'
+import { getMetadata } from '@/lib/jsonDatabase'
+import { convertToNextJsMetadata } from '@/lib/fileSeoUtils'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata = await getMetadata('/terms-and-conditions')
+  if (metadata) {
+    return convertToNextJsMetadata(metadata)
+  }
+  return {
+    title: 'Terms and Conditions | AT Tech Global',
+    description: 'Read the terms and conditions of AT Tech Global. By using our website and services, you agree to these terms.',
+    keywords: 'terms and conditions, legal, AT Tech Global',
+  }
+}
+
 import React from 'react';
 import BreadCumb from '../../Components/Common/BreadCumb';
+import SEOHead from '../../Components/Common/SEOHead';
 
 const TermsAndConditionsPage = () => {
   return (
-    <div>
+    <>
+      <SEOHead route="/terms-and-conditions" />
+      <div>
       <BreadCumb
         bgimg="https://placeholdr.ai/8f9e3f1a-c3b5-4361-a45f-bdb0661ea3a0/1024/412"
         Title="Terms and Conditions"
@@ -111,7 +130,8 @@ const TermsAndConditionsPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
