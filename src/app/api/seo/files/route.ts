@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getAllComponentFiles, parseComponentMetadata, updateComponentMetadata, getComponentFilePath } from '@/lib/fileSeoUtils'
-import { PageMetadataRecord } from '@/lib/database'
+import { PageMetadataRecord } from '@/lib/jsonDatabase'
 
 export async function GET(request: NextRequest) {
   try {

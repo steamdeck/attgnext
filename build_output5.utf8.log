@@ -1,0 +1,118 @@
+﻿
+> at-tech-global@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.3.6
+   - Experiments (use with caution):
+     Γ£ô scrollRestoration
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 11.0s
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/46) ...
+   Generating static pages (11/46) 
+node.exe :  ΓÜá 
+metadataBase property 
+in metadata export is 
+not set for resolving 
+social open graph or 
+twitter images, using "
+http://localhost:3000".
+ See https://nextjs.org
+/docs/app/api-reference
+/functions/generate-met
+adata#metadatabase
+At C:\nvm4w\nodejs\npm.
+ps1:16 char:5
++     & 
+"$basedir/node$exe"  "$
+basedir/node_modules/np
+m/bin/npm-cli.js" ...
++     ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ( ΓÜá metadata   
+ Ba...ta#metadataba    
+se:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+   Generating static pages (22/46) 
+   Generating static pages (34/46) 
+ Γ£ô Generating static pages (46/46)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                                    Size  First Load JS  Revalidate  Expire
+Γöî Γùï /                                                       24.3 kB         134 kB
+Γö£ Γùï /_not-found                                               981 B         102 kB
+Γö£ Γùï /about                                                   5.3 kB         115 kB
+Γö£ Γùï /admin/dashboard                                         1.9 kB         107 kB
+Γö£ Γùï /admin/images                                           5.64 kB         112 kB
+Γö£ Γùï /admin/page-editor                                      2.84 kB         104 kB
+Γö£ Γùï /admin/page-editor-demo                                 1.96 kB         103 kB
+Γö£ Γùï /admin/seo                                                340 B         107 kB
+Γö£ Γùï /admin/services                                         1.37 kB         103 kB
+Γö£ Γùï /admin/settings                                         1.72 kB         103 kB
+Γö£ Γùï /admin/users                                            1.24 kB         103 kB
+Γö£ ╞Æ /api/blogs                                                188 B         101 kB
+Γö£ ╞Æ /api/blogs/seed                                           188 B         101 kB
+Γö£ ╞Æ /api/images                                               188 B         101 kB
+Γö£ ╞Æ /api/images/[id]                                          188 B         101 kB
+Γö£ ╞Æ /api/images/[id]/replace                                  188 B         101 kB
+Γö£ ╞Æ /api/images/[id]/usage                                    188 B         101 kB
+Γö£ ╞Æ /api/images/scan                                          188 B         101 kB
+Γö£ ╞Æ /api/pages                                                188 B         101 kB
+Γö£ ╞Æ /api/seo/analysis                                         188 B         101 kB
+Γö£ ╞Æ /api/seo/files                                            188 B         101 kB
+Γö£ ╞Æ /api/seo/files/[route]                                    188 B         101 kB
+Γö£ ╞Æ /api/seo/json-metadata/[route]                            188 B         101 kB
+Γö£ ╞Æ /api/seo/metadata                                         188 B         101 kB
+Γö£ ╞Æ /api/seo/metadata/[route]                                 188 B         101 kB
+Γö£ ╞Æ /api/seo/seed                                             188 B         101 kB
+Γö£ Γùï /blog                                                   2.08 kB         112 kB
+Γö£ Γùï /blog-sidebar                                           2.08 kB         112 kB
+Γö£ Γùï /blog/blog-details                                      5.82 kB         116 kB
+Γö£ Γùï /blog/digital-marketing-agency-in-gurugram                694 B         111 kB
+Γö£ Γùï /blog/gurgaon-digital-marketing-sprouting-new-strategy    694 B         111 kB
+Γö£ Γùï /business-transformation                                3.58 kB         105 kB
+Γö£ Γùï /contact                                                4.76 kB         115 kB
+Γö£ Γùï /faq                                                    3.51 kB         113 kB
+Γö£ Γùï /icon.png                                                   0 B            0 B
+Γö£ Γùï /pricing                                                3.66 kB         114 kB
+Γö£ Γùï /privacy-policy                                         2.06 kB         107 kB
+Γö£ Γùï /project                                                3.19 kB         113 kB
+Γö£ Γùï /robots.txt                                               188 B         101 kB
+Γö£ Γùï /service                                                2.96 kB         113 kB
+Γö£ Γùï /service/crm                                            5.32 kB         118 kB
+Γö£ Γùï /service/digital-marketing                              5.16 kB         118 kB
+Γö£ Γùï /service/ecommerce                                      5.66 kB         119 kB
+Γö£ Γùï /service/email-marketing                                5.49 kB         118 kB
+Γö£ Γùï /service/erp                                             5.5 kB         118 kB
+Γö£ Γùï /service/lms                                            5.41 kB         118 kB
+Γö£ Γùï /service/mobile-application                             5.47 kB         118 kB
+Γö£ Γùï /service/ppc                                             5.2 kB         118 kB
+Γö£ Γùï /service/seo                                            5.74 kB         119 kB
+Γö£ Γùï /service/smm                                            5.13 kB         118 kB
+Γö£ Γùï /service/web-development                                5.12 kB         118 kB
+Γö£ Γùï /service/whatsapp-marketing                             5.41 kB         118 kB
+Γö£ Γùï /sitemap.xml                                              188 B         101 kB          1d      1y
+Γö£ Γùï /team                                                   2.08 kB         112 kB
+Γö£ Γùï /team/team-details                                      4.26 kB         114 kB
+Γöö Γùï /terms-and-conditions                                   2.06 kB         107 kB
++ First Load JS shared by all                                101 kB
+  Γö£ chunks/1684-0026dd6a629a2330.js                         45.9 kB
+  Γö£ chunks/4bd1b696-8648c6fd21d4b534.js                     53.2 kB
+  Γöö other shared chunks (total)                             2.16 kB
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

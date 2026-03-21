@@ -1,0 +1,92 @@
+﻿
+> at-tech-global@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.3.6
+   - Experiments (use with caution):
+     Γ£ô scrollRestoration
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 12.0s
+   Skipping linting
+   Checking validity of types ...
+node.exe : Failed to 
+compile.
+At C:\nvm4w\nodejs\npm.
+ps1:16 char:5
++     & 
+"$basedir/node$exe"  "$
+basedir/node_modules/np
+m/bin/npm-cli.js" ...
++     ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Failed to com   
+ pile.:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+.next/types/app/api/seo
+/metadata/[route]/route
+.ts:49:7
+Type error: Type '{ 
+__tag__: "GET"; 
+__param_position__: 
+"second"; 
+__param_type__: { 
+params: { route: 
+string; }; }; }' does 
+not satisfy the 
+constraint 'ParamCheck<
+RouteContext>'.
+  The types of '__param
+_type__.params' are 
+incompatible between 
+these types.
+    Type '{ route: 
+string; }' is missing 
+the following 
+properties from type 
+'Promise<any>': then, 
+catch, finally, 
+[Symbol.toStringTag]
+
+[0m [90m 47 |[39m   
+  [33mDiff[39m[33m<
+[39m[0m
+[0m [90m 48 |[39m   
+    [33mParamCheck[39
+m[33m<[39m[33mRouteC
+ontext[39m[33m>[39m
+[33m,[39m[0m
+[0m[31m[1m>[22m[39
+m[90m 49 |[39m       
+{[0m
+[0m [90m    |[39m   
+    [31m[1m^[22m[39
+m[0m
+[0m [90m 50 |[39m   
+      
+__tag__[33m:[39m 
+[32m'GET'[39m[0m
+[0m [90m 51 |[39m   
+      __param_position_
+_[33m:[39m 
+[32m'second'[39m[0m
+[0m [90m 52 |[39m   
+      __param_type__[3
+3m:[39m [33mSecondArg
+[39m[33m<[39m[33mMa
+ybeField[39m[33m<[39
+m[33mTEntry[39m[33m,
+[39m [32m'GET'[39m[
+33m>>[39m[0m
+Next.js build worker 
+exited with code: 1 
+and signal: null

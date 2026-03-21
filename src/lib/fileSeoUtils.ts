@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
-import { PageMetadataRecord } from './database'
+import { PageMetadataRecord } from './jsonDatabase'
 
 // Map route paths to actual file locations
 const ROUTE_TO_FILE_MAP: Record<string, string> = {

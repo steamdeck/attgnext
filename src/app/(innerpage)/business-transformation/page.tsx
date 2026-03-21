@@ -22,3 +22,5 @@ const BusinessTransformationPage = () => {
         <BusinessTransformationClientPage />
     );
 };
+
+export default BusinessTransformationPage;
