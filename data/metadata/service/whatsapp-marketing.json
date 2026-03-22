@@ -1,19 +1,20 @@
-// /service/web-development
-<title>Web Development Company in Gurgaon | Custom Website Development – AT Tech Global</title>
-<meta name="description" content="AT Tech Global offers expert web development services in Gurgaon & Leicester. Custom websites, CMS, portals, eCommerce. 14+ years experience. Get a free quote today." />
-
-// /service/digital-marketing
-<title>Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global</title>
-<meta name="description" content="Result-driven digital marketing services: SEO, PPC, Social Media, Email & WhatsApp marketing. Serving businesses across India & UK. 3,000+ satisfied clients." />
-
-// /service/mobile-application
-<title>Mobile App Development Company India | iOS & Android – AT Tech Global</title>
-<meta name="description" content="Custom iOS & Android mobile app development by AT Tech Global. Flutter, React Native & native apps. Offices in Gurgaon & Leicester. Start your project today." />
-
-// /service/seo
-<title>SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global</title>
-<meta name="description" content="Top-ranked SEO agency in Gurgaon helping businesses dominate Google search. On-page, off-page, technical SEO & local SEO. Book a free audit with AT Tech Global." />
-
-// /service/ecommerce
-<title>Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global</title>
-<meta name="description" content="End-to-end eCommerce website development on Shopify, WooCommerce & custom platforms. Serving India & UK businesses. Fast delivery, SEO-ready. AT Tech Global." />
+{
+  "id": 1771103607330,
+  "route": "\\service\\whatsapp-marketing",
+  "page_name": "\\service\\whatsapp Marketing Page",
+  "title": "\\service\\whatsapp Marketing Page",
+  "meta_title": "WhatsApp Marketing Services | Chatbot & Broadcast Campaigns – AT Tech Global",
+  "meta_description": "Boost customer engagement with AT Tech Global's WhatsApp Marketing services. We build AI-powered WhatsApp chatbots, run broadcast campaigns, and automate customer journeys for businesses in India & UK.",
+  "keywords": "whatsapp marketing agency, whatsapp chatbot development, whatsapp business API, whatsapp broadcast campaigns, whatsapp automation india, whatsapp marketing gurugram, whatsapp business solutions UK, whatsapp lead generation",
+  "og_title": "WhatsApp Marketing & Chatbot Solutions – AT Tech Global",
+  "og_description": "Reach customers instantly with WhatsApp Marketing by AT Tech Global. AI chatbots, broadcast campaigns & automated funnels – driving real results for businesses in India & UK.",
+  "og_image": "/assets/img/hero-bg.jpg",
+  "canonical_url": "https://attechglobal.com/service/whatsapp-marketing",
+  "robots_index": true,
+  "robots_follow": true,
+  "twitter_title": "WhatsApp Marketing & Chatbot Solutions – AT Tech Global",
+  "twitter_description": "AI-powered WhatsApp chatbots, broadcast campaigns & customer automation. AT Tech Global helps businesses in India & UK grow faster with WhatsApp Marketing.",
+  "twitter_image": "/assets/img/hero-bg.jpg",
+  "created_at": "2026-02-14T21:13:27.330Z",
+  "updated_at": "2026-03-22T00:00:00.000Z"
+}
