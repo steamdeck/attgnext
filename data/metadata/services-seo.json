@@ -1,19 +1,102 @@
-// /service/web-development
-<title>Web Development Company in Gurgaon | Custom Website Development – AT Tech Global</title>
-<meta name="description" content="AT Tech Global offers expert web development services in Gurgaon & Leicester. Custom websites, CMS, portals, eCommerce. 14+ years experience. Get a free quote today."/>
-
-// /service/digital-marketing
-<title>Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global</title>
-<meta name="description" content="Result-driven digital marketing services: SEO, PPC, Social Media, Email & WhatsApp marketing. Serving businesses across India & UK. 3,000+ satisfied clients."/>
-
-// /service/mobile-application
-<title>Mobile App Development Company India | iOS & Android – AT Tech Global</title>
-<meta name="description" content="Custom iOS & Android mobile app development by AT Tech Global. Flutter, React Native & native apps. Offices in Gurgaon & Leicester. Start your project today."/>
-
-// /service/seo
-<title>SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global</title>
-<meta name="description" content="Top-ranked SEO agency in Gurgaon helping businesses dominate Google search. On-page, off-page, technical SEO & local SEO. Book a free audit with AT Tech Global."/>
-
-// /service/ecommerce
-<title>Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global</title>
-<meta name="description" content="End-to-end eCommerce website development on Shopify, WooCommerce & custom platforms. Serving India & UK businesses. Fast delivery, SEO-ready. AT Tech Global."/>
+[
+  {
+    "id": 1771103607287,
+    "route": "/service/web-development",
+    "page_name": "\\service\\web-development Page",
+    "title": "Web Development Company in Gurgaon | Custom Website Development – AT Tech Global",
+    "meta_title": "Web Development Company in Gurgaon | Custom Website Development – AT Tech Global",
+    "meta_description": "AT Tech Global offers expert web development services in Gurgaon & Leicester. Custom websites, CMS, portals, eCommerce. 14+ years experience. Get a free quote today.",
+    "keywords": "web development company Gurgaon, custom website development, CMS development, eCommerce development, web development Leicester",
+    "og_title": "Web Development Company in Gurgaon | Custom Website Development – AT Tech Global",
+    "og_description": "AT Tech Global offers expert web development services in Gurgaon & Leicester. Custom websites, CMS, portals, eCommerce. 14+ years experience. Get a free quote today.",
+    "og_image": "/assets/img/hero-bg.jpg",
+    "canonical_url": "https://attechglobal.com/service/web-development",
+    "robots_index": true,
+    "robots_follow": true,
+    "twitter_title": "Web Development Company in Gurgaon | Custom Website Development – AT Tech Global",
+    "twitter_description": "AT Tech Global offers expert web development services in Gurgaon & Leicester. Custom websites, CMS, portals, eCommerce. 14+ years experience. Get a free quote today.",
+    "twitter_image": "/assets/img/hero-bg.jpg",
+    "created_at": "2026-02-14T21:13:27.287Z",
+    "updated_at": "2026-02-14T21:13:27.287Z"
+  },
+  {
+    "id": 1771103607287,
+    "route": "/service/digital-marketing",
+    "page_name": "\\service\\digital-marketing Page",
+    "title": "Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global",
+    "meta_title": "Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global",
+    "meta_description": "Result-driven digital marketing services: SEO, PPC, Social Media, Email & WhatsApp marketing. Serving businesses across India & UK. 3,000+ satisfied clients.",
+    "keywords": "digital marketing agency Gurgaon, SEO services India, PPC advertising, social media marketing, WhatsApp marketing",
+    "og_title": "Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global",
+    "og_description": "Result-driven digital marketing services: SEO, PPC, Social Media, Email & WhatsApp marketing. Serving businesses across India & UK. 3,000+ satisfied clients.",
+    "og_image": "/assets/img/hero-bg.jpg",
+    "canonical_url": "https://attechglobal.com/service/digital-marketing",
+    "robots_index": true,
+    "robots_follow": true,
+    "twitter_title": "Digital Marketing Agency in Gurgaon | SEO, PPC, SMM – AT Tech Global",
+    "twitter_description": "Result-driven digital marketing services: SEO, PPC, Social Media, Email & WhatsApp marketing. Serving businesses across India & UK. 3,000+ satisfied clients.",
+    "twitter_image": "/assets/img/hero-bg.jpg",
+    "created_at": "2026-02-14T21:13:27.287Z",
+    "updated_at": "2026-02-14T21:13:27.287Z"
+  },
+  {
+    "id": 1771103607287,
+    "route": "/service/mobile-application",
+    "page_name": "\\service\\mobile-application Page",
+    "title": "Mobile App Development Company India | iOS & Android – AT Tech Global",
+    "meta_title": "Mobile App Development Company India | iOS & Android – AT Tech Global",
+    "meta_description": "Custom iOS & Android mobile app development by AT Tech Global. Flutter, React Native & native apps. Offices in Gurgaon & Leicester. Start your project today.",
+    "keywords": "mobile app development India, iOS app development, Android app development, Flutter development, React Native development",
+    "og_title": "Mobile App Development Company India | iOS & Android – AT Tech Global",
+    "og_description": "Custom iOS & Android mobile app development by AT Tech Global. Flutter, React Native & native apps. Offices in Gurgaon & Leicester. Start your project today.",
+    "og_image": "/assets/img/hero-bg.jpg",
+    "canonical_url": "https://attechglobal.com/service/mobile-application",
+    "robots_index": true,
+    "robots_follow": true,
+    "twitter_title": "Mobile App Development Company India | iOS & Android – AT Tech Global",
+    "twitter_description": "Custom iOS & Android mobile app development by AT Tech Global. Flutter, React Native & native apps. Offices in Gurgaon & Leicester. Start your project today.",
+    "twitter_image": "/assets/img/hero-bg.jpg",
+    "created_at": "2026-02-14T21:13:27.287Z",
+    "updated_at": "2026-02-14T21:13:27.287Z"
+  },
+  {
+    "id": 1771103607287,
+    "route": "/service/seo",
+    "page_name": "\\service\\seo Page",
+    "title": "SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global",
+    "meta_title": "SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global",
+    "meta_description": "Top-ranked SEO agency in Gurgaon helping businesses dominate Google search. On-page, off-page, technical SEO & local SEO. Book a free audit with AT Tech Global.",
+    "keywords": "SEO company Gurgaon, search engine optimization India, on-page SEO, off-page SEO, technical SEO, local SEO",
+    "og_title": "SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global",
+    "og_description": "Top-ranked SEO agency in Gurgaon helping businesses dominate Google search. On-page, off-page, technical SEO & local SEO. Book a free audit with AT Tech Global.",
+    "og_image": "/assets/img/hero-bg.jpg",
+    "canonical_url": "https://attechglobal.com/service/seo",
+    "robots_index": true,
+    "robots_follow": true,
+    "twitter_title": "SEO Company in Gurgaon | Search Engine Optimization Services – AT Tech Global",
+    "twitter_description": "Top-ranked SEO agency in Gurgaon helping businesses dominate Google search. On-page, off-page, technical SEO & local SEO. Book a free audit with AT Tech Global.",
+    "twitter_image": "/assets/img/hero-bg.jpg",
+    "created_at": "2026-02-14T21:13:27.287Z",
+    "updated_at": "2026-02-14T21:13:27.287Z"
+  },
+  {
+    "id": 1771103607287,
+    "route": "/service/ecommerce",
+    "page_name": "\\service\\ecommerce Page",
+    "title": "Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global",
+    "meta_title": "Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global",
+    "meta_description": "End-to-end eCommerce website development on Shopify, WooCommerce & custom platforms. Serving India & UK businesses. Fast delivery, SEO-ready. AT Tech Global.",
+    "keywords": "ecommerce development India, Shopify development, WooCommerce development, online store development, ecommerce agency UK",
+    "og_title": "Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global",
+    "og_description": "End-to-end eCommerce website development on Shopify, WooCommerce & custom platforms. Serving India & UK businesses. Fast delivery, SEO-ready. AT Tech Global.",
+    "og_image": "/assets/img/hero-bg.jpg",
+    "canonical_url": "https://attechglobal.com/service/ecommerce",
+    "robots_index": true,
+    "robots_follow": true,
+    "twitter_title": "Ecommerce Development Company India | Shopify, WooCommerce – AT Tech Global",
+    "twitter_description": "End-to-end eCommerce website development on Shopify, WooCommerce & custom platforms. Serving India & UK businesses. Fast delivery, SEO-ready. AT Tech Global.",
+    "twitter_image": "/assets/img/hero-bg.jpg",
+    "created_at": "2026-02-14T21:13:27.287Z",
+    "updated_at": "2026-02-14T21:13:27.287Z"
+  }
+]
