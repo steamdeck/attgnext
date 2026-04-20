@@ -35,6 +35,7 @@ import {
   DynamicTeam1 
 } from './Components/Common/DynamicWrapper';
 import SEOHead from './Components/Common/SEOHead';
+import SchemaOrg from './Components/Common/SchemaOrg';
 import ClientWhatsAppButton from './Components/Common/ClientWhatsAppButton';
 
 const HomePage = () => {
@@ -43,6 +44,8 @@ const HomePage = () => {
             <SEOHead 
                 route="/"
             />
+            <SchemaOrg type="website" />
+            <SchemaOrg type="organization" />
             <div className='main-page-area'>
                 <Header1 />
                 <HeroBanner1 />

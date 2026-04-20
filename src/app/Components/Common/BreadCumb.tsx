@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import loadBackgroudImages from "./loadBackgroudImages";
 import Link from "next/link";
+import SchemaOrg from "./SchemaOrg";
 
 const BreadCumb = ({Title,bgimg}) => {
     
@@ -17,6 +18,15 @@ const BreadCumb = ({Title,bgimg}) => {
         <section className="cs_page_heading cs_bg_filed cs_center text-center cs_heading_bg position-relative" data-background={bgimg}>
         <div className="cs_overlay position-absolute"></div>
         <div className="container">
+          <SchemaOrg 
+            type="breadcrumb" 
+            data={{ 
+              items: [
+                { name: 'Home', item: '/' },
+                { name: Title, item: '#' }
+              ] 
+            }} 
+          />
           <h1 className="cs_fs_50 cs_white_color cs_extra_bold cs_mb_20 wow fadeInDown">{Title}</h1>
           <ol className="breadcrumb wow fadeInUp">
             <li className="breadcrumb-item"><Link href="/">Home</Link></li>

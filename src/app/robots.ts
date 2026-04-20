@@ -15,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
       baseUrl = `http://localhost:${port}`
     } else {
       // In production, use your actual domain
-      baseUrl = 'https://yourdomain.com'
+      baseUrl = 'https://www.attechglobal.com'
     }
   }
   
