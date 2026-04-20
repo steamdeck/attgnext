@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 import VideoModal from '../VideoModal/VideoModal';
 import Image from 'next/image';
+import SchemaOrg from '../Common/SchemaOrg';
 
 const Faq1 = () => {
 
@@ -50,6 +51,12 @@ const Faq1 = () => {
 
     return (
         <section className="position-relative overflow-hidden">
+        <SchemaOrg 
+          type="faq" 
+          data={{ 
+            faqs: faqContent.map(f => ({ question: f.title, answer: f.content })) 
+          }} 
+        />
         <div className="cs_height_120 cs_height_lg_80"></div>
         <div className="container">
           <div className="row cs_gap_y_30 position-relative z-1">

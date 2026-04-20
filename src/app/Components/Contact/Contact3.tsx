@@ -271,8 +271,17 @@ const Contact3 = () => {
           </div>
         </div>
         <div className="cs_height_100 cs_height_lg_80"></div>
-        <div className="cs_location_map cs_radius_30 wow fadeInDown">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56102.642665128515!2d76.9447845486328!3d28.497154299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2391b6e20db78d7b%3A0x44ee4f6937c99c2d!2sAT%20Tech%20Global!5e0!3m2!1sen!2sin!4v1759269907072!5m2!1sen!2sin"  loading="lazy"></iframe>
+        <div className="row cs_gap_y_30 wow fadeInDown">
+          <div className="col-lg-6">
+            <div className="cs_location_map cs_radius_30">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56102.642665128515!2d76.9447845486328!3d28.497154299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2391b6e20db78d7b%3A0x44ee4f6937c99c2d!2sAT%20Tech%20Global!5e0!3m2!1sen!2sin!4v1759269907072!5m2!1sen!2sin"  loading="lazy"></iframe>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="cs_location_map cs_radius_30">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.791398525825!2d-1.0662377233112277!3d52.64568167209429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487763c86be7a1a3%3A0xe92e44d43e14196e!2s6%20Armadale%20Dr%2C%20Leicester%20LE5%201HD%2C%20UK!5e0!3m2!1sen!2sin!4v1776712211172!5m2!1sen!2sin" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>

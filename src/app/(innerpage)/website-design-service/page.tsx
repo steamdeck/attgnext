@@ -2,6 +2,7 @@ import React from 'react';
 import BreadCumb from '../../Components/Common/BreadCumb';
 import WebDevelopmentContent from '../../Components/Services/WebDevelopmentContent';
 import Contact2 from '../../Components/Contact/Contact2';
+import SchemaOrg from '../../Components/Common/SchemaOrg';
 import { Metadata } from 'next';
 import { getMetadata } from '@/lib/jsonDatabase';
 import { convertToNextJsMetadata } from '@/lib/fileSeoUtils';
@@ -20,6 +21,14 @@ export async function generateMetadata(): Promise<Metadata> {
 const page = () => {
   return (
     <div>
+      <SchemaOrg 
+        type="review" 
+        data={{ 
+          serviceName: "Website Design Service",
+          ratingValue: "4.9",
+          reviewCount: "128"
+        }} 
+      />
       <BreadCumb
         bgimg="https://placeholdr.ai/591d45d7-b0e8-44aa-bbb1-b950e39425ba/1024/412"
         Title="Website Design Service"
