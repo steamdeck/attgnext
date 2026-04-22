@@ -4,31 +4,31 @@ import React from 'react';
 
 const Team1 = () => {
 
-    const teamContent = [
-        {img:'https://i.ibb.co/rK6Nw1zF/Alex-Thomas.jpg', name:'Alex Thomax', content:'Founder & Director'},
-        {img:'https://i.ibb.co/PvwSYB7M/Hardik-Vaish.jpg', name:'Hardik Vaish', content:'Senior Developer'},
-        {img:'https://i.ibb.co/1twVNRFX/Vinit-Pushpak.jpg', name:'Vinit Pushpak', content:'Digital Marketing Head'},
-        {img:'https://i.ibb.co/JjvsyF78/Rishi.jpg', name:'Rishi', content:'Digital Marketing Assistant'},
-      ];
+  const teamContent = [
+    { img: 'https://i.ibb.co/rK6Nw1zF/Alex-Thomas.jpg', name: 'Alex Thomas', content: 'Founder & Director' },
+    { img: 'https://i.ibb.co/PvwSYB7M/Hardik-Vaish.jpg', name: 'Hardik Vaish', content: 'Senior Developer' },
+    { img: 'https://i.ibb.co/1twVNRFX/Vinit-Pushpak.jpg', name: 'Vinit Pushpak', content: 'Digital Marketing Head' },
+    { img: 'https://i.ibb.co/JjvsyF78/Rishi.jpg', name: 'Rishi', content: 'Digital Marketing Assistant' },
+  ];
 
-    return (
-        <section className="cs_gray_bg_1 position-relative">
-        <div className="cs_height_120 cs_height_lg_80"></div>
-        <div className="container">
-          <div className="cs_section_heading cs_style_1 text-center">
-            <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_center cs_mb_20 wow fadeInDown">
-              <span className="cs_shape_left"></span>Our Team<span className="cs_shape_right"></span>
-            </p>
-            <h2 className="cs_fs_48 cs_mb_21 wow fadeInUp">Our Professional Experts</h2>
-          </div>
-          <div className="cs_height_60 cs_height_lg_50"></div>
-          <div className="row cs_row_gap_30 cs_gap_y_30 position-relative z-1">
+  return (
+    <section className="cs_gray_bg_1 position-relative">
+      <div className="cs_height_120 cs_height_lg_80"></div>
+      <div className="container">
+        <div className="cs_section_heading cs_style_1 text-center">
+          <p className="cs_section_subtitle cs_fs-18 cs_semibold cs_accent_color cs_center cs_mb_20 wow fadeInDown">
+            <span className="cs_shape_left"></span>Our Team<span className="cs_shape_right"></span>
+          </p>
+          <h2 className="cs_fs_48 cs_mb_21 wow fadeInUp">Our Professional Experts</h2>
+        </div>
+        <div className="cs_height_60 cs_height_lg_50"></div>
+        <div className="row cs_row_gap_30 cs_gap_y_30 position-relative z-1">
 
           {teamContent.map((item, i) => (
             <div key={i} className="col-lg-3 col-sm-6 wow fadeInDown">
               <div className="cs_team cs_style_1 position-relative">
                 <div className="cs_team_thumbnail cs_radius_15 position-relative">
-                  <Image src={item.img} alt="img" width={264} height={342}   />
+                  <Image src={item.img} alt="img" width={264} height={342} />
                 </div>
                 <div className="cs_tean_info cs_radius_8 text-center">
                   <h3 className="cs_fs_24 text-capitalize mb-0"><Link href="/team/team-details" aria-label="Team details page link">{item.name}</Link></h3>
@@ -36,17 +36,17 @@ const Team1 = () => {
                 </div>
               </div>
             </div>
-            ))}
+          ))}
 
-          </div>
-          <div className="cs_team_shape_1 position-absolute"></div>
-          <div className="cs_team_shape_2 position-absolute">
-            <Image src="/assets/img/team_shape_1.svg" alt="img" width={264} height={573}   />
-          </div>
         </div>
-        <div className="cs_height_120 cs_height_lg_80"></div>
-      </section>
-    );
+        <div className="cs_team_shape_1 position-absolute"></div>
+        <div className="cs_team_shape_2 position-absolute">
+          <Image src="/assets/img/team_shape_1.svg" alt="img" width={264} height={573} />
+        </div>
+      </div>
+      <div className="cs_height_120 cs_height_lg_80"></div>
+    </section>
+  );
 };
 
 export default Team1;

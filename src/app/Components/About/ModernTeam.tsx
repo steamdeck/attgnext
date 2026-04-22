@@ -6,7 +6,7 @@ import Image from 'next/image';
 const ModernTeam = () => {
     const team = [
         {
-            name: 'Alex Thomax',
+            name: 'Alex Thomas',
             role: 'Founder & Director',
             image: 'https://i.ibb.co/rK6Nw1zF/Alex-Thomas.jpg',
             bio: 'Visionary leader with expertise in building innovative digital solutions and driving business growth.',
@@ -62,20 +62,20 @@ const ModernTeam = () => {
                             }}>
                                 {/* Image */}
                                 <div className="position-relative" style={{ height: '280px', overflow: 'hidden' }}>
-                                    <Image 
+                                    <Image
                                         src={member.image}
                                         alt={member.name}
                                         width={280}
                                         height={280}
                                         unoptimized={true}
-                                        style={{ 
-                                            width: '100%', 
-                                            height: '100%', 
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
                                             objectFit: 'cover',
                                             transition: 'transform 0.4s ease'
                                         }}
                                     />
-                                    
+
                                     {/* Social Overlay */}
                                     <div className="position-absolute" style={{
                                         top: '0',
@@ -145,8 +145,8 @@ const ModernTeam = () => {
                             <p className="cs_fs_16 mb-4" style={{ opacity: '0.9' }}>
                                 We're always looking for talented individuals who are passionate about digital innovation and client success.
                             </p>
-                            <Link 
-                                href="/contact" 
+                            <Link
+                                href="/contact"
                                 className="cs_btn cs_style_1 cs_fs_14 cs_bold text-uppercase"
                                 style={{ background: '#EA7010', borderColor: '#EA7010' }}
                                 aria-label="View career opportunities"
