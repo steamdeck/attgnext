@@ -84,6 +84,11 @@ export default function Nav({ setMobileToggle }) {
                 Mobile Application
               </Link>
             </li>
+            <li>
+              <Link href="/service/ai-calling-management" onClick={() => setMobileToggle(false)}>
+                AI Calling Management
+              </Link>
+            </li>
           </ul>
         </DropDown>
       </li>
