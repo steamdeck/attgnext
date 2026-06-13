@@ -85,8 +85,8 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
             <li>
-              <Link href="/service/ai-calling-management" onClick={() => setMobileToggle(false)}>
-                AI Calling Management
+              <Link href="/service/ai-automation" onClick={() => setMobileToggle(false)}>
+                AI Automation
               </Link>
             </li>
           </ul>
