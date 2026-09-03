@@ -1,0 +1,16 @@
+{
+  "[project]/src/app/Components/About/ModernFAQ.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/app/Components/About/ModernFAQ.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_db7af7f9._.js",
+      "static/chunks/src_app_Components_About_ModernFAQ_tsx_3e42f43c._.js"
+    ]
+  },
+  "[project]/src/app/Components/About/ModernMissionVision.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/app/Components/About/ModernMissionVision.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_app_Components_About_ModernMissionVision_tsx_ba579a67._.js",
+      "static/chunks/src_app_Components_About_ModernMissionVision_tsx_3e42f43c._.js"
+    ]
+  }
+}

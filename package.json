@@ -1,0 +1,42 @@
+{
+  "name": "at-tech-global",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "build:cpanel": "set CPANEL_EXPORT=true && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "metadata": "node scripts/generate-metadata.js",
+    "metadata:generate": "node scripts/generate-metadata.js"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/sqlite3": "^3.1.11",
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "html-react-parser": "^5.2.10",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "next": "15.3.6",
+    "react": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.2.0",
+    "react-slick": "^0.30.3",
+    "sharp": "^0.34.5",
+    "slick-carousel": "^1.8.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.6",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "15.3.6",
+    "typescript": "^5.9.3"
+  }
+}

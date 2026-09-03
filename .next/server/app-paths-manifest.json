@@ -1,0 +1,9 @@
+{
+  "/(innerpage)/about/page": "app/(innerpage)/about/page.js",
+  "/(innerpage)/project/page": "app/(innerpage)/project/page.js",
+  "/(innerpage)/service/page": "app/(innerpage)/service/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/seo/json-metadata/[route]/route": "app/api/seo/json-metadata/[route]/route.js",
+  "/icon.png/route": "app/icon.png/route.js",
+  "/page": "app/page.js"
+}

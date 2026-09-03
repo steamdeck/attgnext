@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Migration Estimate - AT Tech Global</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3ecf8e;
+            --secondary: #1c1c1c;
+            --text: #2d3436;
+            --light-bg: #f9fbf9;
+            --border: #e1e8e1;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+            margin: 0;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--secondary);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #636e72;
+            margin-top: 5px;
+        }
+
+        .date {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--secondary);
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+
+        .phase-title {
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .est-time {
+            font-weight: 600;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, var(--primary), #2bb371);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .summary-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .total-time {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .alert {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid;
+        }
+
+        .alert-warning {
+            background-color: #fff9e6;
+            border-color: #f1c40f;
+            color: #856404;
+        }
+
+        .alert-important {
+            background-color: #e8f4fd;
+            border-color: #3498db;
+            color: #0c5460;
+        }
+
+        .alert-note {
+            background-color: #f4f4f4;
+            border-color: #95a5a6;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: #b2bec3;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .summary-box { background: #3ecf8e !important; color: white !important; -webkit-print-color-adjust: exact; }
+            th { background-color: #1c1c1c !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Migration Estimate</h1>
+        <div class="subtitle">attechglobal.com &bull; Supabase Integration</div>
+    </div>
+    <div class="date">April 26, 2026</div>
+</header>
+
+<p>This document outlines the scope, timeline, and architectural impact of migrating the <strong>attechglobal.com</strong> backend from a hybrid SQLite/JSON file system to a unified <strong>Supabase</strong> infrastructure.</p>
+
+<h3>Project Inventory</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Layer</th>
+            <th>Current Technology</th>
+            <th>Migration Required</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SQLite Database</td>
+            <td><code>sqlite3</code> (images.db)</td>
+            <td>Yes (SQL Tables)</td>
+        </tr>
+        <tr>
+            <td>JSON Metadata</td>
+            <td>25+ JSON files in <code>/data/metadata</code></td>
+            <td>Yes (Supabase DB)</td>
+        </tr>
+        <tr>
+            <td>Authentication</td>
+            <td>Hardcoded creds + Custom JWT</td>
+            <td>Yes (Supabase Auth)</td>
+        </tr>
+        <tr>
+            <td>Image Storage</td>
+            <td>Local <code>/public/uploads</code></td>
+            <td>Yes (Supabase Storage)</td>
+        </tr>
+        <tr>
+            <td>API Layer</td>
+            <td>Next.js API Routes</td>
+            <td>Yes (Supabase SDK)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Phased Implementation Plan</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Phase</th>
+            <th>Tasks & Deliverables</th>
+            <th>Est. Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="phase-title">1. Setup</td>
+            <td>Project initialization, Schema definition, RLS policies</td>
+            <td class="est-time">2 – 3 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">2. DB Logic</td>
+            <td>Replace SQLite helpers in <code>src/lib/database.ts</code></td>
+            <td class="est-time">3 – 4 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">3. Metadata</td>
+            <td>Migrate JSON files to <code>page_metadata</code> table</td>
+            <td class="est-time">3 – 4 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">4. Auth</td>
+            <td>Supabase Auth integration & middleware update</td>
+            <td class="est-time">2 – 3 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">5. Storage</td>
+            <td>Public uploads migration to Supabase Buckets</td>
+            <td class="est-time">3 – 4 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">6. API Rewrite</td>
+            <td>Updating all 5 endpoint groups to use SDK</td>
+            <td class="est-time">4 – 5 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">7. Data Migration</td>
+            <td>Scripted export/import of current live data</td>
+            <td class="est-time">1 – 2 hrs</td>
+        </tr>
+        <tr>
+            <td class="phase-title">8. QA</td>
+            <td>Full system testing & dashboard verification</td>
+            <td class="est-time">3 – 4 hrs</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="summary-box">
+    <h2>Total Estimated Development Time</h2>
+    <div class="total-time">21 – 29 Hours</div>
+    <p>Approximately 3–4 days (Full-time) or 7–8 days (Part-time)</p>
+</div>
+
+<div class="alert alert-warning">
+    <strong>⚠️ Risk: Image Migration</strong><br>
+    All existing assets in <code>public/uploads/</code> must be programmatically re-uploaded to Supabase Storage. Database references must be updated to the new CDN URLs.
+</div>
+
+<div class="alert alert-important">
+    <strong>💡 Structural Change: SEO Management</strong><br>
+    The current <code>fileSeoUtils.ts</code> writes directly to <code>.tsx</code> files. Post-migration, SEO will be served dynamically from the database, improving build times and reliability.
+</div>
+
+<div class="alert alert-note">
+    <strong>📝 Server Compatibility</strong><br>
+    Next.js must be configured in SSR mode for API routes to function with Supabase. Verify if the current cPanel hosting supports Node.js runtime environments.
+</div>
+
+<footer>
+    Generated by Antigravity AI for attechglobal.com &bull; Confidential
+</footer>
+
+</body>
+</html>

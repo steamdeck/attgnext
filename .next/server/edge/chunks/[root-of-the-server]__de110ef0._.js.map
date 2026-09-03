@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server'\r\nimport type { NextRequest } from 'next/server'\r\n\r\nexport function middleware(request: NextRequest) {\r\n  // Temporarily disabled for static hosting\r\n  // This middleware requires server-side processing which isn't available on static hosting\r\n  return NextResponse.next()\r\n}\r\n\r\nexport const config = {\r\n  matcher: [\r\n    '/admin/:path*'\r\n  ]\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AAAA;;AAGO,SAAS,WAAW,OAAoB;IAC7C,0CAA0C;IAC1C,0FAA0F;IAC1F,OAAO,6LAAA,CAAA,eAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;KACD;AACH"}}]
+}
