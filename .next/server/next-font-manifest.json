@@ -1,15 +1,15 @@
 {
   "app": {
-    "[project]/src/app/(innerpage)/about/page": [
+    "[project]/src/app/(innerpage)/contact/page": [
       "static/media/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1-s.p.f805f543.woff2"
     ],
     "[project]/src/app/(innerpage)/project/page": [
       "static/media/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1-s.p.f805f543.woff2"
     ],
-    "[project]/src/app/(innerpage)/service/page": [
+    "[project]/src/app/(innerpage)/service/ecommerce/page": [
       "static/media/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1-s.p.f805f543.woff2"
     ],
-    "[project]/src/app/_not-found/page": [
+    "[project]/src/app/(innerpage)/service/web-development/page": [
       "static/media/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1-s.p.f805f543.woff2"
     ],
     "[project]/src/app/page": [
