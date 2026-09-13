@@ -1,10 +1,11 @@
 import React from 'react';
-import BreadCumb from '../../Components/Common/BreadCumb';
-import WebDevelopmentContent from '../../Components/Services/WebDevelopmentContent';
-import Contact2 from '../../Components/Contact/Contact2';
 import { Metadata } from 'next';
+import BreadCumb from '@/app/Components/Common/BreadCumb';
+import ServicePageSections from '@/app/Components/Services/ServicePageSections';
+import Contact2 from '@/app/Components/Contact/Contact2';
 import { getMetadata } from '@/lib/jsonDatabase';
 import { convertToNextJsMetadata } from '@/lib/fileSeoUtils';
+import content from '@/content/servicePages/gurgaon-website-design';
 
 export async function generateMetadata(): Promise<Metadata> {
   const metadata = await getMetadata('/gurgaon-website-design');
@@ -12,19 +13,21 @@ export async function generateMetadata(): Promise<Metadata> {
     return convertToNextJsMetadata(metadata);
   }
   return {
-    title: 'Gurgaon Website Design | AT Tech Global',
-    description: 'Expert Gurgaon Website Design services by AT Tech Global. We create stunning, responsive websites that drive business growth.',
+    title: content.seo.metaTitle,
+    description: content.seo.metaDescription,
+    keywords: content.seo.keywords
+      .split(',')
+      .map((keyword) => keyword.trim())
+      .filter(Boolean),
+    alternates: { canonical: `https://www.attechglobal.com/gurgaon-website-design` },
   };
 }
 
 const page = () => {
   return (
     <div>
-      <BreadCumb
-        bgimg="https://placeholdr.ai/591d45d7-b0e8-44aa-bbb1-b950e39425ba/1024/412"
-        Title="Gurgaon Website Design"
-      />
-      <WebDevelopmentContent />
+      <BreadCumb bgimg={content.breadcrumbImage} Title={content.breadcrumbTitle} />
+      <ServicePageSections content={content} />
       <Contact2 />
     </div>
   );

@@ -1,0 +1,20 @@
+{
+  "id": 1789295320633884,
+  "route": "/security-audits",
+  "page_name": "Security Audits",
+  "title": "Website Security Audits & Testing | AT Tech Global",
+  "meta_title": "Website Security Audits & Testing | AT Tech Global",
+  "meta_description": "Website security audits covering the OWASP Top 10, dependency CVEs, TLS and headers, account access and malware, with severity-ranked remediation.",
+  "keywords": "website security audit, web application security testing, owasp top 10 audit, vulnerability assessment, dependency cve scanning, security headers review, malware and backdoor scan",
+  "og_title": "Website Security Audits & Testing | AT Tech Global",
+  "og_description": "A manual and automated security review that ends in a ranked, fixable list rather than a raw scanner dump.",
+  "og_image": "/assets/img/page_header.jpg",
+  "canonical_url": "https://www.attechglobal.com/security-audits",
+  "robots_index": true,
+  "robots_follow": true,
+  "twitter_title": "Website Security Audits & Testing | AT Tech Global",
+  "twitter_description": "A manual and automated security review that ends in a ranked, fixable list rather than a raw scanner dump.",
+  "twitter_image": "/assets/img/page_header.jpg",
+  "created_at": "2026-09-13T10:28:39.495Z",
+  "updated_at": "2026-09-13T10:28:39.495Z"
+}

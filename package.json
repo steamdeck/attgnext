@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "metadata": "node scripts/generate-metadata.js",
-    "metadata:generate": "node scripts/generate-metadata.js"
+    "metadata:generate": "node scripts/generate-metadata.js",
+    "pages:check": "node scripts/generate-service-pages.js --dry",
+    "pages:generate": "node scripts/generate-service-pages.js",
+    "pages:audit": "node scripts/audit-service-pages.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",

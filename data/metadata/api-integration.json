@@ -1,0 +1,20 @@
+{
+  "id": 1789295319679845,
+  "route": "/api-integration",
+  "page_name": "API Integration",
+  "title": "Trusted API Integration Services Company | AT Tech Global",
+  "meta_title": "Trusted API Integration Services Company | AT Tech Global",
+  "meta_description": "API integration services for payments, ERP, logistics and WhatsApp. OAuth handling, webhooks, retries, idempotency and monitoring that survives production.",
+  "keywords": "api integration services, rest api integration, webhook integration, payment gateway integration, third party api integration",
+  "og_title": "API Integration Services | AT Tech Global",
+  "og_description": "Systems that talk to each other reliably, with retries, idempotency and monitoring built in from the start.",
+  "og_image": "/assets/img/page_header.jpg",
+  "canonical_url": "https://www.attechglobal.com/api-integration",
+  "robots_index": true,
+  "robots_follow": true,
+  "twitter_title": "API Integration Services | AT Tech Global",
+  "twitter_description": "Systems that talk to each other reliably, with retries, idempotency and monitoring built in from the start.",
+  "twitter_image": "/assets/img/page_header.jpg",
+  "created_at": "2026-09-13T10:28:39.495Z",
+  "updated_at": "2026-09-13T10:28:39.495Z"
+}
