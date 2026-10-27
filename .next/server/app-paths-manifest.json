@@ -1,9 +1,0 @@
-{
-  "/(innerpage)/contact/page": "app/(innerpage)/contact/page.js",
-  "/(innerpage)/project/page": "app/(innerpage)/project/page.js",
-  "/(innerpage)/service/ecommerce/page": "app/(innerpage)/service/ecommerce/page.js",
-  "/(innerpage)/service/web-development/page": "app/(innerpage)/service/web-development/page.js",
-  "/api/seo/json-metadata/[route]/route": "app/api/seo/json-metadata/[route]/route.js",
-  "/icon.png/route": "app/icon.png/route.js",
-  "/page": "app/page.js"
-}

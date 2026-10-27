@@ -53,7 +53,7 @@ export default function Header3({ variant } : any ) {
                 </li>
                 <li>
                 <i className="bi bi-geo-alt-fill"></i>
-                  IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017
+                  Tower A, Ansal Corporate Plaza, G-53, Ground Floor, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017
                 </li>
               </ul>
             </div>

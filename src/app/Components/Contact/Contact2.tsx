@@ -44,7 +44,7 @@ const Contact2 = () => {
                     <i className="bi bi-geo-alt-fill"></i>
                     </span>
                     <div className="cs_iconbox_info">
-                      <p className="mb-0">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                      <p className="mb-0">Tower A, Ansal Corporate Plaza, G-53, Ground Floor, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                     </div>
                   </div>
                 </li>

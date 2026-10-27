@@ -118,7 +118,7 @@ const TermsAndConditionsPage = () => {
                   <div className="cs_contact_info cs_mb_30">
                     <p><strong>Email:</strong> info@attechglobal.com</p>
                     <p><strong>Phone:</strong> +91 92668 12465</p>
-                    <p><strong>Address:</strong> IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                    <p><strong>Address:</strong> Tower A, Ansal Corporate Plaza, G-53, Ground Floor, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                   </div>
 
                   <p className="cs_mb_0">

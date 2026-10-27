@@ -156,7 +156,7 @@ const Contact3 = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_mb_1">Visit Our Office (India)</p>
-                      <p className="cs_fs_18 cs_semibold cs_heading_color mb-0">IIIrd Floor, Block B, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                      <p className="cs_fs_18 cs_semibold cs_heading_color mb-0">Tower A, Ansal Corporate Plaza, G-53, Ground Floor, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                     </div>
                   </div>
                 </li>

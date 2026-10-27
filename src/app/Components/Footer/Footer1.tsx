@@ -76,7 +76,7 @@ const Footer1 = () => {
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_27 position-relative">Contact Us</h2>
                 <p className="cs_mb_4"><b>India</b></p>
-                <p className="cs_mb_4">IIIrd Floor, Block B, Ansal Corporate Plaza, T-444, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
+                <p className="cs_mb_4">Tower A, Ansal Corporate Plaza, G-53, Ground Floor, Carterpuri Rd, Block C 2, Palam Vihar, Gurugram, Haryana 122017</p>
                 <p className="cs_mb_24"><b>+91 92668 12465</b></p>
               </div>
             </div>
