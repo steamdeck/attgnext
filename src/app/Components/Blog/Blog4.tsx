@@ -5,6 +5,8 @@ import React from 'react';
 const Blog4 = () => {
 
     const chooseContent = [
+        {img:'/assets/img/custom-website-vs-wordpress-cost-2026.jpg', title:'Custom Website vs WordPress (2026): Which Is Cheaper in the Long Run?', content:'Web Development', link:'/blog/custom-website-vs-wordpress', date:'25'},
+        {img:'/assets/img/website-development-cost-india-2026.jpg', title:'Website Development Cost in India (2026): Gurgaon Price Guide', content:'Web Development', link:'/blog/website-development-cost-india-2026', date:'23'},
         {img:'https://i.ibb.co/B5JBLqQv/Gurgaon-Digital-Marketing-Sprouting-in-New-Strategy.jpg', title:'Gurgaon Digital Marketing Sprouting in New Strategy.', content:'Digital Marketing', link:'/blog/gurgaon-digital-marketing-sprouting-new-strategy', date:'29'},
         {img:'/assets/img/post_6.jpg', title:'Digital Marketing Agency in Gurugram: Your Gateway to Business Growth', content:'Digital Marketing', link:'/blog/digital-marketing-agency-in-gurugram', date:'15'},
         {img:'/assets/img/post_7.jpg', title:'Unlocking Potential Through Technology', content:'Marketing', link:'/blog/blog-details', date:'14'},
@@ -26,7 +28,7 @@ const Blog4 = () => {
               <Image src={item.img} alt={item.title} width={362} height={235}   />
               <span className="cs_posted_by cs_blue_bg cs_white_color cs_radius_10 text-center position-absolute">
               <span className="cs_fs_24 cs_bold">{item.date || '17'}</span>
-              <span className="cs_fs_12">Jan</span>
+              <span className="cs_fs_12">Nov</span>
               </span>
               </Link>
               <div className="cs_post_content cs_white_bg">
